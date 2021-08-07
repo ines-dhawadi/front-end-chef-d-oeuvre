@@ -124,3 +124,38 @@
   .bd-docs.dark-edition {
     background-color: #fff;
   }
+  .logo-dash{
+    border-radius: 50%;
+    width: 5rem;
+    height: 7.5rem;
+
+  }
+  .NON-ADMIN{
+    margin-left: 3rem;
+    margin-top: -1rem;
+  }
+
+  .modal-content-add {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 43rem;
+    pointer-events: auto;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+    outline: 0;
+  }
+
+  .troix-1-input{
+    display: flex;
+    justify-content: space-around;
+   
+  }
+
+  .modal-ajout-artisan{
+margin-top: 8rem;
+margin-left: 50rem;
+  }

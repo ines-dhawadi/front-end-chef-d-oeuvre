@@ -2,13 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import "./admin.css";
 import "./material-dashboard.css"
-import GetArtisan from '../view/getArtisan'
-import FormAjoutArtisan  from "../view/addArtisan";
+//import GetArtisan from '../view/getArtisan'
 
 
 
 
-const Users = ({email} ) => {
+
+const Client = ({email} ) => {
   return(
     <div class="dark-edition">
           <div class="wrapper ">
@@ -112,12 +112,9 @@ const Users = ({email} ) => {
           </div>
         </div>
       </nav>
+      {/* <GetArtisan  /> */}
 
-      <div className="modal-ajout-artisan">
-      <FormAjoutArtisan />
-      </div>
-      
-      <GetArtisan  />
+
     </div>
 
 
@@ -134,4 +131,4 @@ const Users = ({email} ) => {
 
  }
 
-export default Users
+export default Client

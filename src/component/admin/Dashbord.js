@@ -5,7 +5,7 @@ import "./material-dashboard.css"
 const Doshboard = () => {
  
     return(
-        <div>
+        <div class="dark-edition">
             <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="black" data-image="../assets/img/sidebar-2.jpg">
     {/*       
@@ -14,51 +14,53 @@ const Doshboard = () => {
             Tip 2: you can also add an image using data-image tag */}
         
           <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-              Creative Tim
+          <img src="/images/image-Dhashb/admin-img.jpg" alt="..." className="logo-dash mb-5"/>
+           <p class="NON-ADMIN">Ines DHAOUADI</p>
             </a></div>
           <div class="sidebar-wrapper">
             <ul class="nav">
               <li class="nav-item active  ">
-                <a class="nav-link" href="./dashboard.html">
+                <Link class="nav-link" to="./dashboard.html">
                   <i class="material-icons">dashboard</i>
                   <p>Dashboard</p>
-                </a>
+                </Link>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="./users">
+                <Link class="nav-link" to="./artisan">
                   <i class="material-icons">person</i>
-                  <p>User Profile</p>
-                </a>
+                  <p>craftswoman  Profile </p>
+                  {/* <p>User Profile</p> */}
+                </Link>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="./tables.html">
+                <Link class="nav-link" to="./users">
                   <i class="material-icons">content_paste</i>
-                  <p>Table List</p>
-                </a>
+                  <p>User Profile</p>
+                </Link>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="./typography.html">
+                <Link class="nav-link" to="./typography.html">
                   <i class="material-icons">library_books</i>
                   <p>Typography</p>
-                </a>
+                </Link>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="./icons.html">
+                <Link class="nav-link" to="./icons.html">
                   <i class="material-icons">bubble_chart</i>
                   <p>Icons</p>
-                </a>
+                </Link>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="./map.html">
+                <Link class="nav-link" to="./map.html">
                   <i class="material-icons">location_ons</i>
                   <p>Maps</p>
-                </a>
+                </Link>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="./notifications.html">
+                <Link class="nav-link" to="./notifications.html">
                   <i class="material-icons">notifications</i>
                   <p>Notifications</p>
-                </a>
+                </Link>
               </li>
                  {/* <li class="nav-item active-pro ">
                     <a class="nav-link" href="./upgrade.html">
@@ -84,13 +86,13 @@ const Doshboard = () => {
               </button>
               <div class="collapse navbar-collapse justify-content-end">
                 <form class="navbar-form">
-                  <div class="input-group no-border">
-                    <input type="text" value="" class="form-control" placeholder="Search..."/>
-                    <button type="submit" class="btn btn-default btn-round btn-just-icon">
-                      <i class="material-icons">search</i>
-                      <div class="ripple-container"></div>
-                    </button>
-                  </div>
+                <div className="input-group no-border">
+                <input type="text" value="" className="form-control search-admin" placeholder="Search..."/>
+                <button type="submit" className="btn btn-default btn-round btn-just-icon">
+                  <i className="material-icons">search</i>
+                  <div className="ripple-container"></div>
+                </button>
+              </div>
                 </form>
                 <ul class="navbar-nav">
                   <li class="nav-item">
@@ -132,7 +134,7 @@ const Doshboard = () => {
           {/* End Navbar */}
           <div class="content">
             <div class="container-fluid">
-              <div class="row">
+              {/* <div class="row">
                 <div class="col-xl-4 col-lg-12">
                   <div class="card card-chart">
                     <div class="card-header card-header-success">
@@ -182,7 +184,11 @@ const Doshboard = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
+
+
+
+            
               <div class="row">
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                   <div class="card card-stats">

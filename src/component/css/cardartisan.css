@@ -1,7 +1,10 @@
 :root {
     --surface-color: #fff;
-    --curve: 40;
+    --curve: 35;
+    --back-dash:#1a2035;
   }
+  
+
   
   * {
     box-sizing: border-box;
@@ -9,10 +12,10 @@
   
   body {
     font-family: "Noto Sans JP", sans-serif;
-    background-color: #fef8f8;
+    background-color: var( --back-dash) !important;
   }
   
-  .cards {
+  /* .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -20,16 +23,18 @@
     padding: 0;
     list-style-type: none;
 
-  }
+  } */
   
   .card {
-    position: relative;
-    display: block;
-    height: 25rem;
-    border-radius: calc(var(--curve) * 1px);
-    overflow: hidden;
-    text-decoration: none;
-    width: 20rem;
+    position: relative !important;
+    display: block !important;
+    height: 20rem !important;
+    border-radius: calc(var(--curve) * 1px) !important;
+    overflow: hidden !important;
+    text-decoration: none !important ;
+    width: 18rem !important;
+    background-color: #fff !important;
+    margin-bottom: 2rem !important;
   }
   
   .card__image {
@@ -47,10 +52,12 @@
     background-color: var(--surface-color);
     transform: translateY(100%);
     transition: 0.2s ease-in-out;
+    height: 15rem;
+   
   }
   
   .card:hover .card__overlay {
-    transform: translateY(0);
+    transform: translateY(0) !important;
   }
   
   .card__header {
@@ -61,8 +68,9 @@
     padding: 2em;
     border-radius: calc(var(--curve) * 1px) 0 0 0;
     background-color: var(--surface-color);
-    transform: translateY(-100%);
-    transition: 0.2s ease-in-out;
+    transform: translateY(-100%) !important;
+    transition: 0.2s ease-in-out !important;
+    
   }
   
   .card__arc {
@@ -77,10 +85,11 @@
   .card__arc path {
     fill: var(--surface-color);
     d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+ 
   }
   
   .card:hover .card__header {
-    transform: translateY(0);
+    transform: translateY(0) !important;
   }
   
   .card__thumb {
@@ -119,4 +128,17 @@
     -webkit-line-clamp: 3;
     overflow: hidden;
   }
-  
+  #card-artisan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5rem;
+  }
+
+  .icon-update{
+    position: relative;
+    margin-top: -12rem;
+    margin-left: 14rem;
+    background-color: rgba(255, 255, 255, 0.651);
+
+  }

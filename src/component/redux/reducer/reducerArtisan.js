@@ -1,4 +1,4 @@
-import {REACT_APP_GET_ARTISAN,REACT_APP_GET_ARTISAN_FAILED} from '../action/type'
+import {REACT_APP_DELETE_ARTISAN,REACT_APP_POST_ARTISAN,REACT_APP_GET_ARTISAN,REACT_APP_GET_ARTISAN_FAILED} from '../action/type'
 
 
 
@@ -18,6 +18,20 @@ export const artisanReducer =(state =initialState ,action )=>{
   return {
     ...state,
     datas: payload};
+
+case REACT_APP_POST_ARTISAN:
+  return{
+    ...state,
+    datas:[...state.datas,payload]
+  };
+  case REACT_APP_DELETE_ARTISAN:
+                return {
+                  ...state,
+                  datas: state.datas.filter(
+                    data => data._id !== payload
+                  )
+                };
+
 }
   console.log('state action', state)
   return state

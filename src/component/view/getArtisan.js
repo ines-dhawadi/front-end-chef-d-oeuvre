@@ -2,8 +2,8 @@ import React from 'react'
 import "../css/cardartisan.css";
 import {useEffect} from "react";
 import {useSelector,useDispatch} from "react-redux"
-import {allArtisan} from "../redux/action/actionArtisan"
-
+import { deleteArtisanB ,allArtisan} from "../redux/action/actionArtisan"
+import  UpdateArtisan from "../view/updateArtisan"
 
 const GetArtisan=()=>{
     const artisan = useSelector(state =>state.artisanStore.datas)
@@ -15,41 +15,51 @@ const GetArtisan=()=>{
   console.log("produit", artisan)
   
   
+
+  //Delete ARTISAN
+  const deleteARTISAN =(id)=>{
+    dispatch (deleteArtisanB(id) )
+    console.log(deleteArtisanB(id))
+  }
   
   
     return(
-    <div>
+    <div id="card-artisan">
 
 {artisan.map((el,key)=>(
 <div key={key}>
 
-<h1>{el.nom}</h1>
-<h1> {el.prenom} </h1>
-<h1> {el.role} </h1>
-<h1> {el.desc} </h1>
-
-</div>
 
 
-))}
+
 
  {/* start card  */}
  <ul class="cards">
   <li>
     <a href="" class="card">
-      <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+      <img src={el.image1} class="card__image" alt="" />
+      <div class="icon-update" >  < UpdateArtisan id={el._id}  el={el} />  </div>
+      
       <div class="card__overlay">
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
             <path />
           </svg>
-          <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+          <img class="card__thumb" src={el.imageP} alt="" />
           <div class="card__header-text">
-            <h3 class="card__title">Jessica Parker</h3>
-            <span class="card__status">1 hour ago</span>
+            <h3 class="card__title">{el.nom} {el.prenom}</h3>
+            <span class="card__status">{el.role}</span>
           </div>
         </div>
-        <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+        <p class="card__description">{el.desc}</p>
+
+        <div class="d-flex ml-5">
+        <i onClick={() => deleteARTISAN(el._id)} class="far fa-trash-alt fa-2x"></i>
+      
+        </div>
+      
+      {/* <button><i class="far fa-trash-alt"></i> </button>
+      <button><i class="far fa-edit"></i></button> */}
       </div>
     </a>
   </li>
@@ -57,6 +67,13 @@ const GetArtisan=()=>{
   
   
 </ul>
+
+
+
+</div>
+
+
+))}
 
 {/* END CARD */}
 
