@@ -1,6 +1,6 @@
 import {BrowserRouter,Route} from 'react-router-dom'
 import './App.css';
-//import GetArtisan from './component/view/getArtisan'
+import GetArtisan from './component/view/getArtisan'
 import Client from "./component/admin/client";
  import Admin from "./component/admin/admin";
  import Users from "./component/admin/users";
@@ -19,8 +19,8 @@ function App() {
       </BrowserRouter>
 
       
-{/* 
-<GetArtisan /> */}
+
+<GetArtisan />
 
 
     </div>

@@ -28,7 +28,7 @@ const GetArtisan=()=>{
 
 {artisan.map((el,key)=>(
 <div key={key}>
-
+<h1>{el.nom} {el.prenom}</h1>
 
 
 
@@ -38,8 +38,6 @@ const GetArtisan=()=>{
   <li>
     <a href="" class="card">
       <img src={el.image1} class="card__image" alt="" />
-      <div class="icon-update" >  < UpdateArtisan id={el._id}  el={el} />  </div>
-      
       <div class="card__overlay">
         <div class="card__header">
           <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
@@ -48,6 +46,8 @@ const GetArtisan=()=>{
           <img class="card__thumb" src={el.imageP} alt="" />
           <div class="card__header-text">
             <h3 class="card__title">{el.nom} {el.prenom}</h3>
+            < UpdateArtisan id={el._id}  el={el} />
+           
             <span class="card__status">{el.role}</span>
           </div>
         </div>
@@ -55,7 +55,7 @@ const GetArtisan=()=>{
 
         <div class="d-flex ml-5">
         <i onClick={() => deleteARTISAN(el._id)} class="far fa-trash-alt fa-2x"></i>
-      
+     
         </div>
       
       {/* <button><i class="far fa-trash-alt"></i> </button>

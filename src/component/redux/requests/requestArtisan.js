@@ -50,8 +50,8 @@ export const deleteArtisan =(id)=>{
 
 
 
-export const updateArtisanR=(nom,
-    id,
+export const updateArtisanR=(id,nom,
+   
     prenom,
     role,
     desc,
@@ -65,9 +65,8 @@ export const updateArtisanR=(nom,
     Ntelf,
     adress,
     gouvernorat)=>{
-    axios.put(`${SERVER_BASE_API}/artisan/${id}/update`,{nom,
-        id,
-        prenom,
+    axios.put(`${SERVER_BASE_API}/artisan/${id}/update`,{ id,nom,
+       prenom,
         role,
         desc,
         latitude,

@@ -42,9 +42,10 @@ const handelChange=(e)=>{
 
   const handelSubmit=(e)=>{
    e.preventDefault()
-    dispatch( updateArtisan(Input.nom,Input.prenom, Input.role, Input.desc,Input.latitude,Input.longitude, Input.imageP,Input.image1,Input.image2,Input.image3,Input.image4,Input.Ntelf,Input.adress,Input.gouvernorat))
+    dispatch( updateArtisan(id,Input.nom,Input.prenom, Input.role, Input.desc,Input.latitude,Input.longitude, Input.imageP,Input.image1,Input.image2,Input.image3,Input.image4,Input.Ntelf,Input.adress,Input.gouvernorat))
    
     console.log('val input', Input)
+    setShow(false)
   }
 
   
@@ -70,8 +71,9 @@ const [show, setShow] = useState(false);
 {/* ********************modal********************* */}
 
     <div >
+        <Button  onClick={handleShow} > <i class="far fa-edit fa-2x"></i></Button>
      
-      <i onClick={handleShow} class="far fa-edit fa-2x"></i>
+     
      
 
       <Modal  show={show} onHide={handleClose}>

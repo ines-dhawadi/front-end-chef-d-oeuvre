@@ -79,8 +79,8 @@ export const deleteArtisanB = (id)=> async (dispatch) => {
 
 
    // update ARTISAN
-export const updateArtisan = (nom,
-    id,
+export const updateArtisan = ( id,nom,
+    
     prenom,
     role,
     desc,
@@ -95,8 +95,8 @@ export const updateArtisan = (nom,
     adress,
     gouvernorat) => async dispatch => {
     try {
-      const res = await updateArtisanR(nom,
-        id,
+      const res = await updateArtisanR(id,nom,
+       
         prenom,
         role,
         desc,
