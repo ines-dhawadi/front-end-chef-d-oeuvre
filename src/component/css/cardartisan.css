@@ -1,5 +1,6 @@
 :root{
-  --col-bz:#f68a31
+  --col-bz:#f68a31;
+  --bg-bv:#181f34;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
@@ -17,10 +18,10 @@ display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-.card {
+.card1 {
   background: #fff;
   border-radius: 4px;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  box-shadow: 0px 14px 80px rgba(92, 93, 121, 0.904);
   max-width: 440px;
   display: flex;
   text-align: center;
@@ -29,14 +30,16 @@ display: flex;
   position: relative;
   margin-bottom: 2rem;
   height: 15rem;
+  background-color: var(--bg-bv);
+ 
 }
 
-.card h2 {
+.card1 h2 {
   margin: 0;
   padding: 0 1rem;
 }
 
-.card .title {
+.card1 .title {
  
   text-align: right;
   color: rgb(144, 248, 144);
@@ -47,13 +50,13 @@ display: flex;
  padding-bottom: 1rem;
 }
 
-.card .desc {
+.card1 .desc {
   padding: 0.5rem 1rem;
   font-size: 12px;
   color: white;
 }
 
-.card .actions {
+.card1 .actions {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -126,5 +129,5 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #191f34;
+  background-color:  var(--bg-bv);
 }

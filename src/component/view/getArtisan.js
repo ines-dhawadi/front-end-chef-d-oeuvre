@@ -102,10 +102,10 @@ const GetArtisan=()=>{
     const artisan = useSelector(state =>state.artisanStore.datas)
     
     const dispatch = useDispatch()
-  useEffect(()=>{
-    dispatch( allArtisan());
-  },[]);
-  console.log("produit", artisan)
+    useEffect(()=>{
+      dispatch( allArtisan());
+    },[]);
+    console.log("produit", artisan)
   
   
 
@@ -122,7 +122,7 @@ const GetArtisan=()=>{
 {artisan.map((el,key)=>(
 <div>
 
-<div class="card" key={key}>
+<div class="card1" key={key}>
   <div class="">
 {/* <img className="card-logo " src='images/logo.webp'/> */}
 <img class="img-avatar" src={el.imageP} alt="" />

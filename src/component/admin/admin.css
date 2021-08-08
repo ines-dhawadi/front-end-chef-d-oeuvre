@@ -159,3 +159,12 @@
 margin-top: 8rem;
 margin-left: 50rem;
   }
+
+  .image-client-dashbord{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px rgba(0, 0, 0, 0.411) solid;
+    size: cover;
+   
+  }

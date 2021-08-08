@@ -1,6 +1,6 @@
 import {BrowserRouter,Route} from 'react-router-dom'
 import './App.css';
-//import GetArtisan from './component/view/getArtisan'
+//import GetAllClientC  from './component/view/getClient'
 import Client from "./component/admin/client";
  import Admin from "./component/admin/admin";
  import Users from "./component/admin/users";

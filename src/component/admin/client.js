@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import "./admin.css";
 import "./material-dashboard.css"
+import GetAllClientC from "../view/getClient";
 //import GetArtisan from '../view/getArtisan'
 
 
@@ -113,6 +114,10 @@ const Client = ({email} ) => {
         </div>
       </nav>
       {/* <GetArtisan  /> */}
+
+      <div class="users-dh-chbord">
+      <GetAllClientC />
+      </div>
 
 
     </div>
