@@ -13,3 +13,23 @@
   margin: 1rem;
 }
 
+.leaflet-container{
+  width: 60vw;
+  height: 100vh;
+  float: right;
+}
+
+.leaflet-popup-content-wrapper{
+  width: 20rem;
+  text-align: center;
+  padding-right: 1rem;
+}
+
+.image-popup{
+  width: 18rem;
+  height: auto;
+justify-content: center;
+
+border-radius: 14px;
+
+}
