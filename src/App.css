@@ -14,9 +14,10 @@
 }
 
 .leaflet-container{
-  width: 60vw;
+  width: 50vw;
   height: 100vh;
   float: right;
+
 }
 
 .leaflet-popup-content-wrapper{
@@ -33,3 +34,23 @@ justify-content: center;
 border-radius: 14px;
 
 }
+
+.imag-carosel-artisan-map{
+  width: 20rem !important;
+  height: 14.5rem;
+  border-radius: 14px;
+}
+
+
+.hr{
+
+  border-bottom:black 1px solid ;
+}
+
+.map-all{
+  position: fixed !important;
+margin-left: 45.5rem !important;
+}
+/* .mart-1-p-map{
+  overflow-y: scroll;
+} */
