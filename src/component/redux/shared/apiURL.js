@@ -11,4 +11,5 @@ export const ADD_ARTISAN_API = `${SERVER_BASE_API}/artisan/add`
 //****************url client */
 
  export const GET_client_API = `${SERVER_BASE_API}/client/getAllClient`
-export const ADD_client_API = `${SERVER_BASE_API}/client/'/add `
+export const ADD_client_API = `${SERVER_BASE_API}/client/add `
+export const DELETE_client_API = `${SERVER_BASE_API}/client `

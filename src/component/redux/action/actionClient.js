@@ -1,5 +1,5 @@
-import {getAllClient} from "../requests/requestClient";
-import { REACT_APP_GET_CLIENT, REACT_APP_GET_CLIENT_FAILED } from "./type";
+import {updtClient,deleteClient,getAllClient} from "../requests/requestClient";
+import {  REACT_APP_UPDATE_CLIENT,REACT_APP_DELETE_CLIENT, REACT_APP_GET_CLIENT, REACT_APP_GET_CLIENT_FAILED } from "./type";
 
 
 
@@ -17,16 +17,47 @@ export function GetAllClientA(){
     }
 }
 
-// // GET ARTISAN
-// export function allArtisan(){
-//     return dispatch =>{
-//         fetchArtisan() 
-//         .then(artisan => dispatch(
-// {type :REACT_APP_GET_ARTISAN, payload :artisan })
-//         )
-//         .catch(err=> dispatch({
-//             type:REACT_APP_GET_ARTISAN_FAILED,
-//             payload: err
-//         }))
-//     }
-// }
+ // delete client 
+
+
+  export const deleteClientA = (id)=> async (dispatch) => {
+    try {
+      await deleteClient (id);
+      dispatch({
+        type:REACT_APP_DELETE_CLIENT,
+        payload:id
+    })
+      console.log("delete")
+      dispatch(GetAllClientA);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
+// UPDATE CLIENT 
+export const updateClient=(id,nom,
+    prenom,
+    telephone,
+    email,
+    image,
+    password)=> async dispatch =>{
+    try{
+      const res =  await  updtClient(id,nom,
+        prenom,
+        telephone,
+        email,
+        image,
+        password);
+        dispatch({
+            type:REACT_APP_UPDATE_CLIENT,
+        payload: res.data
+        })
+
+        console.log('jitouch', )
+    }catch(err){
+        console.log(err);
+    }
+}
+
+  

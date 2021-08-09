@@ -2,8 +2,8 @@ import React from 'react'
 import "../admin/admin.css";
 import {useEffect} from "react";
 import {useSelector,useDispatch} from "react-redux"
-import {GetAllClientA} from "../redux/action/actionClient"
-//import  UpdateArtisan from "../view/updateArtisan"
+import {GetAllClientA,deleteClientA} from "../redux/action/actionClient"
+import UpdateClientC from "../view/updateClient"
 
 
 
@@ -17,16 +17,13 @@ useEffect(()=>{
     dispatch( GetAllClientA());
 },[]);
 
+// DELETE CLIENT 
+const deleteclientC=(id)=>{
+  dispatch(deleteClientA(id))
+}
 
 
 
-// const artisan = useSelector(state =>state.artisanStore.datas)
-    
-//     const dispatch = useDispatch()
-//     useEffect(()=>{
-//       dispatch( allArtisan());
-//     },[]);
-//     console.log("produit", artisan)
   return(
     <div>
 
@@ -59,10 +56,14 @@ useEffect(()=>{
                             <td> {el.telephone}</td>
                             <td class="td-actions ">
                                   <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm mr-3">
-                                    <i class="material-icons">edit</i>
+                                    
+                                    <UpdateClientC el={el}  id={el._id} />
                                   </button>
-                                  <button type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
-                                    <i class="material-icons">close</i>
+                                  <button onClick={()=>deleteclientC(el._id)} type="button" rel="tooltip" title="Remove" class="btn btn-white btn-link btn-sm">
+                                  <i class="material-icons">close</i>
+
+
+
                                   </button>
                                 </td>
                           

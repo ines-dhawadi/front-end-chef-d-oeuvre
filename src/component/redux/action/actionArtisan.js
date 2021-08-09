@@ -115,7 +115,7 @@ export const updateArtisan = ( id,nom,
         type:  REACT_APP_UPDATE_ARTISAN, 
         payload: res.data
       });
-      console.log("superrr")
+      console.log("superrr", )
     } catch (error) {
       console.log(error);
     }
