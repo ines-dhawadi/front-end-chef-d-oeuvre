@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root{
+    --fnt:'Audiowide', cursive;
+    --allFont:Arial, Helvetica, sans-serif;
+    --color-on:#f36600
+}
+body{
+    background-image: url("https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.general.png");
+}
+
+
+/* .navbar-light{
+    
+ background-color: transparent !important;
+    padding-left: 11% !important;
+    padding-right: 10% !important;
+    margin-bottom: 5rem !important;
+    margin-top: 9.4rem;
+    color: white;
+  } */
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    border: none;
+    color: var(--clr-primary-light) !important;
+    border-bottom: solid 1px var(--clr-primary-light);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: -3px;
+  }
+  .form-control {
+    margin-left: 20px !important;
+    margin-top: -3px !important;
+    width: 100%;
+    border-radius: 0 !important;
+    font-size: .95rem !important;
+    color: var(--clr-primary-light) !important;
+    background: none !important;
+    border:none !important;
+    border-bottom: 1px solid var(--clr-primary-light) !important;
+  }
+  .heart{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--clr-primary-light);
+    cursor: pointer;
+  }
+  .favorite--value{
+    background-color: var(--clr-secondary-redish);
+    padding: 1px 6px !important;
+    border-radius: 50% ;
+    font-size: .5em;
+    position: absolute;
+    top: 12px !important;
+    right: 9%;
+    z-index: 1;
+    font-weight: bold;
+    color: var(--clr-primary-light) !important;
+  }
+  .ninja-icon{
+    position: absolute;
+    top: 15px !important;
+    right: 7%;
+  }
+  .heart:hover, .linked--brand:hover,
+  .linked--page:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+  .linked--brand{
+    text-decoration: none;
+    color:var(--clr-primary-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: var( --fnt);
+    padding-left: 1rem;
+  }
+  .linked--page{
+    color: var(--clr-primary-light);
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 10px 20px 10px 0 !important;
+    cursor: pointer;
+    font-family: var(--allFont);
+  }
+  
+  .part2-nav{
+      padding-left: 13rem;
+      padding-right: 8rem;
+      font-family: var(--allFont);
+  }
+
+  .part2-nav:hover{
+    border-radius: 0;
+    border-right: 1px solid #000000;
+    line-height: 20px;
+    list-style: outside none none;
+    color: var( --color-on);
+   
+ 
+  
+  }
+  .part3-nav{
+    padding-left: 4rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .far{
+      color: white !important;
+  }
+
+
+  .img-1-home{
+      height: 50rem;
+ 
+      z-index: -1;
+   
+      
+  }
+
+  .titre-1-home{
+    
+background-image: url("https://www.formtrends.com/wp-content/uploads/2013/10/mercedes_c-class_interior-01.jpg");
+font-size: 4rem;
+color: white;
+padding-top: 35rem;
+    font-family: var( --fnt);
+    background-position: top;
+height: 48rem;
+border: 1px solid #333;
+    box-shadow: 1px 1px 1px #000000;
+    border-radius: 3px;
+    background-attachment: fixed;
+  }
+
+
+  .logo-top-navbar{
+margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-left: -10rem;
+    font-size: 4rem;
+    cursor: pointer;
+    font-family: var( --fnt);
+ color: white;
+  }
+
+  .prag-top-navbar{
+    color: var( --color-on);
+    margin-top: 4rem;
+  }
+
+  .phone-numbr{
+    color: white;
+    font-size: 1rem;
+    font-family: var(--allFont);
+  }
+  .petit-titre-numbr{
+    color: white;
+    font-size: 0.7rem;
+    font-family: var(--allFont);
+    margin-left: 13rem;
+  }
+
+  .navbar{
+    background-color: transparent;
+    padding-left: 11% ;
+    padding-right: 10% ;
+    margin-bottom: 5rem ;
+    margin-top: 9.4rem;
+    color: white;
+ 
+  }
+  .navbar.colorChange{
+    background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
+  
+  width: 69.4rem;
+ margin-left: 9.8rem;
+ padding: 0%;
+    color: white;
+ 
+  }

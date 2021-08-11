@@ -649,10 +649,10 @@
     border-radius: 0;
   }
   
-  button:focus {
+  /* button:focus {
     outline: 1px dotted;
     outline: 5px auto -webkit-focus-ring-color;
-  }
+  } */
   
   input,
   button,
@@ -682,14 +682,14 @@
     -webkit-appearance: button;
   }
   
-  button::-moz-focus-inner,
+  /* button::-moz-focus-inner,
   [type="button"]::-moz-focus-inner,
   [type="reset"]::-moz-focus-inner,
   [type="submit"]::-moz-focus-inner {
     padding: 0;
     border-style: none;
   }
-  
+   */
   input[type="radio"],
   input[type="checkbox"] {
     box-sizing: border-box;
@@ -4234,7 +4234,7 @@
     border-left: 0 solid #d2d2d2;
     border-radius: 0 0 0 0;
   }
-  
+/*   
   .nav {
     display: flex;
     flex-wrap: wrap;
@@ -4322,26 +4322,26 @@
   
   .tab-content>.active {
     display: block;
-  }
+  } */
   
-  .navbar {
+  /* .navbar {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-  }
+  } */
   
-  .navbar>.container,
+  /* .navbar>.container,
   .navbar>.container-fluid {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-  }
+  } */
   
-  .navbar-brand {
+  /* .navbar-brand {
     display: inline-block;
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
@@ -4349,14 +4349,14 @@
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
-  }
+  } */
   
-  .navbar-brand:hover,
+  /* .navbar-brand:hover,
   .navbar-brand:focus {
     text-decoration: none;
   }
-  
-  .navbar-nav {
+   */
+  /* .navbar-nav {
     display: flex;
     flex-direction: column;
     padding-left: 0;
@@ -4773,7 +4773,7 @@
   .navbar-dark .navbar-text a:focus {
     color: #ffffff;
   }
-  
+   */
   .card {
     position: relative;
     display: flex;
@@ -13637,7 +13637,7 @@
     border-radius: 6px !important;
   }
   
-  .navbar {
+  /* .navbar {
     border: 0;
     border-radius: 3px;
     padding: 0.625rem 0;
@@ -13976,7 +13976,7 @@
   .off-canvas-sidebar .navbar.navbar-transparent {
     padding-top: 25px !important;
   }
-  
+   */
   .alert {
     border: 0;
     border-radius: 3px;

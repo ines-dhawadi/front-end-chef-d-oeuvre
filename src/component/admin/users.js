@@ -8,7 +8,7 @@ import FormAjoutArtisan  from "../view/addArtisan";
 
 
 
-const Users = ({email} ) => {
+const Users = ( ) => {
   return(
     <div class="dark-edition">
           <div class="wrapper ">

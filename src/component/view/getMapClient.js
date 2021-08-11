@@ -4,8 +4,25 @@ import {useEffect} from "react";
 import {useSelector,useDispatch} from "react-redux"
 import {allArtisan} from "../redux/action/actionArtisan"
 import { Carousel } from "react-bootstrap";
+import L from "leaflet";
+import NavbarC from "../view/navbard"
+import { Link } from "react-router-dom";
+//import { useHistory} from 'react-router-dom';
+
+
 const  GestMap=()=> {
 
+  // const marqicon = L.Icon({
+  //   Url : "https://cdn.pixabay.com/photo/2012/04/16/11/39/plumber-35611_960_720.png",
+  //   iconSize: [35,45]
+  // })
+
+
+  // const history = useHistory();
+
+  // const abc = path => {
+  //   history.push(path);
+  // };
   const artisan = useSelector(state =>state.artisanStore.datas)
     
   const dispatch = useDispatch()
@@ -15,6 +32,7 @@ const  GestMap=()=> {
   console.log("produit", artisan)
 
   return(
+    <div>
 
     <div className="container-fluid">
       <div className="row">
@@ -73,18 +91,22 @@ const  GestMap=()=> {
       <MapContainer center={[36.806496, 10.181532]} zoom={6.5} scrollWheelZoom={true}>
   <TileLayer
     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    url={"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}
   />
 {artisan.map((el,key)=>(
   <div key={el._id}>
 
  {/* **** START MAP */}
  
-  <Marker position={[el.latitude, el.longitude]}>
+  <Marker position={[el.latitude, el.longitude]}  >
+    
     <Popup>
       <img  className="image-popup" src={el.image1}  alt=""/>
       
      {el.nom} <br /> {el.prenom}.
+     
+     <Link  to='/user'>User</Link>
+     
     </Popup>
   </Marker>
 
@@ -104,7 +126,7 @@ const  GestMap=()=> {
 
     // ***********
     
-   )
+    </div> )
 
  }
 

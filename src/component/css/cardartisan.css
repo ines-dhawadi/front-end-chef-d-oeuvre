@@ -116,10 +116,10 @@ button {
   cursor: pointer;
   transition: 0.5s;
 }
-button:hover {
+/* button:hover {
   color: #4CAF50;
   transform: rotate(22deg);
-}
+} */
 .iconUpdate{
   margin-top: -2rem;
 }

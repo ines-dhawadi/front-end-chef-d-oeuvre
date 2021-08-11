@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+:root{
+  --fnt:'Audiowide', cursive;
+  --allFont:Arial, Helvetica, sans-serif;
+  --color-on:#f36600;
+  --big-title: 'Pathway Gothic One', Arial, serif !important;
+
+
+}
+.section-accueil{
+    border: 1px rgba(212, 208, 208, 0.295) solid;
+  color: white;
+text-align: left;
+  --allFont:Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0.6rem;
+  background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
+  
+
+}
+
+.big-title{
+  font-size: 46px;
+    line-height: 50px;
+    font-family: var(--big-title);
+    color: var(--color-on);
+    font-weight: normal;
+    text-align: left;
+    margin-top: 3rem;
+    letter-spacing: 0px;
+  }
+
+  .font-logo{
+    font-family: var(--fnt);
+    color: white;
+  }
+
+  .parag-homme{
+    letter-spacing: 1px;
+    color: white;
+    line-height: 1.6 !important;
+    text-align: left;
+
+    margin: 10px 0;
+   
+  
+    line-height: 1;
+    text-rendering: optimizelegibility;
+  }
+
+  .img-4-g-t{
+    height: 10rem !important;
+    width: 15rem !important;
+    border-radius: 6px;
+    margin-top: 5rem;
+  }
+
+  figcaption{
+    color: white;
+    margin-top: 1.5rem;
+   
+  }
+  .bnt-voir{
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 20px;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    color: #fff !important;
+    padding: 10px 15px 9px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
+  }
