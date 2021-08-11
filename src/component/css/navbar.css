@@ -7,7 +7,8 @@
 }
 body{
     background-image: url("https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.general.png");
-}
+color: white;
+  }
 
 
 /* .navbar-light{
@@ -112,6 +113,10 @@ body{
       color: white !important;
   }
 
+  .far:hover{
+    color: var(--color-on);
+}
+
 
   .img-1-home{
       height: 50rem;
@@ -122,13 +127,15 @@ body{
   }
 
   .titre-1-home{
-    
-background-image: url("https://www.formtrends.com/wp-content/uploads/2013/10/mercedes_c-class_interior-01.jpg");
+    /* background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75))  */
+background-image:linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.767)), url("https://www.brumpost.com/wp-content/uploads/2020/02/Tesla-Model-3-Steering-and-digidash.jpg");
+background-repeat: no-repeat;
 font-size: 4rem;
 color: white;
 padding-top: 35rem;
     font-family: var( --fnt);
     background-position: top;
+    background-size: cover;
 height: 48rem;
 border: 1px solid #333;
     box-shadow: 1px 1px 1px #000000;
@@ -171,11 +178,12 @@ margin-bottom: 2rem;
     margin-bottom: 5rem ;
     margin-top: 9.4rem;
     color: white;
+    
  
   }
   .navbar.colorChange{
     background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
-  
+    margin-top: 0%;
   width: 69.4rem;
  margin-left: 9.8rem;
  padding: 0%;

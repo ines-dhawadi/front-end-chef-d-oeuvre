@@ -15,7 +15,7 @@ function Part1Homme(){
 </div>
 <div>
   <h1  className="big-title text-center">Explorez les environs</h1>
-<div className="row"> 
+<div className="row  part2-h"> 
 <div className="col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/tunus.png" aly="" /> <figcaption> Gouvernorat de Tunis</figcaption> <button className="bnt-voir">voir</button></figure>
  </div>
 <div className="col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/ariana.jpeg" aly="" /> <figcaption> Gouvernorat de Ariana</figcaption><button className="bnt-voir">voir</button> </figure> </div>
@@ -24,9 +24,15 @@ function Part1Homme(){
 
 
  </div>
-<div className="row"> 
-<div className="col-md-6 col-sm-6"> <img className="" src="/images/image-view/local.png" aly="" />  </div>
-<div className="col-md-6 col-sm-6"></div> 
+ <h1 className="big-title">Nos objectifs  </h1>
+<div className="row mt-5 part-all-objectif"> 
+
+<div className="col-md-6 col-sm-6"> <img className="img-local" src="/images/image-view/local.png" aly="" />  </div>
+<div className="col-md-6 col-sm-6  blok-2-objectif">
+  <div className="d-flex"><i class="fas fa-search-location fa-3x mr-3"></i> <p>Facilite la détection de la géolocalisation <br></br> des services automobiles plus rapidement</p></div><br></br>
+  <div className="d-flex"><i class="fas fa-cogs fa-3x mr-3"></i><p>Facilite la détection de la géolocalisation <br></br> des services automobiles plus rapidement</p></div><br></br>
+  <div className="d-flex"><i class="fas fa-history fa-3x mr-3"></i> <p>Facilite la détection de la géolocalisation <br></br> des services automobiles plus rapidement</p></div>
+</div> 
  </div>
 </div>
 

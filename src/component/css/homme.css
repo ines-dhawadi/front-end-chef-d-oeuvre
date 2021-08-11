@@ -72,3 +72,28 @@ text-align: left;
     transition: 0.5s;
     background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
   }
+  .fas{
+    color: white !important;
+}
+
+.fas:hover{
+  color: var(--color-on);
+}
+
+  .part2-h{
+    border: 1px rgba(212, 208, 208, 0.295) solid;
+    padding: 0%;
+  }
+
+  .img-local{
+    
+  }
+
+  .blok-2-objectif{
+    margin-top: 7%;
+  padding-left: 10%;
+  }
+
+  .part-all-objectif{
+    border: 1px rgba(212, 208, 208, 0.295) solid;
+  }
