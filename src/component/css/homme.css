@@ -7,6 +7,11 @@
 
 
 }
+
+.container-site{
+  margin-left: 7%;
+  margin-right: 7%;
+}
 .section-accueil{
     border: 1px rgba(212, 208, 208, 0.295) solid;
   color: white;
@@ -28,6 +33,7 @@ text-align: left;
     text-align: left;
     margin-top: 3rem;
     letter-spacing: 0px;
+    margin-bottom: 5%;
   }
 
   .font-logo{
@@ -72,28 +78,38 @@ text-align: left;
     transition: 0.5s;
     background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
   }
-  .fas{
+  .fas .fab{
     color: white !important;
 }
 
 .fas:hover{
-  color: var(--color-on);
+  color: var(--color-on) !important;
 }
 
   .part2-h{
-    border: 1px rgba(212, 208, 208, 0.295) solid;
+    
     padding: 0%;
   }
 
-  .img-local{
-    
-  }
+  /* .img-local{
+    min-height: 50%;
+  width: 100%;
+  } */
 
   .blok-2-objectif{
     margin-top: 7%;
-  padding-left: 10%;
+ 
+
+  }
+  .blokobjectif{
+ padding-left: 5%;
+    border-left: 4px solid var(--color-on);
+
   }
 
   .part-all-objectif{
     border: 1px rgba(212, 208, 208, 0.295) solid;
+    background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
   }

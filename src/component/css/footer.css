@@ -1,0 +1,120 @@
+.footer-bg:after {
+    content: "";
+    width: 100% ;
+    height: 100%;
+    background-color: rgba(6, 15, 25, 0.71);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    text-align: start !important;
+}
+
+.pag-1-footer2 {
+    color: rgba(245, 240, 240, 0.562);
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.8rem;
+}
+
+.widget-title{
+    color: rgba(245, 240, 240, 0.562);
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding-left: 5%;
+    border-left: 4px solid var(--color-on);
+}
+#menu-movie-category{
+    color: rgba(245, 240, 240, 0.562);
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.menu-item-type-taxonomy{
+    display: list-item !important;
+    color: rgba(245, 240, 240, 0.562);
+    padding: 0 !important;
+    margin-left: 0 !important;
+    line-height: 2.7rem;
+    text-decoration: none;
+
+}
+#nav_menu-2{
+    margin-top: -1.5rem;
+    margin-left: 5rem;
+}
+#img1-footre2{
+    
+    width: 8rem;
+    height: 4rem;
+  margin: 1rem;
+}
+#pag-img-footer2{
+    padding-top:1.5rem ;
+    color: rgba(245, 240, 240, 0.562);
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px;
+    line-height: 1.8rem;
+}
+
+#photo-footer2{
+    margin-top: -1.5rem;
+   
+}
+#lign-footer2{
+    border: 2px rgba(245, 240, 240, 0.562) solid ; 
+    margin-bottom: 5rem;
+    width: 100%;
+}
+#footer2{
+    color: rgba(245, 240, 240, 0.562);
+    text-align: start !important;
+ padding: 5% 10% 5% 10%;
+    margin-top: 5rem;
+    background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    
+}
+
+#img-part2-about{
+    width: 100%;
+   
+}
+
+.img1-footer{
+    width: 100%;
+    height: 100%;
+}
+.icon-footer{
+    display: flex;
+   justify-content: space-around;
+    margin-top: -10%;
+}
+
+.fas .fab{
+    color: var( --color-on) !important;
+}
+
+.section-en-footer{
+    width: 55%;
+    margin-top: -8%;
+}
+/* .img-end-footer{
+    width: 100%;
+    height: 50%;
+} */

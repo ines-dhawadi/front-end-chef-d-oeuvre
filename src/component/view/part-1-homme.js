@@ -7,7 +7,7 @@ import "../css/homme.css";
 
 function Part1Homme(){
   return(
-    <div>
+    <div className="">
 <div>
     <h3 className="section-accueil"> Accueil </h3>
 <h1 className="big-title">Bienvenue À <span className="font-logo">GUIDE ME  </span>  </h1>
@@ -24,14 +24,14 @@ function Part1Homme(){
 
 
  </div>
- <h1 className="big-title">Nos objectifs  </h1>
-<div className="row mt-5 part-all-objectif"> 
 
-<div className="col-md-6 col-sm-6"> <img className="img-local" src="/images/image-view/local.png" aly="" />  </div>
+<div className="row mt-5 part-all-objectif"> 
+<h1 className="big-title">Nos objectifs  </h1>
+<div className="col-md-6 col-sm-6"> <img className="img-local" src="/images/image-view/loc2.png" aly="" />  </div>
 <div className="col-md-6 col-sm-6  blok-2-objectif">
-  <div className="d-flex"><i class="fas fa-search-location fa-3x mr-3"></i> <p>Facilite la détection de la géolocalisation <br></br> des services automobiles plus rapidement</p></div><br></br>
-  <div className="d-flex"><i class="fas fa-cogs fa-3x mr-3"></i><p>Facilite la détection de la géolocalisation <br></br> des services automobiles plus rapidement</p></div><br></br>
-  <div className="d-flex"><i class="fas fa-history fa-3x mr-3"></i> <p>Facilite la détection de la géolocalisation <br></br> des services automobiles plus rapidement</p></div>
+  <div className="d-flex"><i class="fas fa-search-location fa-3x mr-3"></i> <p className="blokobjectif ml-2">Facilite la détection de la géolocalisation <br></br> des services automobiles plus rapidement</p></div><br></br>
+  <div className="d-flex"><i class="fas fa-cogs fa-3x mr-3"></i><p className="blokobjectif">Facilite la détection de la géolocalisation <br></br> des services automobiles plus rapidement</p></div><br></br>
+  <div className="d-flex"><i class="fas fa-history fa-3x mr-3"></i> <p className="blokobjectif ml-3 ">Facilite la détection de la géolocalisation <br></br> des services automobiles plus rapidement</p></div>
 </div> 
  </div>
 </div>

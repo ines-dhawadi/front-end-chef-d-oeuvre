@@ -29,10 +29,10 @@ function NavbarC(){
  
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="">
-                        <div  className="part2-nav">
-                        <Link className="linked--page" to="/">Accueil</Link>
-                        <Link className="linked--page" to="/Movies">Localisation des service</Link>
-                        <Link className="linked--page" to="/Series">contact</Link>
+                        <div  className="part2-nav par-2-scrol">
+                        <Link className="linked--page part2-nav-hover" to="/">Accueil</Link>
+                        <Link className="linked--page part2-nav-hover " to="/localisation">Localisation des service</Link>
+                        <Link className="linked--page part2-nav-hover" to="/contact">contact</Link>
                         {/* <Link className="linked--page" to="/WatchedList">Watched</Link> */}
                         </div>
                         <div className="part3-nav">
