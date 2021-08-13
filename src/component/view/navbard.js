@@ -41,7 +41,7 @@ function NavbarC(){
                            <i class="fas fa-search  "></i>
                         </Form>
                         <Link className="heart" to="/Favorite"><i class="far fa-heart mb-4"></i><span className="favorite--value"></span></Link>
-                        <i class="far fa-user mt-4"></i>
+                        <i class="far fa-user mt-4 "></i>
                         
                         {/* <SignUp/> */}
                         </div>

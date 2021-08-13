@@ -25,7 +25,7 @@ function Part1Homme(){
 
  </div>
 
-<div className="row mt-5 part-all-objectif"> 
+<div className="row mt-5 part-all-objectif pb-5"> 
 <h1 className="big-title">Nos objectifs  </h1>
 <div className="col-md-6 col-sm-6"> <img className="img-local" src="/images/image-view/loc2.png" aly="" />  </div>
 <div className="col-md-6 col-sm-6  blok-2-objectif">

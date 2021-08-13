@@ -115,7 +115,7 @@ color: white;
   }
 
   .far:hover{
-    color: var(--color-on);
+    color: var(--color-on) !important;
 }
 
 
@@ -174,8 +174,8 @@ margin-bottom: 2rem;
 
   .navbar{
     background-color: transparent;
-    padding-left: 11% ;
-    padding-right: 10% ;
+     padding-left: 8% ; 
+    padding-right: 5% ;
     margin-bottom: 5rem ;
     margin-top: 9.4rem;
     color: white;
@@ -186,22 +186,22 @@ margin-bottom: 2rem;
     background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
     margin-top: 0%;
  
- padding: 0%;
+ padding-left: 8%;
     color: white;
  
   }
 
-  .navbar.colorChange  .par-2-scrol{
+  /* .navbar.colorChange  .par-2-scrol{
    margin-left: 25% !important;
  
 display: flex;
 justify-content: space-around;
-  }
-  .navbar.colorChange .part3-nav{
+  } */
+  /* .navbar.colorChange .part3-nav{
     margin-left: 12%;
-   }
+   } */
 
-   .navbar.colorChange .part2-nav-hover{
+   /* .navbar.colorChange .part2-nav-hover{
     margin-left: 3%;
     margin-right: 3%;
-  }
+  } */
