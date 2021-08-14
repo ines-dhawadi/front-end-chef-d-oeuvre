@@ -8,7 +8,7 @@ import FormAjoutArtisan from "./component/view/addArtisan";
 import GestMap from "./component/view/getMapClient";
 import NavbarC from "./component/view/navbard";
 import Homme from './component/pages/home';
-
+import Localisation from "./component/pages/localisation";
 
 
 
@@ -19,7 +19,7 @@ function App() {
 
 <Switch>
 <Route exact path="/"> <Homme /> </Route>
-{/* <Route exact path="/">  <GestMap /> </Route> */}
+<Route exact path="/localisation"> <Localisation /> </Route>
 <Route  path="/IDHCAR"> <Admin />  </Route>
      
      <Route path="/artisan">  <Users /> </Route>

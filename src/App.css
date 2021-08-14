@@ -14,9 +14,10 @@
 }
 
 .leaflet-container{
-  width: 50vw;
+  width: 60vw;
   height: 100vh;
-  float: right;
+margin-left: -20%;
+
 
 }
 
@@ -36,21 +37,36 @@ border-radius: 14px;
 }
 
 .imag-carosel-artisan-map{
-  width: 20rem !important;
-  height: 14.5rem;
+  width: 16rem !important;
+  height: 10.5rem;
   border-radius: 14px;
+
+ 
 }
 
 
 .hr{
 
-  border-bottom:black 1px solid ;
+  border-bottom:rgba(192, 188, 188, 0.219) 2px solid ;
+  margin: 2rem 0 3rem 0;
+  width: 240%;
+ 
+ 
 }
 
 .map-all{
-  position: fixed !important;
+
 margin-left: 45.5rem !important;
+ height: 100%;
+top: 90px;;
+position: sticky; 
+margin-top: -166%;
 }
 /* .mart-1-p-map{
   overflow-y: scroll;
 } */
+
+h4 .nom-prenom{
+  display: flex;
+  font-size: 10px;
+}

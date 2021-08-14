@@ -55,7 +55,7 @@ const Client = ({email} ) => {
     </div>
     <div className="main-panel">
     
-      <nav className="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
+      {/* <nav className="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
         <div className="container-fluid">
           <div className="navbar-wrapper">
             <a className="navbar-brand" href="javascript:void(0)">Dashboard</a>
@@ -112,7 +112,7 @@ const Client = ({email} ) => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
       {/* <GetArtisan  /> */}
 
       <div class="users-dh-chbord">

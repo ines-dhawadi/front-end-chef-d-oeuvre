@@ -4,7 +4,7 @@ import {useEffect} from "react";
 import {useSelector,useDispatch} from "react-redux"
 import {allArtisan} from "../redux/action/actionArtisan"
 import { Carousel } from "react-bootstrap";
-import L from "leaflet";
+import  "../css/localisation.css";
 import NavbarC from "../view/navbard"
 import { Link } from "react-router-dom";
 //import { useHistory} from 'react-router-dom';
@@ -38,10 +38,11 @@ const  GestMap=()=> {
       <div className="row">
         <div className="col-md-6 col-sm-12">
 {/* *************** */}
-<div className="col-md-6 col-sm-6 mart-1-p-map">
+<div className="col-md-63 col-sm-6 mart-1-p-map">
 {/* *******carosel******** */}
 
 {artisan.map((el,key)=>(
+  <div>
   <div className="d-flex">
   <Carousel key={key} className="mb-3">
   <Carousel.Item interval={1000}>
@@ -70,11 +71,14 @@ const  GestMap=()=> {
   </Carousel.Item>
 </Carousel>
 
-<div className=""> <h4>{el.nom}{el.prenom}</h4>
-<br></br>
-<h6>{el.desc}</h6>
+<div > <h4 className="nom-prenom"> nom et prénom : {el.nom}     {el.prenom}</h4>
+
+<h4 className="nom-prenom"> spécialité : {el.role}</h4>
+
+<h6>{el.desc}ffffffffffffffffffffffffffffffffffffffff</h6>
  </div>
- <div className="hr"></div>
+</div>
+<div className="hr"></div>
 </div>
 ))}
 
@@ -86,7 +90,7 @@ const  GestMap=()=> {
 {/* *************** */}
 
         </div>
-        <div className="col-md-6 col-sm-12 map-all">
+        <div className="col-md-5 col-sm-12 map-all  position-sticky ">
         <div>
       <MapContainer center={[36.806496, 10.181532]} zoom={6.5} scrollWheelZoom={true}>
   <TileLayer
