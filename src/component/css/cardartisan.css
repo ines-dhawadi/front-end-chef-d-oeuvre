@@ -22,7 +22,7 @@ display: flex;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0px 14px 80px rgba(92, 93, 121, 0.904);
-  max-width: 440px;
+  max-width: 430px;
   display: flex;
   text-align: center;
   flex-direction: row;
@@ -87,8 +87,10 @@ margin-left: 8rem;
 }
 
 .title-total {
-  padding: 2.5em 1.5em 1.5em 1.5em;
+  /* padding: 2.5em 1.5em 1.5em 1.5em; */
   color: white;
+  padding-top: 2rem !important;
+
 }
 
 path {
@@ -108,13 +110,17 @@ path {
  
 }
 
-button {
-  border: none;
+.button-card-artisan {
+  border: none ;
   background: none;
-  font-size: 24px;
+  font-size: 16px !important;
   color: #8bc34a;
   cursor: pointer;
   transition: 0.5s;
+  padding-right: 1%;
+}
+.button-card-artisan:hover{
+  background-color: transparent;
 }
 /* button:hover {
   color: #4CAF50;

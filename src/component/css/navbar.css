@@ -70,16 +70,16 @@ color: white;
     text-decoration: none;
     color: rgb(255, 255, 255);
   }
-  .linked--brand{
+ .linked--brand{
     text-decoration: none;
-    color:var(--clr-primary-light);
+    color:var(--clr-primary-light) !important;
     font-size: 1.5rem;
     cursor: pointer;
     font-family: var( --fnt);
     padding-left: 1rem;
   }
   .linked--page{
-    color: var(--clr-primary-light);
+    color: var(--clr-primary-light) !important;
     font-size: 1.2rem;
     text-decoration: none;
     margin: 10px 20px 10px 0 !important;
@@ -172,20 +172,20 @@ margin-bottom: 2rem;
     margin-left: 13rem;
   }
 
-  .navbar{
-    background-color: transparent;
-     padding-left: 8% ; 
-    padding-right: 5% ;
-    margin-bottom: 5rem ;
-    margin-top: 9.4rem;
-    color: white;
+  .navbar-1{
+    background-color: transparent !important;
+     padding-left: 8% !important; 
+    padding-right: 5% !important;
+    margin-bottom: 5rem !important;
+    margin-top: 9.4rem ;
+    color: white !important;
     
  
   }
-  .navbar.colorChange{
+  .navbar-1.colorChange{
     background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
     margin-top: 0%;
-
+padding-top: 0% !important;
  padding-left: 8%;
     color: white;
  

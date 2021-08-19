@@ -14,10 +14,11 @@
   }
   
   .leaflet-container{
-    width: 60vw;
+    width: 50vw;
     height: 100vh;
   margin-left: -20%;
-  
+  margin-right: 10rem !important;
+  padding-right: 10rem;
   
   }
   
@@ -49,25 +50,82 @@
   
     border-bottom:rgba(192, 188, 188, 0.219) 2px solid ;
     margin: 2rem 0 3rem 0;
-    width: 240%;
+    width: 200%;
    
    
   }
   
   .map-all{
   
-  margin-left: 45.5rem !important;
+  /* margin-left: 45.5rem !important; */
    height: 100%;
   top: 90px;;
   position: sticky; 
   margin-top: -166%;
   }
   /* .mart-1-p-map{
-    overflow-y: scroll;
-  } */
-  
+   border: 2px solid white;
+  }
+   */
  .nom-prenom{
     display: flex !important;
     font-size: 14px !important;
-    padding: 1rem;
+    padding: 0.5rem;
+    width: 17rem;
+  }
+
+ /* .part-desc-local{
+   border: 1px solid white;
+ 
+ } */
+
+ .fa-star{
+   color:var(--color-bas) ;
+margin-top: 10%;
+float: left;
+padding-left: 1rem;}
+
+  .titre-1-localisation{
+    /* background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75))  */
+background-image:linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.541)), url("https://media.istockphoto.com/photos/network-gps-navigation-modern-city-future-technology-picture-id689905208?k=6&m=689905208&s=612x612&w=0&h=s3Zh6HezKVT8kGjgao9pjyiwVJbMheSMbIGsL2NLUQk=");
+background-repeat: no-repeat;
+font-size: 4rem;
+color: white;
+padding-top: 35rem;
+    font-family: var( --fnt);
+    background-position: center;
+    background-size: cover;
+height: 18rem;
+border: 1px solid #333;
+    box-shadow: 1px 1px 1px #000000;
+    border-radius: 3px;
+    background-attachment: fixed;
+  }
+  .react-rater-star.is-active{
+    color: yellow !important;
+    font-size: 1.5rem !important;
+  }
+  .react-rater-star {
+    cursor: pointer;
+    color: rgb(131, 127, 26) !important;
+    font-size: 1.5rem !important;
+    position: relative;
+  }
+    .react-rater-star.is-active-half:before {
+      color: rgb(168, 153, 20)!important;
+      content: '\2605';
+      position: absolute;
+      left: 0;
+      width: 50%;
+      overflow: hidden;
+  }
+
+  .numb{
+    color: white;
+    margin-top: -0.2rem;
+    margin-left: 0.5rem;
+  }
+
+  .all-local{
+    margin-top: 7rem;
   }

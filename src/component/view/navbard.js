@@ -23,7 +23,7 @@ function NavbarC(){
   return(
     <div className="container">
 
-<Navbar collapseOnSelect  fixed="top"  className={colorChange ? 'navbar colorChange' : 'navbar'}>
+<Navbar collapseOnSelect  fixed="top"  className={colorChange ? 'navbar-1 colorChange' : 'navbar-1'}>
                  <Link to="/" className="linked--brand ml-auto" >GUIDE ME</Link>
                  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
  

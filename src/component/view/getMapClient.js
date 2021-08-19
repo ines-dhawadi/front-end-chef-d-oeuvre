@@ -5,7 +5,8 @@ import {useSelector,useDispatch} from "react-redux"
 import {allArtisan} from "../redux/action/actionArtisan"
 import { Carousel } from "react-bootstrap";
 import  "../css/localisation.css";
-import NavbarC from "../view/navbard"
+import Rater from 'react-rater';
+import 'react-rater/lib/react-rater.css';
 import { Link } from "react-router-dom";
 //import { useHistory} from 'react-router-dom';
 
@@ -34,15 +35,15 @@ const  GestMap=()=> {
   return(
     <div>
 
-    <div className="container-fluid">
-      <div className="row">
+    <div className="container">
+      <div className="row all-local">
         <div className="col-md-6 col-sm-12">
 {/* *************** */}
-<div className="col-md-63 col-sm-6 mart-1-p-map">
+<div className="col-md-63 col-sm-6 ">
 {/* *******carosel******** */}
 
 {artisan.map((el,key)=>(
-  <div>
+  <div className="mart-1-p-map">
   <div className="d-flex">
   <Carousel key={key} className="mb-3">
   <Carousel.Item interval={1000}>
@@ -71,11 +72,19 @@ const  GestMap=()=> {
   </Carousel.Item>
 </Carousel>
 
-<div > <h4 className="nom-prenom"> nom et prénom : {el.nom}     {el.prenom}</h4>
+<div className='part-desc-local'> 
+  <h4 className="nom-prenom"> nom et prénom : {el.nom}     {el.prenom}</h4>
 
 <h4 className="nom-prenom"> spécialité : {el.role}</h4>
 
-<h6>{el.desc}ffffffffffffffffffffffffffffffffffffffff</h6>
+{/* <h6  className="nom-prenom">{el.desc}fffffffffffffffffff <br></br> ffffffffffff</h6> */}
+<div>
+                      {/* <span><Rater id="retiong" total={10} rating="2" />  &nbsp;</span>
+                      <span>2</span> &nbsp; &nbsp; 
+                      <spann>Metascore</spann> */}
+                 <i class="fas fa-star d-flex "> <h4 class="numb ">5</h4>  </i> 
+                   </div>
+                  
  </div>
 </div>
 <div className="hr"></div>
@@ -128,8 +137,7 @@ const  GestMap=()=> {
     
 </div>
 
-    // ***********
-    
+  
     </div> )
 
  }

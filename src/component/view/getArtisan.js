@@ -122,7 +122,7 @@ const GetArtisan=()=>{
 {artisan.map((el,key)=>(
 <div>
 
-<div class="card1" key={key}>
+<div class="card1 " key={key}>
   <div class="">
 {/* <img className="card-logo " src='images/logo.webp'/> */}
 <img class="img-avatar" src={el.imageP} alt="" />
@@ -138,8 +138,8 @@ const GetArtisan=()=>{
      
   <div class="desc">{el.desc}</div>
   <div class="actions">
-    <button><i class="far fa-heart"></i></button>
-    <button onClick={() => deleteARTISAN(el._id)}><i class="far fa-trash-alt"></i> </button>
+    <button className="button-card-artisan "><i class="far fa-heart"></i></button>
+    <button className="button-card-artisan " onClick={() => deleteARTISAN(el._id)}><i class="far fa-trash-alt"></i> </button>
 
 < UpdateArtisan id={el._id}  el={el}/>
 

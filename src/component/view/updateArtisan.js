@@ -71,7 +71,7 @@ const [show, setShow] = useState(false);
 {/* ********************modal********************* */}
 
     <div >
-   <button> <i  onClick={handleShow} class="far fa-edit"></i>  </button>
+   <button className="button-card-artisan "> <i  onClick={handleShow} class="far fa-edit"></i>  </button>
        
      
      
