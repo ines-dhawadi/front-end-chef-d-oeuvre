@@ -1,4 +1,4 @@
-import {BrowserRouter,Route,Switch} from 'react-router-dom'
+import {BrowserRouter,Route,Switch ,Redirect} from 'react-router-dom'
 
 
 //import GetAllClientC  from './component/view/getClient'
@@ -10,6 +10,9 @@ import GestMap from "../view/getMapClient";
 import NavbarC from "../view/navbard";
 import Homme from '../pages/home';
 import Localisation from "../pages/localisation";
+import Chat from '../pages/chat';
+import Tendance from '../pages/tendance';
+import ProfilUser from '../pages/profilUser';
 
 
 
@@ -19,13 +22,19 @@ function Routes() {
       <BrowserRouter>
 
 <Switch>
-<Route exact path="/"> <Homme /> </Route>
-<Route exact path="/localisation"> <Localisation /> </Route>
-<Route  path="/IDHCAR"> <Admin />  </Route>
-     
-     <Route path="/artisan">  <Users /> </Route>
-     <Route path="/users">  <Client /> </Route>
-    
+
+<Route  path="/"   exact component={Homme}/>
+<Route path="/localisation"  exact component={Localisation}/> 
+<Route  path="/IDHCAR"   exact component={Admin} /> 
+<Route path="/artisan" exact component={Users} /> 
+<Route path="/users" exact component={Client} /> 
+
+{/* pages chat  */}
+
+        <Route path="/Chat" exact component={Chat} />
+        <Route path="/Tendance" exact component={Tendance} />
+        <Route path="/ProfilUser" exact component={ProfilUser} />
+        <Redirect to="/" />
   
 </Switch>
 

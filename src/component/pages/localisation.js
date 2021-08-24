@@ -2,7 +2,7 @@ import React from 'react'
 import NavbarC from '../view/navbard'
 import  GestMap from "../view/getMapClient";
 import "../css/localisation.css";
-
+import '../../App.css';
 import TopNavbar from "../view/top-navbar";
 import Footer from "../view/footer";
 
