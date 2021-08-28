@@ -13,7 +13,7 @@ import Localisation from "../pages/localisation";
 import Chat from '../pages/chat';
 import Tendance from '../pages/tendance';
 import ProfilUser from '../pages/profilUser';
-
+//import NewNavbar from "../view/newnavbar";
 
 
 function Routes() {

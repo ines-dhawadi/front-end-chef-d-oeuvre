@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { UidContext } from "./component/AppContext";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-
+import {getUser} from './component/redux/action/actionUser'
 
 function App() {
   const [uid, setUid] = useState(null);
@@ -20,7 +20,10 @@ function App() {
         })
         .catch((err) => console.log("No token"));
     };
-    fetchToken();}, [uid]);
+    fetchToken();
+    if (uid) dispatch(getUser(uid));
+
+  }, [uid]);
 
   return (
     <div className="App">

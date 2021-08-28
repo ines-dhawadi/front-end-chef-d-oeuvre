@@ -1,15 +1,18 @@
 import { artisanReducer } from "../reducer/reducerArtisan";
 import { reducerClient } from "../reducer/reducerClient";
-import { UserReducer } from "../reducer/reducerUser";
+import {  userReducer} from "../reducer/reducerUser";
 import thunk from "redux-thunk"
 import { createStore ,applyMiddleware,combineReducers}  from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
+
+
 
 const Reducers = combineReducers({
 
     artisanStore :artisanReducer, 
     clientStore:reducerClient,
-    // userStore:UserReducer
+    userStore:userReducer
    })
   
-  const store =   createStore(Reducers,applyMiddleware(thunk));
+  const store =   createStore(Reducers,composeWithDevTools(applyMiddleware(thunk)));
     export default store

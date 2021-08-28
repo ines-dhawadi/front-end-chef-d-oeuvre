@@ -1,40 +1,44 @@
 
 
-import {REACT_APP_SIGNIN_USER} from '../action/type'
 
 
+import {
+  FOLLOW_USER,
+  GET_USER,
+  UNFOLLOW_USER,
+  UPDATE_BIO,
+  UPLOAD_PICTURE,
+} from "../action/type";
 
-const initialState ={
-    datasUsers :[]
-}
+const initialState = {};
 
-
-
-export const UserReducer =(state =initialState ,action )=>{
-  
-    
-    const {type,payload}= action;
-    
-    switch(type){
-//       case  REACT_APP_GET_ARTISAN:
-//   return {
-//     ...state,
-//     datas: payload};
-
-case REACT_APP_SIGNIN_USER:
-  return{
-    ...state,
-    datasUsers:[...state.datas,payload]
-  };
-//   case REACT_APP_DELETE_ARTISAN:
-//                 return {
-//                   ...state,
-//                   datas: state.datas.filter(
-//                     data => data._id !== payload
-//                   )
-//                 };
-
-}
-  console.log('state action', state)
-  return state
+export const  userReducer=(state = initialState, action)=> {
+  switch (action.type) {
+    case GET_USER:
+      return action.payload;
+    // case UPLOAD_PICTURE:
+    //   return {
+    //     ...state,
+    //     picture: action.payload,
+    //   };
+    // case UPDATE_BIO:
+    //   return {
+    //     ...state,
+    //     bio: action.payload,
+    //   };
+    // case FOLLOW_USER:
+    //   return {
+    //     ...state,
+    //     following: [action.payload.idToFollow, ...state.following],
+    //   };
+    // case UNFOLLOW_USER:
+    //   return {
+    //     ...state,
+    //     following: state.following.filter(
+    //       (id) => id !== action.payload.idToUnfollow
+    //     ),
+    //   };
+    default:
+      return state;
+  }
 }
