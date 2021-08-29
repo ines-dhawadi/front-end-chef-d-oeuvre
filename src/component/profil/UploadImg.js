@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { uploadPicture } from "../redux/action/actionUser";
-import  "../../styles/index.scss";
-
+//import  "../../styles/index.scss";
+import "../css/profil.css";
 
 function UploadImg () {
   const [file, setFile] = useState();
@@ -21,7 +21,7 @@ function UploadImg () {
 
   return (
     <form action="" onSubmit={handlePicture} className="upload-pic">
-      <label htmlFor="file">Changer d'image</label>
+      <label className="file"  htmlFor="file">Changer d'image</label>
       <input
         type="file"
         id="file"

@@ -99,3 +99,11 @@ body{
   color: green;
   font-weight: bold;
 }
+
+.user-pic{
+  height: 50px;
+            width: 50px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 2px rgba(51, 51, 51, 0.376);
+}

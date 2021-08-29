@@ -21,11 +21,11 @@ export const  userReducer=(state = initialState, action)=> {
         ...state,
         picture: action.payload,
       };
-    // case UPDATE_BIO:
-    //   return {
-    //     ...state,
-    //     bio: action.payload,
-    //   };
+    case UPDATE_BIO:
+      return {
+        ...state,
+        bio: action.payload,
+      };
     // case FOLLOW_USER:
     //   return {
     //     ...state,
