@@ -6,6 +6,7 @@
   box-shadow: 18px 1px 0px $color-1, 22px 4px 0px 0px $shadow;
   z-index: 10;
   top: 0;
+ 
 
   @media screen and(max-width: 1251px) {
     padding: 0 20px;
@@ -31,7 +32,7 @@
     justify-content: space-between;
     height: 45px;
     align-items: center;
-    
+  
     .logo {
       display: flex;
       align-items: center;
