@@ -48,8 +48,13 @@ export const updateBio = (userId, bio) => {
   return (dispatch) => {
     return axios({
       method: "put",
+      
       url: `${process.env.REACT_APP_API_URL}idhcar/user/` + userId,
       data: { bio },
+      Accept: 'application/json',
+    'Content-type': 'application/json',
+    credentials:"include"
+   //' Access-Control-Request-Headers':'Origin, X-Requested-With, Content-Type, Accept'
     })
       .then((res) => {
         dispatch({ type: UPDATE_BIO, payload: bio });

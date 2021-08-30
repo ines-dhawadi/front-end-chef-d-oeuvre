@@ -25,3 +25,6 @@ export const UPDATE_BIO = "UPDATE_BIO";
 export const FOLLOW_USER = "FOLLOW_USER";
 export const UNFOLLOW_USER = "UNFOLLOW_USER";
 export const GET_USER_ERRORS = "GET_USER_ERRORS";
+
+// type userss
+export const GET_USERS = "GET_USERS";

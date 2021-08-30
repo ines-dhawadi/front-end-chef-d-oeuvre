@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react'
 import  "../../styles/index.scss";
 import LeftNav from '../view/LeftNav'
@@ -7,8 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import UploadImg from "../profil/UploadImg";
 import {updateBio} from "../redux/action/actionUser";
 import { dateParser } from "../Utils";
-import {  Modal,Button} from "react-bootstrap";
-import { getUsers } from "../redux/action/actionUserss";
 //import "../css/profil.css";
 
 
@@ -21,15 +17,7 @@ function UpdateProfil() {
   const dispatch = useDispatch();
   const [followingPopup, setFollowingPopup] = useState(false);
   const [followersPopup, setFollowersPopup] = useState(false);
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  const getusersss = () => {
-    dispatch(getUsers())
-  };
-
+ 
     const handleUpdate = () => {
       dispatch(updateBio(userData._id, bio));
       setUpdateForm(false);
@@ -69,33 +57,25 @@ function UpdateProfil() {
               </>
             )}
           </div>
-         
-          {/* /************* */ }
           <h4>Membre depuis le : {dateParser(userData.createdAt)}</h4>
-          <>
-    
-     
-           <h5 className="bnt-modl-abon"  onClick={handleShow}>
+           <h5 onClick={() => setFollowingPopup(true)}>
             Abonnements : {userData.following ? userData.following.length : ""}
           </h5>
-    
-
-      <Modal className="modal" show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Abonnements</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-        
-        <div >
-        {/* className="popup-profil-container" */}
-          <div >
-          {/* className="modal" */}
+          <h5 onClick={() => setFollowersPopup(true)}>
+            Abonnés : {userData.followers ? userData.followers.length : ""}
+          </h5>
+        </div>
+       </div>
+       {followingPopup && (
+        <div className="popup-profil-container">
+          <div className="modal">
             <h3>Abonnements</h3>
-
-
+            <span className="cross" onClick={() => setFollowingPopup(false)}>
+              &#10005;
+            </span>
             <ul>
               {usersData.map((user) => {
-                for (let i = 0; i < userData.following && userData.following.length; i++) {
+                for (let i = 0; i < userData.following.length; i++) {
                   if (user._id === userData.following[i]) {
                     return (
                       <li key={user._id}>
@@ -108,72 +88,40 @@ function UpdateProfil() {
                     );
                   } 
                 }
-                return "no following";
+                return null;
               })}
             </ul>
           </div>
         </div>
-     
-
-        </Modal.Body>
-      
-      </Modal>
-    </>
-
-
-          {/* ******************** */}
-         
-          <>
-    
-     
-    <h5 className="bnt-modl-abon"  onClick={handleShow}>
-    Abonnés : {userData.followers ? userData.followers.length : ""}
-   </h5>
-
-
-<Modal className="modal" show={show} onHide={handleClose}>
- <Modal.Header closeButton>
-   <Modal.Title>Abonnés</Modal.Title>
- </Modal.Header>
- <Modal.Body>
- 
- <div >
- {/* className="popup-profil-container" */}
-   <div >
-   {/* className="modal" */}
-     <h3>Abonnés</h3>
-
-
-     <ul>
-       {usersData.map((user) => {
-         for (let i = 0; i < userData.followers  && userData.followers .length; i++) {
-           if (user._id === userData.followers [i]) {
-             return (
-               <li key={user._id}>
-                 <img src={user.picture} alt="user-pic" />
-                 <h4>{user.pseudo}</h4>
-                 <div className="follow-handler">
-                   {/* <FollowHandler idToFollow={user._id} type={'suggestion'} /> */}
-                 </div>
-               </li>
-             );
-           } 
-         }
-         return "no followers ";
-       })}
-     </ul>
-   </div>
- </div>
-
-
- </Modal.Body>
-
-</Modal>
-</>
+      )}
+      {followersPopup && (
+        <div className="popup-profil-container">
+          <div className="modal">
+            <h3>Abonnés</h3>
+            <span className="cross" onClick={() => setFollowersPopup(false)}>
+              &#10005;
+            </span>
+            <ul>
+              {usersData.map((user) => {
+                for (let i = 0; i < userData.followers.length; i++) {
+                  if (user._id === userData.followers[i]) {
+                    return (
+                      <li key={user._id}>
+                        <img src={user.picture} alt="user-pic" />
+                        <h4>{user.pseudo}</h4>
+                        <div className="follow-handler">
+                          {/* <FollowHandler idToFollow={user._id} type={'suggestion'} /> */}
+                        </div>
+                      </li>
+                    );
+                  }
+                }
+                return null;
+              })}
+            </ul>
+          </div>
         </div>
-       </div>
-       
-      
+      )}
 
 
     </div>

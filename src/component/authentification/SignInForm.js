@@ -31,7 +31,7 @@ axios.defaults.withCredentials = true
       method: "post",
       withCredentials: true,
       url: `${process.env.REACT_APP_API_URL}idhcar/user/login`,
-      //withCredentials: true,
+     //mode: "no-cors",
       data: {
         email,
         password,
