@@ -9,6 +9,7 @@ import {updateBio} from "../redux/action/actionUser";
 import { dateParser } from "../Utils";
 import {  Modal,Button} from "react-bootstrap";
 import { getUsers } from "../redux/action/actionUserss";
+import ModalFollowers from '../profil/modalfollowers'
 //import "../css/profil.css";
 
 
@@ -77,6 +78,7 @@ function UpdateProfil() {
      
            <h5 className="bnt-modl-abon"  onClick={handleShow}>
             Abonnements : {userData.following ? userData.following.length : ""}
+         
           </h5>
     
 
@@ -85,21 +87,22 @@ function UpdateProfil() {
           <Modal.Title>Abonnements</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        
+        {userData.following  &&(
         <div >
         {/* className="popup-profil-container" */}
           <div >
           {/* className="modal" */}
-            <h3>Abonnements</h3>
-
-
-            <ul>
+           
+            
+            <ul  className="cont-modal">
+          
               {usersData.map((user) => {
-                for (let i = 0; i < userData.following && userData.following.length; i++) {
+              // 
+                for (let i = 0; i < userData.following.length; i++) {
                   if (user._id === userData.following[i]) {
                     return (
                       <li key={user._id}>
-                        <img src={user.picture} alt="user-pic" />
+                        <img className="img-modai-fillow" src={user.picture} alt="user-pic" />
                         <h4>{user.pseudo}</h4>
                         <div className="follow-handler">
                           {/* <FollowHandler idToFollow={user._id} type={'suggestion'} /> */}
@@ -108,15 +111,15 @@ function UpdateProfil() {
                     );
                   } 
                 }
-                return "no following";
+                return null;
               })}
             </ul>
           </div>
         </div>
      
-
+     )}
         </Modal.Body>
-      
+       
       </Modal>
     </>
 
@@ -126,49 +129,7 @@ function UpdateProfil() {
           <>
     
      
-    <h5 className="bnt-modl-abon"  onClick={handleShow}>
-    Abonnés : {userData.followers ? userData.followers.length : ""}
-   </h5>
-
-
-<Modal className="modal" show={show} onHide={handleClose}>
- <Modal.Header closeButton>
-   <Modal.Title>Abonnés</Modal.Title>
- </Modal.Header>
- <Modal.Body>
- 
- <div >
- {/* className="popup-profil-container" */}
-   <div >
-   {/* className="modal" */}
-     <h3>Abonnés</h3>
-
-
-     <ul>
-       {usersData.map((user) => {
-         for (let i = 0; i < userData.followers  && userData.followers .length; i++) {
-           if (user._id === userData.followers [i]) {
-             return (
-               <li key={user._id}>
-                 <img src={user.picture} alt="user-pic" />
-                 <h4>{user.pseudo}</h4>
-                 <div className="follow-handler">
-                   {/* <FollowHandler idToFollow={user._id} type={'suggestion'} /> */}
-                 </div>
-               </li>
-             );
-           } 
-         }
-         return "no followers ";
-       })}
-     </ul>
-   </div>
- </div>
-
-
- </Modal.Body>
-
-</Modal>
+   <ModalFollowers />
 </>
         </div>
        </div>
