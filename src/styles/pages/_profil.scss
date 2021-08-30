@@ -682,19 +682,19 @@
               text-align: left;
               min-width: 210px;
             }
-        //     .follow-handler {
-        //       text-align: left;
+            .follow-handler {
+              text-align: left;
+            }
+            .bnt-fl {
+                background: $color-4;
+                border-radius: 20px;
+                margin-right: 6px;
   
-        //       button {
-        //         background: $color-4;
-        //         border-radius: 20px;
-        //         margin-right: 6px;
-  
-        //         &:hover {
-        //           color: $color-3;
-        //           transform: translateX(2px);
-        //         }
-        //       }
+                &:hover {
+                  color: $color-3;
+                  transform: translateX(2px);
+                }
+              }
         //     }
         //   }
         // }

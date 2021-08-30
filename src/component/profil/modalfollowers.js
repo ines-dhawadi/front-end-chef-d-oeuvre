@@ -2,7 +2,7 @@ import React ,{ useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import {  Modal,Button} from "react-bootstrap";
 import  "../../styles/index.scss";
-
+import  FollowHandler from "./followhandler";
 
 
 function ModalFollowers(){
@@ -47,7 +47,7 @@ function ModalFollowers(){
                  <img className="img-modai-fillow" src={user.picture} alt="user-pic" />
                  <h4>{user.pseudo}</h4>
                  <div className="follow-handler">
-                   {/* <FollowHandler idToFollow={user._id} type={'suggestion'} /> */}
+                   <FollowHandler idToFollow={user._id} type={'suggestion'} />
                  </div>
                </li>
              );

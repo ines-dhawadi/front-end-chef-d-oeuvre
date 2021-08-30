@@ -10,6 +10,7 @@ import { dateParser } from "../Utils";
 import {  Modal,Button} from "react-bootstrap";
 import { getUsers } from "../redux/action/actionUserss";
 import ModalFollowers from '../profil/modalfollowers'
+import  FollowHandler from "./followhandler";
 //import "../css/profil.css";
 
 
@@ -105,7 +106,7 @@ function UpdateProfil() {
                         <img className="img-modai-fillow" src={user.picture} alt="user-pic" />
                         <h4>{user.pseudo}</h4>
                         <div className="follow-handler">
-                          {/* <FollowHandler idToFollow={user._id} type={'suggestion'} /> */}
+                          <FollowHandler idToFollow={user._id} type={'suggestion'} />
                         </div>
                       </li>
                     );
