@@ -241,7 +241,7 @@
         .pseudo {
           display: flex;
 
-          h3 {
+        .pseudo-card {
             font-family: $font-1;
           }
           span {
@@ -410,3 +410,12 @@
     }
   }
 }
+
+.pseudo {
+  display: flex;
+}
+.pseudo-card {
+    font-family: $font-1;
+    font-size: 20px;
+    margin-top: -0.1rem;
+  }

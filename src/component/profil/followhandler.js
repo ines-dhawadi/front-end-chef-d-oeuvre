@@ -31,13 +31,13 @@ const FollowHandler = ({ idToFollow, type }) => {
       {isFollowed && !isEmpty(userData) && (
         <span onClick={handleUnfollow}>
           {type === "suggestion" && <button className="unfollow-btn bnt-fl">Abonné</button>}
-          {type === "card" && <img src="./img/icons/checked.svg" alt="checked"/>}
+          {type === "card" && <img src="images/imgChat/checked.svg" alt="checked"/>}
         </span>
       )}
       {isFollowed === false && !isEmpty(userData) && (
         <span onClick={handleFollow}>
           {type === "suggestion" && <button className="follow-btn bnt-fl">Suivre</button>}
-          {type === "card" && <img src="./img/icons/check.svg" alt="check"/>}
+          {type === "card" && <img src="images/imgChat/check.svg" alt="check"/>}
         </span>
       )}
     </>

@@ -1,15 +1,40 @@
-import React from 'react'
-import NewNavbar from "../view/newnavbar";
+import React, { useContext } from "react";
+import { UidContext } from "../AppContext";
+import LeftNav from "../view/LeftNav";
+import NewNavbar from '../view/newnavbar'
+//import NewPostForm from "../components/Post/NewPostForm";
+import Thread from "../post/Fil";
+import Authentifixation from "../authentification/index";
+//import Trends from "../components/Trends";
+//import FriendsHint from "../components/Profil/FriendsHint";
 
+const Chat = () => {
+  const uid = useContext(UidContext);
 
-function Chat(){
-  return(
-    <div>
-      <NewNavbar/>
-        <h1>Chat</h1>
+  return (
+  <div>
+    <NewNavbar/>
+     
+  
+    <div className="home">
+      <LeftNav />
+      <div className="main">
+        <div className="home-header">
+        {/* {uid ? <NewPostForm /> : <Authentifixation signin={true} signup={false} />} */}
+        </div>
+        <Thread />
+      </div>
+      <div className="right-side">
+        <div className="right-side-container">
+          <div className="wrapper">
+            {/* <Trends />
+            {uid && <FriendsHint />} */}
+          </div>
+        </div>
+      </div>
     </div>
-   )
+    </div>
+  );
+};
 
- }
-
-export default Chat
+export default Chat;

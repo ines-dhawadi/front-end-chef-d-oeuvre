@@ -5,6 +5,7 @@ import thunk from "redux-thunk"
 import { createStore ,applyMiddleware,combineReducers}  from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import usersReducer from "../reducer/reducerUserss";
+import postReducer from "../reducer/reducerPost";
 
 
 
@@ -13,7 +14,8 @@ const Reducers = combineReducers({
     artisanStore :artisanReducer, 
     clientStore:reducerClient,
     userStore:userReducer,
-     usersStore: usersReducer
+     usersStore: usersReducer,
+     postStore:postReducer
    })
   
   const store =   createStore(Reducers,composeWithDevTools(applyMiddleware(thunk)));
