@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { dateParser, isEmpty } from "../Utils";
 import FollowHandler from "../profil/followhandler";
-//import LikeButton from "./LikeButton";
-//import { updatePost } from "../../actions/post.actions";
+import LikeButton from "./LikeButton";
+import { updatePost } from "../redux/action/actionPost";
 //import DeleteCard from "./DeleteCard";
 //import CardComments from "./CardComments";
 
@@ -16,12 +16,12 @@ function CardChat({post}) {
   const userData = useSelector((state) => state.userStore);
   const dispatch = useDispatch();
 
-  // const updateItem = () => {
-  //   if (textUpdate) {
-  //     dispatch(updatePost(post._id, textUpdate));
-  //   }
-  //   setIsUpdated(false);
-  // };
+  const updateItem = () => {
+    if (textUpdate) {
+      dispatch(updatePost(post._id, textUpdate));
+    }
+    setIsUpdated(false);
+  };
 
   useEffect(() => {
     !isEmpty(usersData[0]) && setIsLoading(false);
@@ -67,7 +67,8 @@ function CardChat({post}) {
               </div>
               <span>{dateParser(post.createdAt)}</span>
             </div>
-            {/* {isUpdated === false && <p>{post.message}</p>}
+         
+            {isUpdated === false && <p>{post.message}</p>}
             {isUpdated && (
               <div className="update-post">
                 <textarea
@@ -75,16 +76,16 @@ function CardChat({post}) {
                   onChange={(e) => setTextUpdate(e.target.value)}
                 />
                 <div className="button-container">
-                  <button className="btn" onClick={updateItem}>
+                  <button id="btn-updat" onClick={updateItem}>
                     Valider modification
                   </button>
                 </div>
               </div>
-            )} */}
+            )}
             {post.picture && (
               <img src={post.picture} alt="card-pic" className="card-pic" />
             )}
-            {/* {post.video && (
+            {post.video && (
               <iframe
                 width="500"
                 height="300"
@@ -94,27 +95,28 @@ function CardChat({post}) {
                 allowFullScreen
                 title={post._id}
               ></iframe>
-            )} */}
-            {/* {userData._id === post.posterId && (
+            )}
+            {userData._id === post.posterId && (
               <div className="button-container">
-                <div onClick={() => setIsUpdated(!isUpdated)}>
-                  <img src="./img/icons/edit.svg" alt="edit" />
+                <div onClick={() => setIsUpdated(!isUpdated)} >
+                
+                  <img src="/images/imgChat/edit.svg" alt="edit" />
                 </div>
-                <DeleteCard id={post._id} />
+                {/* <DeleteCard id={post._id} /> */}
               </div>
-            )} */}
-            {/* <div className="card-footer">
-              <div className="comment-icon">
-                <img
-                  onClick={() => setShowComments(!showComments)}
-                  src="./img/icons/message1.svg"
+            )}
+            <div className="card-footer">
+             <div className="comment-icon">
+                 <img
+                  // onClick={() => setShowComments(!showComments)}
+                  src="/images/imgChat/message1.svg"
                   alt="comment"
                 />
                 <span>{post.comments.length}</span>
               </div>
               <LikeButton post={post} />
-              <img src="./img/icons/share.svg" alt="share" />
-            </div> */}
+              <img src="/images/imgChat/share.svg" alt="share" />
+            </div> 
             {/* {showComments && <CardComments post={post} />} */}
           </div>
         </>

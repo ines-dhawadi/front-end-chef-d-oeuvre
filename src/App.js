@@ -23,7 +23,7 @@ function App() {
     fetchToken();
     if (uid) dispatch(getUser(uid));
 
-  }, [uid]);
+  }, [uid,dispatch]);
 
   return (
     <div className="App">

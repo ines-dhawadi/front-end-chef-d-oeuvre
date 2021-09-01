@@ -419,3 +419,19 @@
     font-size: 20px;
     margin-top: -0.1rem;
   }
+
+#btn-updat{
+    background: $color-2;
+    width: 240px;
+    transform: translateY(-3px);
+    color: $color-1;
+  &:hover {
+      background: $color-1;
+      width: 250px;
+      letter-spacing: 1px;
+      color: $color-2;
+    }
+    
+  }
+
+  
