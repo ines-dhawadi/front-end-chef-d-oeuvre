@@ -4,7 +4,7 @@ import { dateParser, isEmpty } from "../Utils";
 import FollowHandler from "../profil/followhandler";
 import LikeButton from "./LikeButton";
 import { updatePost } from "../redux/action/actionPost";
-//import DeleteCard from "./DeleteCard";
+import DeleteCard from "./DeleteCard";
 //import CardComments from "./CardComments";
 
 function CardChat({post}) {
@@ -96,15 +96,15 @@ function CardChat({post}) {
                 title={post._id}
               ></iframe>
             )}
-            {userData._id === post.posterId && (
+           
               <div className="button-container">
                 <div onClick={() => setIsUpdated(!isUpdated)} >
                 
                   <img src="/images/imgChat/edit.svg" alt="edit" />
                 </div>
-                {/* <DeleteCard id={post._id} /> */}
+                <DeleteCard id={post._id} />
               </div>
-            )}
+            
             <div className="card-footer">
              <div className="comment-icon">
                  <img
