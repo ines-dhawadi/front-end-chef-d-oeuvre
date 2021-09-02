@@ -1,4 +1,4 @@
-export const  SERVER_BASE_API = "http://localhost:5000/idhcar"
+export const  SERVER_BASE_API = "/idhcar"
 
 
 //****************url artisan */
