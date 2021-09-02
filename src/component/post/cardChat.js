@@ -5,7 +5,7 @@ import FollowHandler from "../profil/followhandler";
 import LikeButton from "./LikeButton";
 import { updatePost } from "../redux/action/actionPost";
 import DeleteCard from "./DeleteCard";
-//import CardComments from "./CardComments";
+import CardComments from "./cardComment";
 
 function CardChat({post}) {
   const [isLoading, setIsLoading] = useState(true);
@@ -96,7 +96,7 @@ function CardChat({post}) {
                 title={post._id}
               ></iframe>
             )}
-           
+           {userData._id === post.posterId && (
               <div className="button-container">
                 <div onClick={() => setIsUpdated(!isUpdated)} >
                 
@@ -104,11 +104,11 @@ function CardChat({post}) {
                 </div>
                 <DeleteCard id={post._id} />
               </div>
-            
+              )}
             <div className="card-footer">
              <div className="comment-icon">
                  <img
-                  // onClick={() => setShowComments(!showComments)}
+                   onClick={() => setShowComments(!showComments)}
                   src="/images/imgChat/message1.svg"
                   alt="comment"
                 />
@@ -117,7 +117,7 @@ function CardChat({post}) {
               <LikeButton post={post} />
               <img src="/images/imgChat/share.svg" alt="share" />
             </div> 
-            {/* {showComments && <CardComments post={post} />} */}
+            {showComments && <CardComments post={post} />}
           </div>
         </>
       )}
