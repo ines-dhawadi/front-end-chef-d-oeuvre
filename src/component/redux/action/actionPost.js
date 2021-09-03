@@ -30,19 +30,19 @@ export const getPosts = () => {
   };
 };
 
-// export const addPost = (data) => {
-//   return (dispatch) => {
-//     return axios
-//       .post(`${process.env.REACT_APP_API_URL}idhcar/post/`, data)
-//       .then((res) => {
-//         if (res.data.errors) {
-//           dispatch({ type: GET_POST_ERRORS, payload: res.data.errors });
-//         } else {
-//           dispatch({ type: GET_POST_ERRORS, payload: "" });
-//         }
-//       });
-//   };
-// };
+export const addPost = (data) => {
+  return (dispatch) => {
+    return axios
+      .post(`${process.env.REACT_APP_API_URL}idhcar/post/`, data)
+      .then((res) => {
+        if (res.data.errors) {
+          dispatch({ type: GET_POST_ERRORS, payload: res.data.errors });
+        } else {
+          dispatch({ type: GET_POST_ERRORS, payload: "" });
+        }
+      });
+  };
+};
 
 export const likePost = (postId, userId) => {
   return (dispatch) => {
@@ -99,47 +99,47 @@ export const deletePost = (postId) => {
   };
 };
 
-// export const addComment = (postId, commenterId, text, commenterPseudo) => {
-//   return (dispatch) => {
-//     return axios({
-//       method: "patch",
-//       url: `${process.env.REACT_APP_API_URL}idhcar/post/comment-post/${postId}`,
-//       data: { commenterId, text, commenterPseudo },
-//     })
-//       .then((res) => {
-//         dispatch({ type: ADD_COMMENT, payload: { postId } });
-//       })
-//       .catch((err) => console.log(err));
-//   };
-// };
+export const addComment = (postId, commenterId, text, commenterPseudo) => {
+  return (dispatch) => {
+    return axios({
+      method: "patch",
+      url: `${process.env.REACT_APP_API_URL}idhcar/post/comment-post/${postId}`,
+      data: { commenterId, text, commenterPseudo },
+    })
+      .then((res) => {
+        dispatch({ type: ADD_COMMENT, payload: { postId } });
+      })
+      .catch((err) => console.log(err));
+  };
+};
 
-// export const editComment = (postId, commentId, text) => {
-//   return (dispatch) => {
-//     return axios({
-//       method: "patch",
-//       url: `${process.env.REACT_APP_API_URL}idhcar/post/edit-comment-post/${postId}`,
-//       data: { commentId, text },
-//     })
-//       .then((res) => {
-//         dispatch({ type: EDIT_COMMENT, payload: { postId, commentId, text } });
-//       })
-//       .catch((err) => console.log(err));
-//   };
-// };
+export const editComment = (postId, commentId, text) => {
+  return (dispatch) => {
+    return axios({
+      method: "patch",
+      url: `${process.env.REACT_APP_API_URL}idhcar/post/edit-comment-post/${postId}`,
+      data: { commentId, text },
+    })
+      .then((res) => {
+        dispatch({ type: EDIT_COMMENT, payload: { postId, commentId, text } });
+      })
+      .catch((err) => console.log(err));
+  };
+};
 
-// export const deleteComment = (postId, commentId) => {
-//   return (dispatch) => {
-//     return axios({
-//       method: "patch",
-//       url: `${process.env.REACT_APP_API_URL}idhcar/post/delete-comment-post/${postId}`,
-//       data: { commentId },
-//     })
-//       .then((res) => {
-//         dispatch({ type: DELETE_COMMENT, payload: { postId, commentId } });
-//       })
-//       .catch((err) => console.log(err));
-//   };
-// };
+export const deleteComment = (postId, commentId) => {
+  return (dispatch) => {
+    return axios({
+      method: "patch",
+      url: `${process.env.REACT_APP_API_URL}idhcar/post/delete-comment-post/${postId}`,
+      data: { commentId },
+    })
+      .then((res) => {
+        dispatch({ type: DELETE_COMMENT, payload: { postId, commentId } });
+      })
+      .catch((err) => console.log(err));
+  };
+};
 
 // export const getTrends = (sortedArray) => {
 //   return (dispatch) => {

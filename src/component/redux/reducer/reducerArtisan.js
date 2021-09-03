@@ -19,6 +19,13 @@ export const artisanReducer =(state =initialState ,action )=>{
     ...state,
     datas: payload};
 
+    case "GET_ArtisanById_SUCCEDED":
+  return {
+    ...state,
+    datas: payload,
+   
+  };
+
 case REACT_APP_POST_ARTISAN:
   return{
     ...state,

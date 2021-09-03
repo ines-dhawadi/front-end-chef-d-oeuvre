@@ -13,6 +13,7 @@ import Localisation from "../pages/localisation";
 import Chat from '../pages/chat';
 import Tendance from '../pages/tendance';
 import ProfilUser from '../pages/profilUser';
+import ProfilArtisan from '../view/ProfilArtisan'
 //import NewNavbar from "../view/newnavbar";
 
 
@@ -28,6 +29,9 @@ function Routes() {
 <Route  path="/IDHCAR"   exact component={Admin} /> 
 <Route path="/artisan" exact component={Users} /> 
 <Route path="/users" exact component={Client} /> 
+<Route path="/userone" exact component={ProfilArtisan} /> 
+
+
 
 {/* pages chat  */}
 

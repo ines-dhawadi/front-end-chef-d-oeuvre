@@ -2,12 +2,13 @@ import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import {useEffect} from "react";
 import {useSelector,useDispatch} from "react-redux"
-import {allArtisan} from "../redux/action/actionArtisan"
+import {allArtisan,getArtisanById} from "../redux/action/actionArtisan"
 import { Carousel } from "react-bootstrap";
 import  "../css/localisation.css";
 import Rater from 'react-rater';
 import 'react-rater/lib/react-rater.css';
 import { Link } from "react-router-dom";
+
 //import { useHistory} from 'react-router-dom';
 
 
@@ -32,6 +33,10 @@ const  GestMap=()=> {
   },[]);
   console.log("produit", artisan)
 
+
+  const getById=(id)=>{
+    dispatch(getArtisanById(id))
+  }
   return(
     <div>
 
@@ -118,7 +123,7 @@ const  GestMap=()=> {
       
      {el.nom} <br /> {el.prenom}.
      
-     <Link  to='/user'>User</Link>
+     <Link  to={`/userone/${el._id}`}>User <button  onClick= {()=>getById(el._id) }>profil</button></Link>
      
     </Popup>
   </Marker>

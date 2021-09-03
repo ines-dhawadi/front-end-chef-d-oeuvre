@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { UidContext } from "../AppContext";
 import LeftNav from "../view/LeftNav";
 import NewNavbar from '../view/newnavbar'
-//import NewPostForm from "../components/Post/NewPostForm";
+import NewPostForm from "../post/NewPostForm";
 import Thread from "../post/Fil";
 import Authentifixation from "../authentification/index";
 //import Trends from "../components/Trends";
@@ -20,7 +20,7 @@ const Chat = () => {
       <LeftNav />
       <div className="main">
         <div className="home-header">
-        {/* {uid ? <NewPostForm /> : <Authentifixation signin={true} signup={false} />} */}
+        {uid ? <NewPostForm /> : <Authentifixation signin={true} signup={false} />}
         </div>
         <Thread />
       </div>
