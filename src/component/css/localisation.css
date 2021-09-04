@@ -14,9 +14,8 @@
   .leaflet-container{
     width: 50vw;
     height: 100vh;
-  margin-left: -20%;
-  margin-right: 10rem !important;
-  padding-right: 10rem;
+  
+ 
   
   }
   
@@ -60,6 +59,9 @@
   top: 90px;;
   position: sticky; 
   margin-top: -166%;
+  margin-right: 60% !important;
+  position: relative;
+  margin-left: -20%;
   }
   /* .mart-1-p-map{
    border: 2px solid white;
@@ -82,9 +84,9 @@
 margin-top: 10%;
 float: left;
 padding-left: 1rem;}
-
+/* 
   .titre-1-localisation{
-    /* background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75))  */
+     background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75))  
 background-image:linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.541)), url("https://media.istockphoto.com/photos/network-gps-navigation-modern-city-future-technology-picture-id689905208?k=6&m=689905208&s=612x612&w=0&h=s3Zh6HezKVT8kGjgao9pjyiwVJbMheSMbIGsL2NLUQk=");
 background-repeat: no-repeat;
 font-size: 4rem;
@@ -98,7 +100,7 @@ border: 1px solid #333;
     box-shadow: 1px 1px 1px #000000;
     border-radius: 3px;
     background-attachment: fixed;
-  }
+  } */
   .react-rater-star.is-active{
     color: yellow !important;
     font-size: 1.5rem !important;

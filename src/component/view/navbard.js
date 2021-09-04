@@ -32,7 +32,7 @@ function NavbarC(){
                         <div  className="part2-nav par-2-scrol">
                         <Link className="linked--page part2-nav-hover" to="/">Accueil</Link>
                         <Link className="linked--page part2-nav-hover " to="/localisation">Localisation des service</Link>
-                        <Link className="linked--page part2-nav-hover" to="/contact">contact</Link>
+                        <Link className="linked--page part2-nav-hover" to="/Contact">contact</Link>
                         {/* <Link className="linked--page" to="/WatchedList">Watched</Link> */}
                         </div>
                         <div className="part3-nav">

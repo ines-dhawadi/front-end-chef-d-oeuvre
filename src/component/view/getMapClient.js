@@ -42,9 +42,9 @@ const  GestMap=()=> {
 
     <div className="container">
       <div className="row all-local">
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-4 col-sm-12">
 {/* *************** */}
-<div className="col-md-63 col-sm-6 ">
+<div className="col-md-3 col-sm-6 ">
 {/* *******carosel******** */}
 
 {artisan.map((el,key)=>(
@@ -104,7 +104,7 @@ const  GestMap=()=> {
 {/* *************** */}
 
         </div>
-        <div className="col-md-5 col-sm-12 map-all  position-sticky ">
+        <div className="col-md-8 col-sm-12 map-all  position-sticky ">
         <div>
       <MapContainer center={[36.806496, 10.181532]} zoom={6.5} scrollWheelZoom={true}>
   <TileLayer
