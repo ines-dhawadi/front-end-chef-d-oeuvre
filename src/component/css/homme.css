@@ -2,7 +2,8 @@
 :root{
   --fnt:'Audiowide', cursive;
   --allFont:Arial, Helvetica, sans-serif;
-  --color-on:#f36600;
+  /* --color-on:#f36600; */
+  --color-on:#fcb931;
   --big-title: 'Pathway Gothic One', Arial, serif !important;
 
 
@@ -11,6 +12,27 @@
 .container-site{
   margin-left: 7%;
   margin-right: 7%;
+  background-color: #ffffff;
+  color: #000000;
+  margin-bottom: 12%;
+}
+.custom-shape-divider-top-1630758667 {
+  
+  
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1630758667 svg {
+  /* position: relative; */
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 428px;
+}
+
+.custom-shape-divider-top-1630758667 .shape-fill {
+  fill: #000000;
 }
 .section-accueil{
     border: 1px rgba(212, 208, 208, 0.295) solid;
@@ -30,7 +52,7 @@ text-align: left;
     font-family: var(--big-title);
     color: var(--color-on);
     font-weight: normal;
-    text-align: left;
+    text-align: center;
     margin-top: 3rem;
     letter-spacing: 0px;
     margin-bottom: 5%;
@@ -38,18 +60,14 @@ text-align: left;
 
   .font-logo{
     font-family: var(--fnt);
-    color: white;
+    color: #000000;
   }
 
   .parag-homme{
     letter-spacing: 1px;
-    color: white;
     line-height: 1.6 !important;
-    text-align: left;
-
-    margin: 10px 0;
-   
-  
+    text-align: center;
+    margin: 15px 0;
     line-height: 1;
     text-rendering: optimizelegibility;
   }
@@ -58,11 +76,12 @@ text-align: left;
     height: 10rem !important;
     width: 15rem !important;
     border-radius: 6px;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    box-shadow: 6px 5px 5px 6px #8888885e;
   }
 
   figcaption{
-    color: white;
+   
     margin-top: 1.5rem;
    
   }
@@ -70,16 +89,20 @@ text-align: left;
     margin-top: 20px;
     font-size: 11px;
     line-height: 20px;
-    border: 1px solid #333333;
+    border: 1px solid var(--color-on);
     border-radius: 3px;
-    color: #fff !important;
+    color: #000000;
     padding: 10px 15px 9px;
     text-transform: uppercase;
     transition: 0.5s;
-    background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
+    background-color: white;
+  }
+  .bnt-voir:hover{
+    background-color: var(--color-on);
+    color: #000000;
   }
   .fas .fab{
-    color: white !important;
+    color: var( --color-on);
 }
 
 .fas:hover{
@@ -106,10 +129,20 @@ text-align: left;
     border-left: 4px solid var(--color-on);
 
   }
-
+.alll-part-1-homme{
+  padding:5% ;
+}
   .part-all-objectif{
-    border: 1px rgba(212, 208, 208, 0.295) solid;
-    background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
+  
+    /* background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ; */
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 10%;
   }
+
+  .img-homme-top{
+    position: relative;
+    margin-left: 20%;
+    margin-top: -11%;
+  }
+  

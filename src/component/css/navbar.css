@@ -3,7 +3,9 @@
 :root{
     --fnt:'Audiowide', cursive;
     --allFont:Arial, Helvetica, sans-serif;
-    --color-on:#f36600
+    /* --color-on:#f36600; */
+    --color-on:#fcb931;
+    /* --color-yell:#fcb931; */
 }
 .bg-homme{
     background-image: url("https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.general.png");
@@ -68,11 +70,11 @@ color: white;
   .heart:hover, .linked--brand:hover,
   .linked--page:hover{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    
   }
  .linked--brand{
     text-decoration: none;
-    color:var(--clr-primary-light) !important;
+    color: var(  --color-on) !important;
     font-size: 1.5rem;
     cursor: pointer;
     font-family: var( --fnt);
@@ -127,8 +129,12 @@ color: white;
       
   }
 
-  .titre-1-home{
-    /* background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75))  */
+  .top-navb{
+    background: url('https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+   
+  }
+  /* .titre-1-home{
+     background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75))  
 background-image:linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.767)), url("https://www.brumpost.com/wp-content/uploads/2020/02/Tesla-Model-3-Steering-and-digidash.jpg") !important;
 background-repeat: no-repeat;
 font-size: 4rem;
@@ -142,14 +148,14 @@ border: 1px solid #333;
     box-shadow: 1px 1px 1px #000000;
     border-radius: 3px;
     background-attachment: fixed;
-  }
+  } */
 
 
   .logo-top-navbar{
 margin-bottom: 2rem;
   margin-top: 4rem;
-  margin-left: -10rem;
-    font-size: 4rem;
+ 
+    font-size: 3rem;
     cursor: pointer;
     font-family: var( --fnt);
  color: white;
@@ -158,6 +164,7 @@ margin-bottom: 2rem;
   .prag-top-navbar{
     color: var( --color-on);
     margin-top: 4rem;
+    margin-left: 22%;
   }
 
   .phone-numbr{
@@ -183,7 +190,9 @@ margin-bottom: 2rem;
  
   }
   .navbar-1.colorChange{
-    background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
+     /* background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
+   #000000 */
+    background: url('https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
     margin-top: 0%;
 padding-top: 0% !important;
  padding-left: 8%;

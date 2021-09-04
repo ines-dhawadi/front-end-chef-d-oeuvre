@@ -48,6 +48,7 @@ function NavbarC(){
                     </Nav>
                 </Navbar.Collapse>
                 </Navbar>
+          
     </div>
    )
 

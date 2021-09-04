@@ -4,7 +4,7 @@ import  "../css/navbar.css";
 
 function TopNavbar(){
   return(
-    <div>
+    <div className="top-navb">
 <div className="row">
     <div className="col-md-6 col-sm-12">
     <p className="logo-top-navbar">GUIDE ME <br></br>

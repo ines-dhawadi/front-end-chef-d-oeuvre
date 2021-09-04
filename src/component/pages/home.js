@@ -15,13 +15,20 @@ function Homme(){
 
 
 <NavbarC />
-
-<h1 className="titre-1-home">GUIDE ME</h1>
+<div class="custom-shape-divider-top-1630758667">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+<div>
+<img className="img-homme-top" src='/images/image-view/0.png' alt=""/>
+</div>
+{/* <h1 className="titre-1-home">GUIDE ME</h1> */}
 <Part1Homme />
-
+<Footer />
       </div>
 
-<Footer />
+
     </div>
    )
 
