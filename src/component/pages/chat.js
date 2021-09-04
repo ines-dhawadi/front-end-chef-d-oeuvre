@@ -6,7 +6,7 @@ import NewPostForm from "../post/NewPostForm";
 import Thread from "../post/Fil";
 import Authentifixation from "../authentification/index";
 //import Trends from "../components/Trends";
-//import FriendsHint from "../components/Profil/FriendsHint";
+import Friends from "../profil/Friend";
 
 const Chat = () => {
   const uid = useContext(UidContext);
@@ -27,8 +27,8 @@ const Chat = () => {
       <div className="right-side">
         <div className="right-side-container">
           <div className="wrapper">
-            {/* <Trends />
-            {uid && <FriendsHint />} */}
+            {/* <Trends />*/}
+             {uid && <Friends />} 
           </div>
         </div>
       </div>

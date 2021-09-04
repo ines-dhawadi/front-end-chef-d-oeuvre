@@ -11,28 +11,34 @@ const NewPostForm = () => {
   const [video, setVideo] = useState("");
   const [file, setFile] = useState();
   const userData = useSelector((state) => state.userStore);
-//   const error = useSelector((state) => state.errorReducer.postError);
+const error = useSelector((state) => state.errorStore.postError);
    const dispatch = useDispatch();
   
   const handlePost = async () => {
+    //1 condut si message ou  postPicture  ou video n p vide 
     if (message || postPicture || video) {
+      // New data 
       const data = new FormData();
       data.append('posterId', userData._id);
       data.append('message', message);
       if (file) data.append("file", file);
       data.append('video', video);
-
+// envoyer ver bacend
       await dispatch(addPost(data));
       dispatch(getPosts());
       cancelPost();
-    } else {
+    }
+     // si  vide (message ou  postPicture  ou video ) 
+     else {
       alert("Veuillez entrer un message")
     }
   };
  
   const handlePicture = (e) => {
     setPostPicture(URL.createObjectURL(e.target.files[0]));
+   // send to db
     setFile(e.target.files[0]);
+    // video vide
     setVideo('');
   }; 
 
@@ -48,22 +54,29 @@ const NewPostForm = () => {
     if (!isEmpty(userData)) setIsLoading(false);
 
     const handleVideo = () => {
+      // split pou boucle
       let findLink = message.split(" ");
       for (let i = 0; i < findLink.length; i++) {
         if (
+          // si exist soit 1 soit 2
           findLink[i].includes("https://www.yout") ||
           findLink[i].includes("https://yout")
         ) {
+          // remplace "watch?v=", "embed/"
+          // embed/ pour que le vidéo etre dispo hors youtub
           let embed = findLink[i].replace("watch?v=", "embed/");
+          // supp aprés  & => time
           setVideo(embed.split("&")[0]);
+          // supp lien de vidéo de l'affichage
           findLink.splice(i, 1);
           setMessage(findLink.join(" "));
+          // imd vide => soit vidéo soit img
           setPostPicture('');
         }
       }
     };
     handleVideo();
-  }, [userData, message, video]);
+   }, [userData, message, video]);
 
   return (
     <div className="post-container">
@@ -140,10 +153,10 @@ const NewPostForm = () => {
                  )}
                 {video && (
                   <button onClick={() => setVideo("")}>Supprimer video</button>
-                )} 
+                )}  
               </div>
-              {/* {!isEmpty(error.format) && <p>{error.format}</p>}
-              {!isEmpty(error.maxSize) && <p>{error.maxSize}</p>} */}
+              {!isEmpty(error.format) && <p>{error.format}</p>}
+              {!isEmpty(error.maxSize) && <p>{error.maxSize}</p>}
               <div className="btn-send">
                 {message || postPicture || video.length > 20 ? (
                   <button className="cancel" onClick={cancelPost}>

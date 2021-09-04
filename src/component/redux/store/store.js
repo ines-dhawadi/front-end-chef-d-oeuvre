@@ -6,7 +6,7 @@ import { createStore ,applyMiddleware,combineReducers}  from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import usersReducer from "../reducer/reducerUserss";
 import postReducer from "../reducer/reducerPost";
-
+import errorReducer from "../reducer/reducerError";
 
 
 const Reducers = combineReducers({
@@ -15,7 +15,8 @@ const Reducers = combineReducers({
     clientStore:reducerClient,
     userStore:userReducer,
      usersStore: usersReducer,
-     postStore:postReducer
+     postStore:postReducer,
+     errorStore:errorReducer
    })
   
   const store =   createStore(Reducers,composeWithDevTools(applyMiddleware(thunk)));
