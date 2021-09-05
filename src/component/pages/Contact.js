@@ -19,6 +19,66 @@ const Contact = () => {
     </svg>
 </div>
 
+<div className="container">
+    <div className="row">
+        <div className="col-lg-6 col-md-6 col col-sm-12">
+        <form action=""  id="cont-form">
+        <label htmlFor="pseudo">Pseudo</label>
+        <br />
+        <input
+          type="text"
+          name="pseudo"
+          id="pseudo"
+      
+        />
+      
+        <br />
+        <label htmlFor="email">Email</label>
+        <br />
+        <input
+          type="text"
+          name="email"
+          id="email"
+        
+        />
+  
+        <br />
+        <label htmlFor="password">Mot de passe</label>
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+         
+        />
+       
+        <br />
+        <label htmlFor="password-conf">Message</label>
+        <br/>
+        
+        <textarea
+                  type="text"
+                
+                ></textarea>
+       <div className='d-flex mt-4'>
+       <input className='mr-2' type="submit" value="Envoyer" />
+        <input type="submit" value="Annuler" />
+       </div>
+      
+       
+      </form>
+        </div>
+        <div className="col-lg-6 col-md-6 col col-sm-12">
+
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="505" height="460" id="gmap_canvas" src="https://maps.google.com/maps?q=hammem%20chatt&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yt2.org">yt2</a><br></br>
+     <a href="https://www.embedgooglemap.net">iframe google maps</a>
+        </div></div>
+        </div>
+
+    </div>
+
+</div>
+
 <Footer />
         </div>
     )

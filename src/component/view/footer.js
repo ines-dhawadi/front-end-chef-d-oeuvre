@@ -1,6 +1,6 @@
 import React from 'react'
 import  "../css/footer.css";
-
+import {Link} from 'react-router-dom'
 function Footer() {
   return(
     <div className="footer-bg:after">
@@ -38,9 +38,24 @@ function Footer() {
 <div id="nav_menu-2" class="widget_nav_menu masonry-item  sm-width widget ft-widget mb-50 masonry-brick" ><h2 class="widget-title"><span>Liens utiles</span></h2>
 <div class="menu-movie-category-container">
     <ul id="menu-movie-category" class="menu">
+        <Link to="/">
         <li id="menu-item-210" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-210"> Accueil</li>
+
+        </Link>
+        <Link to="/localisation">
 <li id="menu-item-211" class="menu-item menu-item-type-taxonomy menu-item-object-movie_cat menu-item-211">Localisation</li>
-<li id="menu-item-212" class="menu-item menu-item-type-taxonomy menu-item-object-movie_cat menu-item-212">contact</li>
+        
+        </Link>
+        <Link to="/Chat">
+<li id="menu-item-212" class="menu-item menu-item-type-taxonomy menu-item-object-movie_cat menu-item-212">Discution</li>
+        
+        </Link>
+        <Link to="/Contact">
+<li id="menu-item-212" class="menu-item menu-item-type-taxonomy menu-item-object-movie_cat menu-item-212">Contact</li>
+        
+        </Link>
+
+
 </ul></div></div>
 </div>
 {/* *****3**** */}

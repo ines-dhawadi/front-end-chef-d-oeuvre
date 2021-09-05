@@ -59,6 +59,8 @@ textarea {
   width: 270px;
   font-family: $font-1;
   background: $white;
+  border: 1px solid $color-1 ;
+  height: 35px;
 }
 textarea {
   &:focus {

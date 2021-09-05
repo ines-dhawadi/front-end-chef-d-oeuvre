@@ -75,7 +75,7 @@ color: white;
  .linked--brand{
     text-decoration: none;
     color: var(  --color-on) !important;
-    font-size: 1.25rem;
+    font-size: 1rem;
     cursor: pointer;
     font-family: var( --fnt);
     padding-left: 1rem;

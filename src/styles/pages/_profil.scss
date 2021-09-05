@@ -751,3 +751,19 @@
             margin-right: 20%;
           }
         }
+        #cont-form{
+          border: 1px solid $color-1 ;
+          padding: 10%;
+          border-radius: 20px;
+          input{
+            border: 1px solid $color-1 ;
+          }
+        }
+        .cont-form>input, textarea {
+          width: 100%  !important;
+          margin-bottom: -6px;
+          font-size: 1.2rem;
+          
+         
+        }
+  

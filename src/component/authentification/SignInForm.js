@@ -75,7 +75,7 @@ axios.defaults.withCredentials = true
       onChange={(e) => setPassword(e.target.value)}
       value={password}
     />
-    <div className="password error">nnnnn</div>
+    <div className="password error"></div>
     <br />
     <input type="submit" value="Se connecter" />
   </form></div>

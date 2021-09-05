@@ -17,8 +17,9 @@
   }
 
   .main {
-    overflow-y:scroll;
-    height: 500px;
+
+    // overflow-y:scroll;
+    // height: 500px;
     .home-header {
       margin: 0 auto 12px;
       text-align: center;
@@ -27,6 +28,7 @@
         background: $color-4;
         border-radius: 20px;
         padding: 20px;
+        margin-left: 5%;
        
 
         ul {
@@ -40,12 +42,14 @@
             padding: 12px 14px;
             transition: .2s;
             margin: 0 8px;
+            color: white;
           }
           .active-btn {
             background: $color-1;
   
             &:hover {
               background: $color-2;
+              color: black;
             }
           }
           li:not(.active-btn) {

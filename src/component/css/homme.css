@@ -69,8 +69,8 @@ text-align: left;
 .big-title{
   font-size: 46px;
     line-height: 50px;
-    font-family: var(--big-title);
-    color: var(--color-on);
+   
+  
     font-weight: normal;
     text-align: center;
     margin-top: 3rem;
@@ -80,7 +80,7 @@ text-align: left;
 
   .font-logo{
     font-family: var(--fnt);
-    color: #000000;
+    color: var(--color-on);
   }
 
   .parag-homme{
