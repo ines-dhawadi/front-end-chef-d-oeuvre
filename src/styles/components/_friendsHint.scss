@@ -1,6 +1,7 @@
 .get-friends-container {
   width: 356px;
-  background: linear-gradient(145deg, $color-2 30%, #ffe1d9 100%);
+  border: solid 2px $color-1;
+  background-color: rgba(250, 245, 245, 0.973);
   border-radius: 20px;
   padding: 20px 20px 10px;
 
@@ -32,7 +33,8 @@
         width: 46px;
         border-radius: 12px;
         object-fit: cover;
-        box-shadow: 0 0 2px rgba(51, 51, 51, 0.377);
+        box-shadow: 0 0 2px rgba(51, 51, 51, 0.719);
+        border: solid 1px rgb(104, 101, 101);
       }
       p {
         text-align: left;

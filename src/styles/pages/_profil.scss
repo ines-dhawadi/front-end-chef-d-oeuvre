@@ -52,14 +52,21 @@
         }
         .active-btn {
           background: $color-1;
+          color: white;
 
           &:hover {
             background: $color-2;
           }
         }
         li:not(.active-btn) {
+         
+           
+            color: white;
+          }
+        li:not(.active-btn) {
           &:hover {
             transform: translateX(3px);
+            color: white;
           }
         }
         #login {
@@ -362,7 +369,7 @@
   margin-top: 7%;
 }
  .update-container {
-  display: grid;
+  // display: grid;
   grid-template-columns: 50% 50%;
 
   @media screen and(max-width: 700px) {
@@ -383,10 +390,14 @@
 
 .update-container>.left-part {
   text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: -8%;
 }
 
-.left-part > h3 {
+.pic-profil{
   margin-bottom: 12px;
+  color: #000000 !important; 
 }
 
 .left-part>img {
@@ -406,9 +417,10 @@
     position: absolute;
     transform: translate(-50%, -50%);
     width: 270px;
-    background: $color-3;
-    color: $color-2;
-    border-radius: 20px;
+    background: #000000;
+    color: $color-1;
+    border: 1px $color-1;
+    border-radius: 20px ;
     display: inline-block;
     padding: 9px 0;
     transition: 0.2s;
@@ -418,10 +430,12 @@
 
   .left-part>form>input[type="file"] {
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     transform: translate(-3px, -50%);
     cursor: pointer;
     padding: 10px 20px;
+    color: $color-1;
+    border: 1px $color-1;
 
     @media screen and(max-width: 1121px) {
       opacity: 0;
@@ -431,6 +445,7 @@
   .left-part>form>input[type="submit"] {
     margin-top: 10px;
     border-radius: 20px;
+    border: 1px $color-1 solid;
 
     &:hover {
       letter-spacing: 1px;
@@ -446,13 +461,17 @@
 
   .right-part {
     text-align: center;
-    padding: 20px 40px;            
+    padding: 20px 40px;    
+    width: 70%;   
+    padding: 10% !important;  
+    margin-left: 15% !important;   
   }
   // .right-part>.bio-update{
   //   display: grid;
   // }
-  .right-part> h3 {
+  h3 {
       margin-bottom: 12px;
+      color: white !important;
     }
 
     .right-part> p>.p-bio,textarea {
@@ -466,7 +485,7 @@
       }
       .p-bio{
         min-height: 80px;
-       
+       color: white;
         border: 1px solid $color-1;
         border-radius: 20px 20px 6px 20px;
         padding: 10px 20px ;
@@ -476,6 +495,7 @@
         width: 100%  !important;
         margin-bottom: -6px;
         font-size: 1.2rem;
+        
        
       }
 
@@ -698,3 +718,36 @@
         //     }
         //   }
         // }
+
+        .user-pseudo{
+          position: relative;
+          color: white;
+          margin-top: -26%;
+          margin-left: 63%;
+          font-size: 3rem;
+          border-top: 2px solid $color-1;
+          padding: 2%;
+          width: 30%;
+          span{
+            color: $color-1;
+          }
+        }
+
+
+        .Choix-page{
+         display: flex;
+          justify-content: space-around;
+
+          .chois-left{
+            border: 1px solid $color-1;
+            padding: 2rem;
+            border-radius: 20px;
+            margin-left: 20%;
+          }
+          .chois-right{
+            border: 1px solid $color-1;
+            padding: 2rem;
+            border-radius: 20px;
+            margin-right: 20%;
+          }
+        }

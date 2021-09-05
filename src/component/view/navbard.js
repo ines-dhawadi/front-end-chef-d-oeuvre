@@ -1,11 +1,18 @@
-import React from 'react'
+
 import  "../css/navbar.css";
 import {Navbar,Nav,Form,FormControl,Button } from "react-bootstrap";
 import { Link  } from "react-router-dom";
-import  { useState } from 'react'
+
+import React, { useState ,useContext } from "react";
+import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
+import { UidContext } from "../AppContext";
+import Logout from "../authentification/Logout";
 
 
 function NavbarC(){
+  const uid = useContext(UidContext);
+ const userData = useSelector((state) => state.userStore);
 
   const [colorChange, setColorchange] = useState(false);
     const changeNavbarColor = () =>{
@@ -31,17 +38,30 @@ function NavbarC(){
                     <Nav className="">
                         <div  className="part2-nav par-2-scrol">
                         <Link className="linked--page part2-nav-hover" to="/">Accueil</Link>
-                        <Link className="linked--page part2-nav-hover " to="/localisation">Localisation des service</Link>
+                        <Link className="linked--page part2-nav-hover " to="/localisation">Localisation </Link>
                         <Link className="linked--page part2-nav-hover" to="/Contact">contact</Link>
-                        {/* <Link className="linked--page" to="/WatchedList">Watched</Link> */}
+                        <Link className="linked--page" to="/Chat">discution</Link>
                         </div>
                         <div className="part3-nav">
                         <Form inline>
                             {/* <FormControl type="text" placeholder="SEARCH"/> */}
-                           <i class="fas fa-search  "></i>
+                           {/* <i class="fas fa-search  "></i> */}
                         </Form>
-                        <Link className="heart" to="/Favorite"><i class="far fa-heart mb-4"></i><span className="favorite--value"></span></Link>
-                        <i class="far fa-user mt-4 "></i>
+                        {uid ? (
+                        <Link  to="/profilUser" className="d-flex">
+                        
+                          <> <i class="far fa-user mt-4 "></i>
+                           <h5 className="mt-4">Bienvenue {userData.pseudo}  {''} </h5>
+
+ <Logout  />
+ </>  </Link>
+                        ): (
+                           <Link to="/Choix" className="d-flex mt-3"> <h5>Se connecter / S'inscrire </h5><i class="fas fa-sign-in-alt ml-3"></i></Link>
+                        )
+                        }
+                      
+                        {/* <Link className="heart" to="/Favorite"><i class="far fa-heart mb-4"></i><span className="favorite--value"></span></Link> */}
+                       
                         
                         {/* <SignUp/> */}
                         </div>

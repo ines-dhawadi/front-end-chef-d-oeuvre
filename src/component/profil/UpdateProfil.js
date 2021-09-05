@@ -41,10 +41,10 @@ function UpdateProfil() {
   return(
        <div className="profil-container">
       <LeftNav />
-      <h1> Profil de {userData.pseudo}</h1>
+      <h1 className="user-pseudo"> Profil de <span>{userData.pseudo}</span> </h1>
       <div className="update-container">
         <div className="left-part">
-          <h3>Photo de profil</h3>
+          <h3 className="pic-profil">Photo de profil</h3>
           <img  className="user-pic" src={userData.picture} alt="user-pic" />
           <UploadImg />
           <p>{error.maxSize}</p>

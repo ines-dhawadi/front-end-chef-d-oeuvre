@@ -8,6 +8,25 @@
 
 
 }
+@font-face {
+  font-family: "font-1";
+  src: url(../../styles/assets/fonts/JosefinSans-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../../styles/assets/fonts/JosefinSans-Regular.ttf);
+}
+@font-face {
+  font-family: "font-3";
+  src: url(../../styles/assets/fonts/JosefinSans-Bold.ttf);
+}
+
+:root{
+  --font-1: "font-1", sans-serif;
+--font-2: "font-2", serif;
+--font-3: "font-3", serif;
+
+}
 
 .container-site{
   margin-left: 7%;
@@ -15,6 +34,7 @@
   background-color: #ffffff;
   color: #000000;
   margin-bottom: 12%;
+  font-family: var( --font-2);
 }
 .custom-shape-divider-top-1630758667 {
   

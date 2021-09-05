@@ -75,24 +75,24 @@ color: white;
  .linked--brand{
     text-decoration: none;
     color: var(  --color-on) !important;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     cursor: pointer;
     font-family: var( --fnt);
     padding-left: 1rem;
   }
   .linked--page{
     color: var(--clr-primary-light) !important;
-    font-size: 1.2rem;
+    font-size: 1.06rem;
     text-decoration: none;
     margin: 10px 20px 10px 0 !important;
     cursor: pointer;
-    font-family: var(--allFont);
+    
   }
   
   .part2-nav{
       padding-left: 13rem;
       padding-right: 8rem;
-      font-family: var(--allFont);
+     
   }
 
   .part2-nav-hover:hover{

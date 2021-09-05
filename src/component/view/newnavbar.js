@@ -38,7 +38,7 @@ function NewNavbar(){
             <li></li>
             <li>
               <NavLink exact to="/profil">
-                <img src="/images/imgChat/login.svg" alt="login"/>
+              <img src="/images/imgChat/login.svg" alt="login"/>
               </NavLink>
             </li>
           </ul>

@@ -6,9 +6,9 @@ import  "../../styles/index.scss";
 import NavbarC from '../view/navbard'
 import TopNavbar from "../view/top-navbar";
 import Footer from "../view/footer";
+import { Link  } from "react-router-dom";
 
-
-function ProfilUser(){
+function Choix(){
   return(
     <div className="container-site" >
        <TopNavbar />
@@ -22,21 +22,18 @@ function ProfilUser(){
     </svg>
 </div>
      
-      <UpdateProfil />
-    {/* <div className="profil-page">
-<div className="log-container">
-          <Authentifixation  signin={false} signup={true} /> 
-           
-          <div className="img-container">
-            <img src="/images/imgChat/log1.svg" alt="img-log" />
-          </div>
-        </div>
-       
-    </div> */}
+    
+    <div className="Choix-page">
+        <Link to="/Singninup"><h1 className="chois-left">user</h1></Link>
+<Link>
+<h1 className="chois-right">artisan</h1>
+</Link>
+  
+    </div>
     <Footer />
     </div>
    )
 
  }
 
-export default  ProfilUser
+export default  Choix

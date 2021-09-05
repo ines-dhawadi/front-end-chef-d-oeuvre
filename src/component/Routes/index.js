@@ -15,6 +15,8 @@ import Tendance from '../pages/tendance';
 import ProfilUser from '../pages/profilUser';
 import ProfilArtisan from '../view/ProfilArtisan'
 import Contact from "../pages/Contact";
+import Singninup from '../pages/singnSinUp'
+import Choix from "../pages/choix";
 //import NewNavbar from "../view/newnavbar";
 
 
@@ -32,6 +34,8 @@ function Routes() {
 <Route path="/users" exact component={Client} /> 
 <Route path="/Contact" exact component={Contact}/>
 <Route path="/userone" exact component={ProfilArtisan} /> 
+<Route path="/Singninup" exact component={Singninup} /> 
+<Route path="/Choix" exact component={Choix} /> 
 
 
 
