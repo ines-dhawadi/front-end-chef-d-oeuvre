@@ -41,7 +41,7 @@ function UpdateProfil() {
   return(
        <div className="profil-container">
       <LeftNav />
-      <h1 className="user-pseudo"> Profil de <span>{userData.pseudo}</span> </h1>
+      <h1 className="user-pseudo"> Profil de <br></br> <span>{userData.pseudo}</span> </h1>
       <div className="update-container">
         <div className="left-part">
           <h3 className="pic-profil">Photo de profil</h3>
@@ -50,7 +50,7 @@ function UpdateProfil() {
           <p>{error.maxSize}</p>
           <p>{error.format}</p>
         </div>
-        <div className="right-part">
+        <div className="right-part all-bio">
           <div className="bio-update">
             <h3>Bio</h3>
             {updateForm === false && (

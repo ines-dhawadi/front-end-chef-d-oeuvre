@@ -37,13 +37,13 @@ function NavbarC(){
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="">
                         <div  className="part2-nav par-2-scrol">
-                        <Link className="linked--page part2-nav-hover" to="/">Accueil</Link>
-                        <Link className="linked--page part2-nav-hover " to="/localisation">Localisation </Link>
-                        <Link className="linked--page" to="/Chat">Discution</Link>
-                        <Link className="linked--page part2-nav-hover" to="/Contact">Contact</Link>
+                        <Link className="linked--page part2-nav-hover" to="/"  exact activeClassName="active-left-nav">Accueil</Link>
+                        <Link className="linked--page part2-nav-hover " to="/localisation"  exact activeClassName="active-left-nav">Localisation </Link>
+                        <Link className="linked--page part2-nav-hover" to="/Chat"  exact  activeClassName="active-left-nav">Discution</Link>
+                        <Link className="linked--page part2-nav-hover" to="/Contact"  exact activeClassName="active-left-nav">Contact</Link>
                        
                         </div>
-                        <div className="part3-nav">
+                        <div className="part3-nav mr-auto">
                         <Form inline>
                             {/* <FormControl type="text" placeholder="SEARCH"/> */}
                            {/* <i class="fas fa-search  "></i> */}

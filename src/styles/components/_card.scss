@@ -206,7 +206,7 @@
       }
     }
     .comment-container.client {
-      background: $color-4;
+      background: $shadow;
       border: none;
       border-radius: 20px 20px 6px 20px;
     }
@@ -233,6 +233,7 @@
       .comment-header {
         display: flex;
         justify-content: space-between;
+        
 
         @media screen and(max-width: 440px) {
           flex-direction: column;
@@ -240,9 +241,11 @@
 
         .pseudo {
           display: flex;
+          
 
         .pseudo-card {
             font-family: $font-1;
+          
           }
           span {
             transform: translate(6px, 4px);
@@ -287,7 +290,7 @@
             background: $white;
             color: $color-1;
             padding: 6px 12px 5px;
-            border-radius: 20px 20px 20px 6px;
+            border-radius: 20px 20px 20px 20px;
             cursor: pointer;
             transition: 0.2s;
             display: inline-block;
@@ -303,13 +306,14 @@
             font-size: 1.15rem;
             padding: 16px;
             width: 100%;
-            border-radius: 6px 20px 6px 20px;
+            border-radius: 20px 20px 20px 20px;
           }
           .btn {
             display: flex;
             align-items: center;
             float: right;
-
+background-color: transparent !important;
+box-shadow: transparent !important;
             span {
               background: $white;
               padding: 10px 5px;
@@ -418,6 +422,7 @@
     font-family: $font-1;
     font-size: 20px;
     margin-top: -0.1rem;
+    color: black !important;
   }
 
 #btn-updat{
@@ -441,7 +446,7 @@
     margin-left: -26%;
     margin-right: 2%;
     margin-top: -0.02%;
-   
+    color: black !important;
   
   }
 }

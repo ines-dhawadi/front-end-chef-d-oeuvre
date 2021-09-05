@@ -5,7 +5,7 @@ import NewNavbar from "../view/newnavbar";
 function Tendance(){
   return(
     <div>
-      <NewNavbar />
+      {/* <NewNavbar /> */}
         <h1>Tendance</h1>
     </div>
    )
