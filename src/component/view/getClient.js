@@ -3,6 +3,7 @@ import "../admin/admin.css";
 import {useEffect} from "react";
 import {useSelector,useDispatch} from "react-redux"
 import {GetAllClientA,deleteClientA} from "../redux/action/actionClient"
+import {deleteUsersA} from '../redux/action/actionUserss'
 import UpdateClientC from "../view/updateClient"
 
 
@@ -11,6 +12,7 @@ const GetAllClientC =()=>{
 
    
     const clients = useSelector(state => state.clientStore.dataClient);
+    const usersData = useSelector((state) => state.usersStore.dataUsersss);
     const dispatch = useDispatch();
 
 useEffect(()=>{
@@ -19,8 +21,11 @@ useEffect(()=>{
 
 // DELETE CLIENT 
 const deleteclientC=(id)=>{
-  dispatch(deleteClientA(id))
+  dispatch(deleteUsersA(id))
 }
+// const deleteclientC=(id)=>{
+//   dispatch(deleteClientA(id))
+// }
 
 
 
@@ -44,16 +49,16 @@ const deleteclientC=(id)=>{
                         <th> </th>
                           <th>ID</th>
                           <th>Name</th>
-                          <th>phone</th>
+                          <th>Email</th>
                           <th>edit  close</th>
                         </thead>
                         <tbody>
-                        {clients.map((el,key)=>(
+                        {usersData.map((el,key)=>(
                           <tr key={key}>
-                             <td> <img class="image-client-dashbord" src={el.image}   alt=""  /></td>
+                             <td> <img class="image-client-dashbord" src={el.picture}   alt=""  /></td>
                             <td>{el._id}</td>
-                            <td>{el.nom} {el.prenom}</td>
-                            <td> {el.telephone}</td>
+                            <td>{el.pseudo} </td>
+                            <td> {el.email}</td>
                             <td class="td-actions ">
                                   <button type="button" rel="tooltip" title="Edit Task" class="btn btn-white btn-link btn-sm mr-3">
                                     

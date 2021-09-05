@@ -27,7 +27,7 @@ const Client = ({email} ) => {
               <p>Dashboard</p>
             </Link>
           </li>
-          <li className="nav-item active">
+          <li className="nav-item ">
             <Link className="nav-link" to="/artisan">
               <i className="material-icons">person</i>
 
@@ -35,8 +35,8 @@ const Client = ({email} ) => {
               {/* <p>User Profile</p> */}
             </Link>
           </li>
-          <li className="nav-item ">
-            <Link className="nav-link" to="/users">
+          <li className="nav-item active">
+            <Link className="nav-link " to="/users">
               <i className="material-icons">content_paste</i>
               <p>User Profile</p>
             </Link>

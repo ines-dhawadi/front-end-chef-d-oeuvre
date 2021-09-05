@@ -28,6 +28,7 @@ export const GET_USER_ERRORS = "GET_USER_ERRORS";
 
 // type userss
 export const GET_USERS = "GET_USERS";
+export const REACT_APP_DELETE_Users = "REACT_APP_DELETE_Users";
 
 
 

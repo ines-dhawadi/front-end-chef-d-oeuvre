@@ -1,6 +1,6 @@
 import axios from "axios";
-import {GET_USERS} from './type'
-
+import {GET_USERS,REACT_APP_DELETE_Users} from './type'
+import {deleteUsers} from '../requests/requestUserss'
 
 export const getUsers = () => {
   return (dispatch) => {
@@ -11,4 +11,21 @@ export const getUsers = () => {
       })
       .catch((err) => console.log(err));
   };
+};
+
+ // delete client 
+
+
+ export const deleteUsersA = (id)=> async (dispatch) => {
+  try {
+    await deleteUsers  (id);
+    dispatch({
+      type:REACT_APP_DELETE_Users,
+      payload:id
+  })
+    console.log("delete")
+    dispatch(getUsers);
+  } catch (error) {
+    console.log(error);
+  }
 };

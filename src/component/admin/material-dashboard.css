@@ -4,6 +4,7 @@
 :root{
   --col-bz:#f68a31;
   --bg-bv:#181f34;
+  --color-on:#fcb931;
 }
 .card {
     font-size: .875rem;
@@ -17171,7 +17172,7 @@
   .card.bg-primary,
   .card.card-rotate.bg-primary .front,
   .card.card-rotate.bg-primary .back {
-    background: linear-gradient(60deg, #ab47bc, #8e24aa);
+    background-color: var(--color-on);
   }
   
   .card .card-header-info .card-icon,
@@ -20277,7 +20278,7 @@
   }
   
   .dark-edition .sidebar[data-color="purple"] li.active>a {
-    background: #e90101;
+    background: var(--color-on);
   
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
   }
@@ -20451,7 +20452,7 @@
   .dark-edition .card .card-footer .stats a {
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(60deg, #7b1fa2, #913f9e);
+    background-color: var(--color-on);
     color: transparent;
   }
   
@@ -20461,7 +20462,7 @@
   .dark-edition .card.bg-warning,
   .dark-edition .card.card-rotate.bg-warning .front,
   .dark-edition .card.card-rotate.bg-warning .back {
-    background: linear-gradient(60deg, #f5700c, #ff9800);
+    background: linear-gradient(60deg, #fff8f3, #ff9800);
   }
   
   .dark-edition .card .card-header-success .card-icon,
@@ -20497,7 +20498,7 @@
   .dark-edition .card.bg-primary,
   .dark-edition .card.card-rotate.bg-primary .front,
   .dark-edition .card.card-rotate.bg-primary .back {
-    background: linear-gradient(60deg, #7b1fa2, #913f9e);
+    background-color: var(--color-on);
   }
   
   .dark-edition .primary-link {

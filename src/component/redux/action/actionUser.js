@@ -10,7 +10,7 @@ import {
 
 
 
-
+//get user by is
 
 export const getUser = (uid) => {
   return (dispatch) => {
