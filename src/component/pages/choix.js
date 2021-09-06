@@ -2,6 +2,7 @@ import React from 'react'
 import Authentifixation from "../authentification/index";
 import NewNavbar from "../view/newnavbar";
 import UpdateProfil from '../profil/UpdateProfil'
+import AddArtisanFront from '../view/addArtisanFront';
 import  "../../styles/index.scss";
 import NavbarC from '../view/navbard'
 import TopNavbar from "../view/top-navbar";
@@ -24,11 +25,12 @@ function Choix(){
      
     
     <div className="Choix-page">
-        <Link to="/Singninup"><h1 className="chois-left">user</h1></Link>
-<Link>
-<h1 className="chois-right">artisan</h1>
-</Link>
-  
+      
+        
+{/* <Link to='/localisation'>
+<h6 className="chois-right">voir les localisation géographique de different artisan </h6>
+</Link> <br></br> */}
+<AddArtisanFront/>
     </div>
     <Footer />
     </div>

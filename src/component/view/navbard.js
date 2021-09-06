@@ -57,7 +57,7 @@ function NavbarC(){
  <Logout  />
  </>  </Link>
                         ): (
-                           <Link to="/Choix" className="d-flex mt-3"> <h5>Se connecter / S'inscrire </h5><i class="fas fa-sign-in-alt ml-3"></i></Link>
+                           <Link to="/Singninup" className="d-flex mt-3"> <h5>Se connecter / S'inscrire </h5><i class="fas fa-sign-in-alt ml-3"></i></Link>
                         )
                         }
                       
