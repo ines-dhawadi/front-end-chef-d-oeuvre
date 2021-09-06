@@ -25,6 +25,8 @@ function Homme(){
 </div>
 {/* <h1 className="titre-1-home">GUIDE ME</h1> */}
 <Part1Homme />
+
+
 <Footer />
       </div>
 

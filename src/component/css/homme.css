@@ -166,3 +166,41 @@ text-align: left;
     margin-top: -11%;
   }
   
+  /* .new-part-homme{
+    background-image: url('/frantend/public/images/image-view/_.png' );
+  } */
+
+  .img-new-part-homme{
+    width: 100%;
+    margin-right: 10% !important;
+  }
+  
+  .parg-new-part-homme{
+    position: relative;
+    margin-top: -50%;
+    padding: 0% 5% 5% 15%;
+    color: white;
+  }
+
+  .bnt-new-part-homme{
+ 
+    background: #000000;
+    color: white;
+    font-family: var(--font-3); 
+    cursor: pointer;
+    transition: 0.2s;
+ 
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+    margin-top: 23%;
+    margin-left: 46%;
+    
+  }
+
+  .bnt-new-part-homme:hover{
+    background: white;
+    color: #000000;
+  }

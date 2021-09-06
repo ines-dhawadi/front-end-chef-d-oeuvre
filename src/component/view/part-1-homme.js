@@ -1,6 +1,6 @@
 import React from 'react'
 import "../css/homme.css";
-
+import {Link} from "react-router-dom"
 
 
 
@@ -25,7 +25,27 @@ function Part1Homme(){
 </div>
 
  </div>
+{/* ***************** */}
+<div className=" new-part-homme">
+  <div className="row">
+<div className="col-md-12">
+<img  className=" img-new-part-homme " src="/images/image-view/_.png" alt="" />
+<div className="row parg-new-part-homme">
+<div className="col-md-6 p-5">
+sdftgyhujikolpm:dfvgybhunji, <br></br> kwsxdcfvgbhnj,k;lxrdcfvgybhnjk,l;<br></br> kwsxdcfvgbhnj,k;lxrdcfvgybhnjk,l;
+</div> 
+<div className="col-md-6 p-5">
+sdftgyhujikolpm:dfvgybhunji, <br></br>kwsxdcfvgbhnj,k;lxrdcfvgybhnjk,l;<br></br> kwsxdcfvgbhnj,k;lxrdcfvgybhnjk,l;
+</div>
 
+</div>
+
+</div>
+
+  </div>
+  <button className="bnt-new-part-homme"> <Link to="/Chat">bhbkhb </Link></button>
+</div>
+{/* ***************** */}
 <div className="row mt-5 part-all-objectif pb-5"> 
 <h1 className="big-title">Nos objectifs  </h1>
 <div className="col-md-6 col-sm-6"> <img className="img-local" src="/images/image-view/loc2.png" aly="" />  </div>

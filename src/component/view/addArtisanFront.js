@@ -73,7 +73,7 @@ const [postPicture, setPostPicture] = useState(null);
     setPostPicture(URL.createObjectURL(e.target.files[0]));
    // send to db
     setFile(e.target.files[0]);
-    // video vide
+    
    
   }; 
 
