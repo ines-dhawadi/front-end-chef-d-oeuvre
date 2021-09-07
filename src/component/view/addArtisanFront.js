@@ -63,19 +63,19 @@ const handelChange=(e)=>{
 
 // }
 const [show, setShow] = useState(false);
-const [postPicture, setPostPicture] = useState(null);
+//const [postPicture, setPostPicture] = useState(null);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const [file, setFile] = useState();
+  //const [file, setFile] = useState();
   
-  const handlePicture = (e) => {
+  // const handlePicture = (e) => {
 
-    setPostPicture(URL.createObjectURL(e.target.files[0]));
-   // send to db
-    setFile(e.target.files[0]);
+  //   setPostPicture(URL.createObjectURL(e.target.files[0]));
+  //  // send to db
+  //   setFile(e.target.files[0]);
     
    
-  }; 
+  // }; 
 
 
   return(
@@ -101,18 +101,19 @@ const [postPicture, setPostPicture] = useState(null);
 <div className="troix-1-input">
 
     {/* <Form.Label>Titre de votre film</Form.Label> */}
-    <input  className="text-center mb-4"   onChange={handelChange}  name="nom"  type="text" placeholder="nom" />
+    <input  className="text-center mb-4  w-50"   onChange={handelChange}  name="nom"  type="text" placeholder="nom" />
 
-    <input className="text-center mb-4" onChange={handelChange}  name="prenom" type="text" placeholder="prenom" />
+    <input className="text-center mb-4  w-50" onChange={handelChange}  name="prenom" type="text" placeholder="prenom" />
 
-    <input className="text-center mb-4" name="role" onChange={handelChange}  type="text" placeholder="role" />
  
   </div>
+  <input className="text-center mb-4 w-100" name="role" onChange={handelChange}  type="text" placeholder="role" />
 
     <input className="text-center w-100 mb-4"  name="desc" onChange={handelChange}  type="text" placeholder="description " />
 
-<label>Si vous ne connaissez pas votre latitude et votre longitude ce site peut vous aider </label>
-<button className=" bnt-add-artisan ml-2 mb-4">visite site<Link to="https://www.latlong.net/"> </Link></button>
+<label className="text-center">Si vous ne connaissez pas votre latitude et votre longitude ce site peut vous aider </label>
+<button className=" bnt-add-artisan ml-2 mb-4">visite du site<Link to="https://www.latlong.net/"> </Link></button>
+
 <div className="troix-1-input">
   
     <input className="text-center w-50 mb-4"  name="latitude" onChange={handelChange}  type="text" placeholder="lalitude" />
@@ -121,52 +122,44 @@ const [postPicture, setPostPicture] = useState(null);
 
   </div>
 
-    <input className="text-center w-100 mb-4"  name="imageP" onChange={handelChange}  
-        id="file"
-        type="file"
-        onChange={(e) => handlePicture(e)}
-        accept=".jpg, .jpeg, .png" placeholder="image (url) personnel" />
+    <input className="text-center w-100 mb-4"  name="imageP"  placeholder="image personnel" onChange={handelChange}  
+        
+        type="text" />
+        
  
 
  
-    <input  className="text-center w-100 mb-4" name="image1" onChange={handelChange}    type="file"
-        id="file"
-        onChange={(e) => handlePicture(e)}
-        accept=".jpg, .jpeg, .png" placeholder="image(url) 1 de votre atelier" />
+    <input  className="text-center w-100 mb-4" name="image1" onChange={handelChange}  placeholder="image(url) 1 de votre atelier"   type="text"
+        />
 
 
 
-    <input className="text-center w-100 mb-4"  name="image2" onChange={handelChange}    type="file"
-        id="file"
-        onChange={(e) => handlePicture(e)}
-        accept=".jpg, .jpeg, .png" placeholder="image(url) 2 de votre atelier" />
+    <input className="text-center w-100 mb-4"  name="image2" onChange={handelChange}  placeholder="image(url) 2 de votre atelier"  type="text"
+        />
 
  
-    <input className="text-center w-100 mb-4"  name="image3" onChange={handelChange}   type="file"
-        id="file"
-        onChange={(e) => handlePicture(e)}
-        accept=".jpg, .jpeg, .png" placeholder="image(url) 3 de votre atelier" />
+    <input className="text-center w-100 mb-4"  name="image3" onChange={handelChange}  placeholder=" image(url) 3 de votre atelier" type="text"
+       />
 
 
 
-    <input className="text-center w-100  mb-4"  name="image4" onChange={handelChange}    type="file"
-        id="file"
-        onChange={(e) => handlePicture(e)}
-        accept=".jpg, .jpeg, .png" placeholder=" image(url) 4 de votre atelier" />
+    <input className="text-center w-100  mb-4"  name="image4" onChange={handelChange}  placeholder="image(url) 4 de votre atelier"  type="text"
+        />
 
 
 <div className="troix-1-input">
  
-    <input className="text-center mb-4"  name="Ntelf" onChange={handelChange}   type="text" placeholder="N telephone" />
+    <input className="text-center w-50 mb-4"  name="Ntelf" onChange={handelChange}   type="text" placeholder="N telephone" />
 
 
-    <input className="text-center mb-4"  name="adress" onChange={handelChange} type="text" placeholder="adress" />
+    <input className="text-center w-50 mb-4"  name="adress" onChange={handelChange} type="text" placeholder="adress" />
 
 
 
-    <input className="text-center mb-4"  name="gouvernorat" onChange={handelChange}  type="text" placeholder="gouvernorat" />
 
   </div>
+  <input className="text-center w-100 mb-4"  name="gouvernorat" onChange={handelChange}  type="text" placeholder="gouvernorat" />
+
   <button className="bnt-add-artisan" type="submit">  Valider</button>
 </form>
 

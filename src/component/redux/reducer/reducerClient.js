@@ -1,4 +1,4 @@
-import { REACT_APP_DELETE_CLIENT, REACT_APP_GET_CLIENT, REACT_APP_GET_CLIENT_FAILED } from "../action/type";
+import { REACT_APP_ADD_CLIENT,REACT_APP_DELETE_CLIENT, REACT_APP_GET_CLIENT, REACT_APP_GET_CLIENT_FAILED } from "../action/type";
 
 
 const initialState = {
@@ -13,6 +13,11 @@ export const reducerClient=(state =initialState ,action)=>{
             ...state,
             dataClient:payload,
         };
+        case REACT_APP_ADD_CLIENT:
+        return{
+          ...state,
+          dataClient:[...state.dataClient, payload]
+        }
         case  REACT_APP_DELETE_CLIENT:
                 return {
                   ...state,

@@ -1,11 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavbarC from '../view/navbard'
-// import Navbar2 from "../view/navbar2";
-// import Part1Homme from '../view/part-1-homme';
+import { AddClientA} from '../redux/action/actionClient'
 import "../css/contact.css";
 import TopNavbar from "../view/top-navbar";
 import Footer from "../view/footer";
+import { useDispatch } from 'react-redux';
 const Contact = () => {
+const dispatch =useDispatch()
+const [Input,setInput]= useState({
+  nom:"",
+  prenom:"",
+  telephone:"",
+  email:"",
+  image:"",
+  password:""
+})
+const AddClientC=(e)=>{
+  e.preventDefault()
+  dispatch(AddClientA(Input.nom,Input.prenom,Input.telephone,Input.email,Input.image,Input.password))
+}
+
+const  handelChange=(e)=>{
+  
+  const {name,value}= e.target
+  setInput({ ...Input,
+    [name]:value }) 
+    console.log("clienttttttttttt",Input)
+}
+
     return (
         <div  className="container-site   ">
               <TopNavbar />
@@ -23,13 +45,13 @@ const Contact = () => {
     <div className="row">
         <div className="col-lg-6 col-md-6 col col-sm-12">
         <form action=""  id="cont-form">
-        <label htmlFor="pseudo">Pseudo</label>
+        <label >Pseudo</label>
         <br />
         <input
           type="text"
-          name="pseudo"
-          id="pseudo"
-      
+          name="nom"
+         
+      onChange={handelChange}
         />
       
         <br />
@@ -39,7 +61,7 @@ const Contact = () => {
           type="text"
           name="email"
           id="email"
-        
+          onChange={handelChange}
         />
   
         <br />
@@ -49,7 +71,7 @@ const Contact = () => {
           type="password"
           name="password"
           id="password"
-         
+          onChange={handelChange}
         />
        
         <br />
@@ -57,11 +79,13 @@ const Contact = () => {
         <br/>
         
         <textarea
+        name="prenom"
                   type="text"
-                
+                  onChange={handelChange}
                 ></textarea>
        <div className='d-flex mt-4'>
-       <input className='mr-2' type="submit" value="Envoyer" />
+       <input className='mr-2'onClick={AddClientC} type="submit"  value="Envoyer" />
+     
         <input type="submit" value="Annuler" />
        </div>
       

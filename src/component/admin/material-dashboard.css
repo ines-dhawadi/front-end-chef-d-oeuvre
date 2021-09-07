@@ -21957,3 +21957,19 @@
   .all-dash-user{
 background-color: var(--bg-bv);
   }
+
+  .chois-right{
+    
+    padding: 2rem;
+    border-radius: 20px;
+    margin-right: 20%;
+    color: #000000 !important;
+    margin-left: 25%;
+    background-color: #fcb931;
+    width: 50%;
+  }
+
+  .chois-right:hover{
+   background-color: white;
+   border: 1px solid  #fcb931;
+  }

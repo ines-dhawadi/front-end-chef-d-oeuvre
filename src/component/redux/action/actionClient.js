@@ -1,5 +1,5 @@
-import {updtClient,deleteClient,getAllClient} from "../requests/requestClient";
-import {  REACT_APP_UPDATE_CLIENT,REACT_APP_DELETE_CLIENT, REACT_APP_GET_CLIENT, REACT_APP_GET_CLIENT_FAILED } from "./type";
+import {addClient,updtClient,deleteClient,getAllClient} from "../requests/requestClient";
+import { REACT_APP_ADD_CLIENT, REACT_APP_UPDATE_CLIENT,REACT_APP_DELETE_CLIENT, REACT_APP_GET_CLIENT, REACT_APP_GET_CLIENT_FAILED } from "./type";
 
 
 
@@ -16,7 +16,22 @@ export function GetAllClientA(){
         }))
     }
 }
+// add client
+export const AddClientA=()=> async (dispatch)=>{
+try{
+  const res= await addClient ();
+dispatch({
+  type:REACT_APP_ADD_CLIENT,
+  payload :res.data })
 
+
+
+}catch (error){
+  console.log(error);
+}
+
+
+}
  // delete client 
 
 

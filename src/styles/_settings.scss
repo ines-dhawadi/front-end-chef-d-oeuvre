@@ -123,9 +123,12 @@ body{
             box-shadow: 0 0 2px rgba(51, 51, 51, 0.376);
 }
 .all-form-add-artisan-front{
-  background-color: black;
+  //background-color: black;
+margin-left: 25%;
+  border: 1px solid $color-1;
+  width: 50%;
   padding: 10%;
-  border-radius: 20px;
+  border-radius: 20px ;
 }
 
 .bg-top-contact{
@@ -142,9 +145,9 @@ body{
   font-family: $font-3;
   cursor: pointer;
   transition: 0.2s;
-  margin: 0;
+margin-left: 32% !important;
   padding: 10px 20px;
-  cursor: pointer;
+
   font-size: 1.1rem;
   border-radius: 20px 20px 20px 20px;
   &:hover{

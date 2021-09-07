@@ -750,6 +750,10 @@
             padding: 2rem;
             border-radius: 20px;
             margin-right: 20%;
+            color: #000000 !important;
+            &:hover{
+              background-color:  $color-1;
+            }
           }
         }
         #cont-form{

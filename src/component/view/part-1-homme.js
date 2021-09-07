@@ -25,6 +25,28 @@ function Part1Homme(){
 </div>
 
  </div>
+ {/* *******???********** */}
+ <div className="container">
+<div className="row">
+
+<div className="col-md-12 col-sm-12">
+<img className="flot-right" src="/images/image-view/v2.png" alt=""  />
+<div class="custom-shape-divider-bottom-1631056526">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+    </svg>
+</div>
+ </div>
+{/* <div className="col-md-6 col-sm-12"><img src="/images/image-view/v2.png" alt=""  /></div> */}
+</div>
+ </div>
+ <div className="container">
+<div className="row">
+<div className="col-md-6 col-sm-12"></div>
+<div className="col-md-6 col-sm-12"> <img src="/images/image-view/v1.png" alt=""  /></div>
+</div>
+ </div>
+
 {/* ***************** */}
 <div className=" new-part-homme">
   <div className="row">

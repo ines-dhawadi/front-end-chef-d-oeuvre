@@ -39,7 +39,7 @@ function NavbarC(){
                         <div  className="part2-nav par-2-scrol">
                         <Link className="linked--page part2-nav-hover" to="/"  exact activeClassName="active-left-nav">Accueil</Link>
                         <Link className="linked--page part2-nav-hover " to="/localisation"  exact activeClassName="active-left-nav">Localisation </Link>
-                        <Link className="linked--page part2-nav-hover" to="/Chat"  exact  activeClassName="active-left-nav">Discution</Link>
+                        <Link className="linked--page part2-nav-hover" to="/Chat"  exact  activeClassName="active-left-nav">Discussion</Link>
                         <Link className="linked--page part2-nav-hover" to="/Contact"  exact activeClassName="active-left-nav">Contact</Link>
                        
                         </div>

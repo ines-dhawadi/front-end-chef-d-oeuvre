@@ -1,78 +1,177 @@
-import React from 'react'
-import "../css/cardartisan.css";
-import {useEffect} from "react";
-import {useSelector,useDispatch} from "react-redux"
-import { deleteArtisanB ,allArtisan} from "../redux/action/actionArtisan"
-import  UpdateArtisan from "../view/updateArtisan"
+import { Button, Form,Modal } from "react-bootstrap";
+import { Link  } from "react-router-dom";
+import React  from 'react';
+import { useState } from "react";
+import {AddArtisanAdmin} from "../redux/action/actionArtisan";
+import { useSelector,useDispatch } from 'react-redux';
+import  "../../styles/index.scss";
 
-const GetArtisan=()=>{
-    const artisan = useSelector(state =>state.artisanStore.datas)
-    
-    const dispatch = useDispatch()
-  useEffect(()=>{
-    dispatch( allArtisan());
-  },[]);
-  console.log("produit", artisan)
-  
-  
 
-  //Delete ARTISAN
-  const deleteARTISAN =(id)=>{
-    dispatch (deleteArtisanB(id) )
-    console.log(deleteArtisanB(id))
+function AddArtisanFront(){
+
+  //dispatch function
+   const dispatch = useDispatch()
+
+// récupération val input
+
+const [Input,setInput] = useState(
+  {
+    nom:"",
+    prenom:"",
+    role:"",
+    desc:"",
+    latitude:"",
+    longitude:"",
+    imageP:"",
+    image1:"",
+    image2:"",
+    image3:"",
+    image4:"",
+    Ntelf:"",
+    adress:"",
+    gouvernorat:""
+
   }
-  
-  
-    return(
-    <div id="card-artisan">
+)
+const handelChange=(e)=>{
+  const {name,value}= e.target 
+  setInput({
+    ...Input,
+    [name]: value
+  });
+  }
+// *************** add to db
 
-{artisan.map((el,key)=>(
+  const handelSubmit=(e)=>{
+   e.preventDefault()
+    dispatch( AddArtisanAdmin(Input.nom,Input.prenom, Input.role, Input.desc,Input.latitude,Input.longitude, Input.imageP,Input.image1,Input.image2,Input.image3,Input.image4,Input.Ntelf,Input.adress,Input.gouvernorat))
+   
+    console.log('val input', Input)
+  }
+
+  
+//*************add to file json */
+// const handleSubmit=(e)=>{
+// e.preventDefault()
+// console.log('input',input)
+
+// axios.post('https://movies-762da-default-rtdb.firebaseio.com/posts.json', input)
+// .then((response)=> console.log(response))
+// .then(response=> window.location.reload())
+// .catch((error)=> console.log('error'))
+
+
+// }
+const [show, setShow] = useState(false);
+//const [postPicture, setPostPicture] = useState(null);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  //const [file, setFile] = useState();
+  
+  // const handlePicture = (e) => {
+
+  //   setPostPicture(URL.createObjectURL(e.target.files[0]));
+  //  // send to db
+  //   setFile(e.target.files[0]);
+    
+   
+  // }; 
+
+
+  return(
+    <div>
+{/* ********************modal********************* */}
+
+     {/* <div >
+     <Button variant="primary" onClick={handleShow}>
+      Ajouter un nouveau produit
+      </Button>
+
+      <Modal  show={show} onHide={handleClose}>
+        <Modal.Header className="modal-content-add" closeButton>
+          <Modal.Title>Vous pouvez Ajouter un nouveau produit
+              
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="modal-content-add"> */}
+{/* ************************************* */}
 <div>
 
-<div class="card" key={key}>
-  <div class="">
-{/* <img className="card-logo " src='images/logo.webp'/> */}
-<img class="img-avatar" src={el.imageP} alt="" />
-  </div>
-  <div class="card-text">
-    <div class="portada" >
+<form onSubmit={handelSubmit}  className=" all-form-add-artisan-front">
+<div className="troix-1-input">
+
+    {/* <Form.Label>Titre de votre film</Form.Label> */}
+    <input  className="text-center mb-4"   onChange={handelChange}  name="nom"  type="text" placeholder="nom" />
+
+    <input className="text-center mb-4" onChange={handelChange}  name="prenom" type="text" placeholder="prenom" />
+
+    <input className="text-center mb-4" name="role" onChange={handelChange}  type="text" placeholder="role" />
  
-    <img class="portada"  src={el.image1}/>
+  </div>
+
+    <input className="text-center w-100 mb-4"  name="desc" onChange={handelChange}  type="text" placeholder="description " />
+
+<label>Si vous ne connaissez pas votre latitude et votre longitude ce site peut vous aider </label>
+<button className=" bnt-add-artisan ml-2 mb-4">visite site<Link to="https://www.latlong.net/"> </Link></button>
+<div className="troix-1-input">
+  
+    <input className="text-center w-50 mb-4"  name="latitude" onChange={handelChange}  type="text" placeholder="lalitude" />
+
+    <input  className="text-center w-50 mb-4"  name="longitude" onChange={handelChange}  type="text" placeholder="longitude" />
+
+  </div>
+
+    <input className="text-center w-100 mb-4"  name="imageP"  placeholder="image personnel" onChange={handelChange}  
+        
+        type="text" />
+        
+ 
+
+ 
+    <input  className="text-center w-100 mb-4" name="image1" onChange={handelChange}  placeholder="image 1 de votre atelier"   type="text"
+        />
+
+
+
+    <input className="text-center w-100 mb-4"  name="image2" onChange={handelChange}  placeholder="image 2 de votre atelier"  type="text"
+        />
+
+ 
+    <input className="text-center w-100 mb-4"  name="image3" onChange={handelChange}  placeholder="image 3 de votre atelier" type="text"
+       />
+
+
+
+    <input className="text-center w-100  mb-4"  name="image4" onChange={handelChange}  placeholder="image 4 de votre atelier"  type="text"
+        />
+
+
+<div className="troix-1-input">
+ 
+    <input className="text-center mb-4"  name="Ntelf" onChange={handelChange}   type="text" placeholder="N telephone" />
+
+
+    <input className="text-center mb-4"  name="adress" onChange={handelChange} type="text" placeholder="adress" />
+
+
+
+    <input className="text-center mb-4"  name="gouvernorat" onChange={handelChange}  type="text" placeholder="gouvernorat" />
+
+  </div>
+  <button className="bnt-add-artisan" type="submit">  Valider</button>
+</form>
+
+
+</div>
+{/* ********************************* */}
+        {/* </Modal.Body>
+       
+      </Modal>
     </div>
-    <div class="title-total">   
-      <div class="title">{el.role}</div>
-      <h2>{el.non} {el.prenom}</h2>
-  
-  <div class="desc">{el.desc}</div>
-  <div class="actions">
-    <button><i class="far fa-heart"></i></button>
-    <button onClick={() => deleteARTISAN(el._id)}><i class="far fa-trash-alt"></i> </button>
-
-< UpdateArtisan id={el._id}  el={el}/>
-
-  
-    
-    {/* <button><i class="far fa-envelope"></i></button>
-    <button><i class="fas fa-user-friends"></i></button> */}
-  </div></div>
- 
-  </div>
-  
- 
-  
-</div>
+  */}
 
 
-  
-</div>
-
-
-
-))}
-
-{/* END CARD */}
-
-
+{/* ******************** END modal********************* */}
 
 
     </div>
@@ -80,157 +179,4 @@ const GetArtisan=()=>{
 
  }
 
-export default  GetArtisan
-
-
-
-//get one publication controller
-getPublicationById:async(req,res)=>{
-  try {
-    const publication = await PUBLICATION.findById(req.params.id);
-    res.json(publication);
-}
-catch (error) {
-    console.error(error.message);
-    res.status(500).send("server error");
-  }
-},
-// get  publication by id action 
-
-export const getPubById=(id)=> async (dispatch)=> {
-try{
-const res = await axios.get(http://localhost:4000/app/publication/getPublicationById/${id})
-dispatch({
-type:"GET_PUBID_SUCCEDED",
-payload:res.data 
-
-})
-console.log('getPubById',res.data)
-}
-catch (error) {
-        console.log(error);
-       }
-}
-// reducer
-case "GET_PUBID_SUCCEDED":
-
-  return {
-    ...state,
-    datas: payload,
-    loading: false
-  };
-import React, {useEffect} from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { getPub} from '../redux/actions/publicationAction'
-import { getPubById} from '../redux/actions/publicationAction'
-import PubById from './publication'
-import {Card,Button} from 'react-bootstrap'
-import { Link } from "react-router-dom";
-
-export default function BlogCard() {
-const datas = useSelector(state => state.pubReducer.datas)
-const loading = useSelector(state => state.pubReducer.loading)
-const dispatch = useDispatch()
-
-
-useEffect(() => {
-dispatch(getPub());
-},[]);
-console.log(datas, "did we ?");
-
-const getItem =(id)=>{
-dispatch (getPubById(id) )
-
-}
-return (
-<div>
-     <div className="d-flex justify-content-between flex-wrap mb-3 blog">
-{datas.map(el => (<div>
-  <Card style={{ width: '20rem' }}>
-<Card.Img variant="top" src={el.image} style={{ height: '16rem' }}/>
-<Card.Body>
-<Card.Title><a href="#">{el.titre}</a></Card.Title>
-
-<Card.Text>
-<p className="text-muted">Par {el.auteur}</p><br/>
-<p>{el.texte}</p><br/>
-
-</Card.Text>
-<Button variant="primary">Lire la suite</Button>
-{/* <PubById id={el._id} /> */}
-<Link to={/PubById/${el._id}}>
-<button
-                type='button'
-                className='btn btn-danger btn-sm'
-                onClick={() => getItem(el._id)}
-
-            >
-
-                get
-</button></Link>
-
-</Card.Body>
-</Card>
-
-
-  </div>
-))}
-</div>
-
-</div>
-)
-}
-Mohamed Mansouri — Aujourd’hui à 16:57
-import React, {useEffect} from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { getPubById} from "../redux/actions/publicationAction"
-import{Card,Button} from 'react-bootstrap'
-
-
-export default function PubById({id}) {
-
-
-const datas = useSelector(state => state.pubReducer.datas)
-const loading = useSelector(state => state.pubReducer.loading)
-const dispatch = useDispatch()
-
-
-useEffect(() => {
-dispatch(getPubById( id));
-},[]);
-console.log(datas, "pub by id");
-
-
-
-
-
-
-return (
-<div>
-    {/* <h1 className="text-center">Liste des datas</h1> /}
-
-<div className="d-flex desc text-center justify-content-between flex-wrap ">
-
-  <Card style={{ width: '18rem' }}>
-{/ <Card.Img variant="top" src={el.image} style={{ height: '16rem' }}/> */}
-<Card.Body>
-<Card.Title>{datas.date}</Card.Title>
-
-<Card.Text>
-
-{datas.titre}<br/>
-{datas.texte}<br/>
-{datas.auteur}
-</Card.Text>
-
-</Card.Body>
-</Card>
-
-
-</div>
-
-</div>
-)
-}
-message.txt
-4 Ko
+export default AddArtisanFront

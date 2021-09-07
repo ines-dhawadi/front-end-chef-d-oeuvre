@@ -44,7 +44,7 @@ const  GestMap=()=> {
       <div className="row all-local">
         <div className="col-md-4 col-sm-12">
 {/* *************** */}
-<div className="col-md-3 col-sm-6 ">
+<div className="col-md-3 col-sm-6  carousel-desc">
 {/* *******carosel******** */}
 
 {artisan.map((el,key)=>(
@@ -78,16 +78,17 @@ const  GestMap=()=> {
 </Carousel>
 
 <div className='part-desc-local'> 
-  <h4 className="nom-prenom"> nom et prénom : {el.nom}     {el.prenom}</h4>
+<h4 className="nom-prenom ml-5 "><i class="fad fa-car-garage ml-5 mr-2"></i> {el.role}</h4>
 
-<h4 className="nom-prenom"> spécialité : {el.role}</h4>
+  <h4 className="nom-prenom"> <i class="fas fa-user ml-2 mr-3"></i>  {el.nom}     {el.prenom}</h4>
+<h4><i class="fas fa-map-marker-alt ml-3 mr-2"></i> {el.gouvernorat}</h4>
 
 {/* <h6  className="nom-prenom">{el.desc}fffffffffffffffffff <br></br> ffffffffffff</h6> */}
 <div>
                       {/* <span><Rater id="retiong" total={10} rating="2" />  &nbsp;</span>
                       <span>2</span> &nbsp; &nbsp; 
                       <spann>Metascore</spann> */}
-                 <i class="fas fa-star d-flex "> <h4 class="numb ">5</h4>  </i> 
+           <h5> <i class="fas fa-phone ml-3 mr-2"> </i> {el.Ntelf} </h5>     
                    </div>
                   
  </div>
@@ -104,9 +105,9 @@ const  GestMap=()=> {
 {/* *************** */}
 
         </div>
-        <div className="col-md-8 col-sm-12 map-all  position-sticky ">
+        <div className="col-md-9 col-sm-12 map-all  position-sticky ">
         <div>
-      <MapContainer center={[36.806496, 10.181532]} zoom={6.5} scrollWheelZoom={true}>
+      <MapContainer className="w-75" center={[36.806496, 10.181532]} zoom={6.5} scrollWheelZoom={true}>
   <TileLayer
     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     url={"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}
