@@ -1,7 +1,11 @@
 :root{
   --color-bas:#f36600
 }
-
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 
 .far{
   color: var(--color-bas);

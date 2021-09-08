@@ -1,5 +1,7 @@
 :root{
-    --color-bas:#f36600
+    --color-bas:#f36600;
+    --color-on:#fcb931;
+
   }
   
   
@@ -64,6 +66,16 @@
 
 
   }
+  #map-all-G {
+  
+    margin-left: 44.4% !important; 
+    height: 100%;
+   top: 70px;;
+   position: sticky; 
+   margin-top: -142% !important;
+   
+   position: relative;
+  }
   /* .mart-1-p-map{
    border: 2px solid white;
   }
@@ -76,7 +88,8 @@
   }
 
  .part-desc-local{
-  background-color: rgb(238, 232, 232);
+  background-color: #f2f8f9;
+  box-shadow:  2px 2px 8px 2px rgb(233, 230, 230);
   border-radius: 20px 20px 20px 20px ;
 margin-right: 5% !important;
 margin-left: 15%;
@@ -165,4 +178,21 @@ border: 1px solid #333;
  
   position: relative;
  
+}
+
+#icon-location{
+  color: var( --color-on) !important;
+}
+.all-top-part-locl{
+  display: block;
+box-shadow:  8px 4px 8px 8px rgb(233, 230, 230);
+  max-width: 382px;
+  max-height: 250px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+margin-left: 32%;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
 }

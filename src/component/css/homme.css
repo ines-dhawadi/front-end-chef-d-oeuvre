@@ -121,10 +121,17 @@ text-align: left;
     background-color: var(--color-on);
     color: #000000;
   }
-  .fas .fab{
-    color: var( --color-on);
+   .fas .fab{
+    color: var( --color-on) !important;
 }
-
+#far{
+  color: black !important;
+  margin-left: -1.3%;
+  padding-right: 3%;
+}
+#far:hover{
+  color: var(--color-on)!important;
+}
 .fas:hover{
   color: var(--color-on) !important;
 }
@@ -135,7 +142,7 @@ text-align: left;
   }
 
   .img-local{
-  margin-top: -10% ;
+  margin-top: 3% ;
   } 
 
   .blok-2-objectif{
@@ -262,7 +269,8 @@ p {
 }
 p.small {
   font-size: 14px;
-  padding-bottom: 5% !important;
+
+  padding-bottom: 2%;
 }
 
 .go-corner {
@@ -286,11 +294,11 @@ p.small {
   font-family: courier, sans;
 }
 
-.card1 {
+.card11 {
   display: block;
   position: relative;
   max-width: 262px;
-  max-height: 130px;
+  max-height: 150px;
   background-color: #f2f8f9;
   border-radius: 4px;
   padding: 32px 24px;
@@ -298,8 +306,10 @@ p.small {
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
+  text-align: center;
+  
 }
-.card1:before {
+.card11:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -314,20 +324,26 @@ p.small {
   transition: transform 0.25s ease-out;
  
 }
-.card1:hover:before {
+.card11:hover:before {
   transform: scale(21);
 }
 
-.card1:hover p {
+.card11:hover p {
   transition: all 0.3s ease-out;
   color: rgba(255, 255, 255, 0.8);
 }
-.card1:hover h3 {
+.card11:hover h3 {
   transition: all 0.3s ease-out;
   color: white !important;
 }
 
-.card1 h3 {
+.card11 h3 {
 
   color: #fcb931 !important;
 }
+
+.parg-homme-problm{
+  margin-left: 10% !important;
+  margin-top: 30% !important;
+}
+

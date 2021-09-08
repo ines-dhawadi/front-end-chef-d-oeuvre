@@ -8,11 +8,13 @@ import  "../css/localisation.css";
 import Rater from 'react-rater';
 import 'react-rater/lib/react-rater.css';
 import { Link } from "react-router-dom";
-
+import TopNavbar from "../view/top-navbar";
+import NavbarC from "../view/navbard";
+import Footer  from "../view/footer";
 //import { useHistory} from 'react-router-dom';
 
 
-const  GestMap=()=> {
+const BenArous=()=> {
 
   // const marqicon = L.Icon({
   //   Url : "https://cdn.pixabay.com/photo/2012/04/16/11/39/plumber-35611_960_720.png",
@@ -38,10 +40,19 @@ const  GestMap=()=> {
     dispatch(getArtisanById(id))
   }
   return(
-    <div>
-<div className="all-top-part-locl"><p className="text-center"> <i id="icon-location" class="fas fa-3x fa-map-marked-alt"></i> <br></br> <br></br>Partager votre profil, expérience <br></br>
-et localisation sur notre map, afin que vous<br></br>
-soyez plus accessible et plus connu.
+    
+        <div className="container-site  ">
+<TopNavbar />
+
+<div className="bg-top-contact">
+<NavbarC /> 
+</div>
+<div class="custom-shape-divider-top-1631053512">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+<div className="all-top-part-locl"><p className="text-center"> <i id="icon-location" class="fas fa-3x fa-map-marked-alt"></i> <br></br> <br></br>Gouvernorat de ben arous
 <br></br><br></br>
 <i class="fas fa-arrow-down"></i></p></div>
     <div className="container">
@@ -51,7 +62,7 @@ soyez plus accessible et plus connu.
 <div className="col-md-3 col-sm-6  carousel-desc">
 {/* *******carosel******** */}
 {/* .filter(el=>el.gouvernorat==="Tunis") */}
-{artisan.map((el,key)=>(
+{artisan.filter(el=>el.gouvernorat==="ben arous").map((el,key)=>(
   <div className="mart-1-p-map">
   <div className="d-flex">
   <Carousel key={key} className="mb-3">
@@ -111,7 +122,7 @@ soyez plus accessible et plus connu.
         </div>
         <div className="col-md-9 col-sm-12 map-all  position-sticky ">
         <div>
-      <MapContainer className="w-75" center={[36.806496, 10.181532]} zoom={6.5} scrollWheelZoom={true}>
+      <MapContainer className="w-75" center={[36.743500, 10.231976]} zoom={12} scrollWheelZoom={true}>
   <TileLayer
     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     url={"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}
@@ -147,9 +158,9 @@ soyez plus accessible et plus connu.
     
 </div>
 
-  
+<Footer />
     </div> )
 
  }
 
-export default GestMap
+export default BenArous
