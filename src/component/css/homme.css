@@ -134,10 +134,9 @@ text-align: left;
     padding: 0%;
   }
 
-  /* .img-local{
-    min-height: 50%;
-  width: 100%;
-  } */
+  .img-local{
+  margin-top: -10% ;
+  } 
 
   .blok-2-objectif{
     margin-top: 7%;
@@ -207,7 +206,7 @@ text-align: left;
 
   .custom-shape-divider-bottom-1631056526 {
     position: absolute;
-    bottom: 0;
+  
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -220,8 +219,115 @@ text-align: left;
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
+  
 }
 
 .custom-shape-divider-bottom-1631056526 .shape-fill {
     fill: #000000;
+  
+}
+
+.img-homme-QSM{
+  margin-left: 2.5%;
+  margin-bottom: -21.3%;
+}
+
+
+
+
+.container-card-homme {
+  width: 100%;
+  height: 100%;
+  margin: 30% 0 15% 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h3 {
+  color: #262626;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+}
+p.small {
+  font-size: 14px;
+  padding-bottom: 5% !important;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #fcb931;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.card1 {
+  display: block;
+  position: relative;
+  max-width: 262px;
+  max-height: 130px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.card1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #fcb931;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+ 
+}
+.card1:hover:before {
+  transform: scale(21);
+}
+
+.card1:hover p {
+  transition: all 0.3s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+.card1:hover h3 {
+  transition: all 0.3s ease-out;
+  color: white !important;
+}
+
+.card1 h3 {
+
+  color: #fcb931 !important;
 }
