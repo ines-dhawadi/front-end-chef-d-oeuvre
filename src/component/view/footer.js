@@ -33,7 +33,7 @@ function Footer() {
 
 </div>
 {/* ****2***** */}
-<div className="col-md-5">
+<div className="col-md-5 col-sm-12">
 
 <div id="nav_menu-2" class="widget_nav_menu masonry-item  sm-width widget ft-widget mb-50 masonry-brick" ><h2 class="widget-title"><span>Liens utiles</span></h2>
 <div class="menu-movie-category-container">

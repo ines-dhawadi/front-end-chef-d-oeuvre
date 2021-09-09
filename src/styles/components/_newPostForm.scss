@@ -1,9 +1,19 @@
+.left-nav-container{
+  @media screen and (max-width:320px){
+   display: none;
+    
+  }
+}
 .post-container {
   margin: 0 auto 0;
   padding: 16px 40px;
   border-radius: 20px;
   position: relative;
   background: $color-4;
+@media screen and (max-width:320px){
+  width: 82%;
+  
+}
 
   i {
     font-size: 1.5rem;

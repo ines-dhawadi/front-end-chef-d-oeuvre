@@ -323,6 +323,18 @@ iframe{
 .widget-title{
   font-size: 1rem !important;
 }
+.section-en-footer{
+  display: none;
+}
+#nav_menu-2{
+ margin-left: 0% !important;
+}
      }
 
-    
+
+/*  ************footer 1024************ */
+    @media only screen and(max-width:1023){
+      #nav_menu-2{
+   margin-left: 15px !important;
+       }
+    }
