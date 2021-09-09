@@ -60,19 +60,19 @@
    height: 100%;
   top: 70px;;
   position: sticky; 
-  margin-top: -242%;
+  margin-top: -315%;
   
   position: relative;
 
 
   }
-  #map-all-G {
+  .map-all-G {
   
     margin-left: 44.4% !important; 
     height: 100%;
-   top: 70px;;
-   position: sticky; 
-   margin-top: -142% !important;
+   top: 70px;
+   position: sticky !important; 
+   margin-top: -34rem !important;
    
    position: relative;
   }

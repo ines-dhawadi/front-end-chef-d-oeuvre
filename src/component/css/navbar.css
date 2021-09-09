@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1082px) { 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 :root{
@@ -130,6 +131,7 @@ color: white;
   .top-navb{
     background: url('https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
    
+   
   }
   /* .titre-1-home{
      background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75))  
@@ -187,6 +189,9 @@ margin-bottom: 2rem;
     
  
   }
+  .nav-media{
+    display: none;
+  }
   .navbar-1.colorChange{
      /* background: url('https://demo.astemplates.com/joomla-templates/002039/templates/as002039/images/bg.breadcrumb.png') ;
    #000000 */
@@ -239,3 +244,85 @@ justify-content: space-around;
       }
     }
   
+
+
+  }
+
+  /*** media  822px*/ 
+     @media only screen and (max-width: 1081px){
+
+
+   
+        .top-navb{
+          display: none;
+        }
+   
+       .navbar-1{
+          display: none;
+        }
+.nav-media{
+  display: block;
+  color: white;
+  background-color: black;
+  width: 100%;
+  padding: 5%;
+}
+
+.custom-shape-divider-top-1630758667{
+  display: none;
+}
+
+.img-homme-top{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+}
+.custom-shape-divider-bottom-1631056526{
+  display: none;
+}
+.parg-new-part-homme{
+  color: black !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  margin-top: 10% !important;
+}
+
+.custom-shape-divider-bottom-1630767245 {
+  display: none;
+}
+.custom-shape-divider-top-1630769194{
+  display: none;
+}
+.part2-h{
+ display: flex;
+ flex-direction: column;
+ justify-content: center !important;
+}
+
+.bnt-new-part-homme{
+  margin-top: -20% !important;
+}
+.form-map-contact{
+  margin-top: 5%;
+  display: flex;
+ 
+  background-color: white;
+}
+iframe{
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+}
+
+#cont-form input{
+  width: 70% !important;
+}
+.widget-title{
+  font-size: 1rem !important;
+}
+     }
+
+    

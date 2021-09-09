@@ -18265,7 +18265,7 @@
     background-color: #999;
   }
   
-  @media all and (max-width: 991px) {
+  /* @media all and (max-width: 991px) {
   
     [class*="navbar-expand-"]>.container,
     [class*="navbar-expand-"]>.container-fluid {
@@ -18484,7 +18484,7 @@
     .navbar-form .bmd-form-group {
       width: 100%;
     }
-  }
+  } */
   
   @media screen and (max-width: 991px) {
     .presentation-page .section-components .components-macbook {
@@ -18934,7 +18934,7 @@
       opacity: 1;
     }
   
-    .navbar-toggler .icon-bar {
+    /* .navbar-toggler .icon-bar {
       display: block;
       position: relative;
       background: #555 !important;
@@ -18949,7 +18949,7 @@
       margin-top: 4px;
       width: 40px;
       height: 40px;
-    }
+    } */
   
     .bar1,
     .bar2,
@@ -20343,7 +20343,7 @@
     background-color: rgba(180, 180, 180, 0.1);
   }
   
-  .dark-edition .navbar:not([class*="bg-"]) .navbar-brand,
+  /* .dark-edition .navbar:not([class*="bg-"]) .navbar-brand,
   .dark-edition .navbar:not([class*="bg-"]) .collapse .navbar-nav .nav-item .nav-link {
     color: #a9afbbd1;
     letter-spacing: 5px;
@@ -21944,7 +21944,7 @@
     100% {
       transform: scale(0.75);
     }
-  }
+  } */
   
   /*# sourceMappingURL=dashboard-free.css.map */
 
@@ -21972,4 +21972,13 @@ background-color: var(--bg-bv);
   .chois-right:hover{
    background-color: white;
    border: 1px solid  #fcb931;
+  }
+
+  .chois-left-bnt{
+    background-color: white;  
+    color: #000000 !important;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px 20px;
+   margin-left: -10%;
+ 
   }

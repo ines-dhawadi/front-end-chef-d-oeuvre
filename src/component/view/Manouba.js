@@ -120,7 +120,7 @@ const Manouba=()=> {
 {/* *************** */}
 
         </div>
-        <div className="col-md-9 col-sm-12 map-all  position-sticky ">
+        <div className="col-md-9 col-sm-12 map-all-G  position-sticky ">
         <div>
       <MapContainer className="w-75" center={[36.805809, 10.088530]} zoom={12} scrollWheelZoom={true}>
   <TileLayer

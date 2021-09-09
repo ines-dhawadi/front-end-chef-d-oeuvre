@@ -21,7 +21,7 @@ function Homme(){
     </svg>
 </div>
 <div>
-<img className="img-homme-top" src='/images/image-view/0.png' alt=""/>
+<img className="img-homme-top img-fluid" src='/images/image-view/0.png' alt=""/>
 </div>
 {/* <h1 className="titre-1-home">GUIDE ME</h1> */}
 <Part1Homme />

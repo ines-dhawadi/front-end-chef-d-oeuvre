@@ -46,9 +46,9 @@ const Chat = () => {
             {/* <Trends />*/}
        
         {uid && 
-        <div className="chois-right">
+        <div className="chois-right-chat">
         <p>Vous disposez d'un lave-auto ou  atelier mécanique ou électrique et vous souhaitez attirer de nombreux clients, vous pouvez vous inscrire chez nous</p>
-        <button className="bnt-add-artisan mb-5">   <Link to="/Choix" className="chois-left"> inscrire chez nous </Link> </button> 
+        <button className="bnt-add-artisan mb-5">   <Link to="/Choix" className="chois-left-bnt"> inscrire chez nous </Link> </button> 
         </div>
         } 
            

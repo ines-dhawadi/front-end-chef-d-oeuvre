@@ -26,3 +26,22 @@
     position: relative;
    
 }
+
+
+
+.chois-right-chat{
+    
+    padding: 5%;
+    border-radius: 20px;
+   
+    color: #000000 !important;
+   margin-bottom: 5%;
+    background-color: #fcb931 !important;
+    width: 94%;
+  }
+
+  .chois-right-chat:hover{
+   background-color: white;
+   border: 1px solid  #fcb931;
+   color: #000000 !important;
+  }

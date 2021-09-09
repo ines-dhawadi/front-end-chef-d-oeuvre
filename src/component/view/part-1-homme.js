@@ -17,7 +17,7 @@ function Part1Homme(){
   < div className="alll-part-1-homme">
   <h1  className="big-title text-left">Explorez les environs</h1>
 <div className="row  part2-h"> 
-<div className="col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/tunus.png" aly="" /> <figcaption> Gouvernorat de Tunis</figcaption> <Link to="/Tunis"><button className="bnt-voir">voir</button></Link> </figure>
+<div className="col-lg-6 col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/tunus.png" aly="" /> <figcaption> Gouvernorat de Tunis</figcaption> <Link to="/Tunis"><button className="bnt-voir">voir</button></Link> </figure>
  </div>
 <div className="col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/ariana.jpeg" aly="" /> <figcaption> Gouvernorat de Ariana</figcaption> <Link to="/Ariana"><button className="bnt-voir">voir</button> </Link></figure> </div>
 <div className="col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/manouba.jpg" aly="" /> <figcaption> Gouvernorat de Manouba</figcaption> <Link to="/Manouba"><button className="bnt-voir">voir</button></Link></figure> </div>
@@ -32,7 +32,7 @@ function Part1Homme(){
 <div className="col-md-12 col-sm-12"> 
 <div className="row">
 <div className="col-md-5 col-sm-12"> <p className="parg-homme-problm text-center">Guide Me, vous accompagne pendant vos déplacements longs et courts, pour des pannes mécaniques simples et compliquées. N'hésitez pas à nous contacter.</p></div>
-<div className="col-md-7 col-sm-12 "><img className="img-homme-QSM" src="/images/image-view/v2.png" alt=""  /></div>
+<div className="col-md-7 col-sm-12 "><img className="img-homme-QSM img-fluid" src="/images/image-view/v2.png" alt=""  /></div>
 </div>
 <div class="custom-shape-divider-bottom-1631056526">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -108,7 +108,7 @@ Partager votre profil, expérience <br></br> et localisation sur notre map, afin
 {/* ***************** */}
 <div className="row mt-5 part-all-objectif pb-5"> 
 <h1 className="big-title">Nos objectifs  </h1>
-<div className="col-md-6 col-sm-6"> <img className="img-local" src="/images/image-view/img-phone.png" aly="" />  </div>
+<div className="col-md-6 col-sm-6"> <img className="img-local img-fluid" src="/images/image-view/img-phone.png" aly="" />  </div>
 <div className="col-md-6 col-sm-6  blok-2-objectif">
   <div className="d-flex"><i id="far" class=" far fa-comments fa-3x  mr-1 "></i><p className="blokobjectif ml-2">Aider les clients à trouver de l'information pour leurs questions et des solutions, pour leurs problèmes mécaniques.</p></div><br></br>
   <div className="d-flex"><i class="fas fa-cogs fa-3x mr-3"></i><p className="blokobjectif">Notre plateforme vous permet de partager  votre expérience, si vous avez <br></br> la réponsed'une question et/ou  <br></br>la solution pour une panne.</p></div><br></br>

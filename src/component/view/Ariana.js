@@ -120,7 +120,7 @@ const Ariana=()=> {
 {/* *************** */}
 
         </div>
-        <div className="col-md-9 col-sm-12 map-all  position-sticky ">
+        <div className="col-md-9 col-sm-12 map-all-G  position-sticky ">
         <div>
       <MapContainer className="w-75" center={[36.858898, 10.196500]} zoom={12} scrollWheelZoom={true}>
   <TileLayer

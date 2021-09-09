@@ -120,7 +120,7 @@ const Tunis=()=> {
 {/* *************** */}
 
         </div>
-        <div ID="map-all-G" className="col-md-9 col-sm-12  position-sticky ">
+        <div className="col-md-9 col-sm-12 map-all-G  position-sticky ">
         <div>
       <MapContainer className="w-75" center={[36.806496, 10.181532]} zoom={12} scrollWheelZoom={true}>
   <TileLayer
