@@ -15223,9 +15223,9 @@
   }
   
   .sidebar .logo p {
-    float: left;
-    font-size: 20px;
-   margin-left: 1rem, 1rem;
+    
+
+
     color: #fff;
     line-height: 20px;
   }
@@ -21981,4 +21981,15 @@ background-color: var(--bg-bv);
     padding: 10px 20px;
    margin-left: -10%;
  
+  }
+
+ .fa-circle  {
+    color: rgb(30, 116, 4)!important;
+    background-color: rgb(30, 116, 4)!important;
+    border-radius: 50%;
+  }
+  .fa-circle:hover  {
+    color: rgb(30, 116, 4)!important;
+    background-color: rgb(30, 116, 4)!important;
+  
   }

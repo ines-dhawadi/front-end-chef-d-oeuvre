@@ -48,7 +48,7 @@ function Routes() {
 
 
 {/* DASHBOARD ADLIN */}
-<Route path="/DASHBOARD-ADLIN" exact component={SignInAdmin} />
+<Route path="/DASHBOARD-ADMIN" exact component={SignInAdmin} />
 
 {/* pages chat  */}
 

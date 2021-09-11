@@ -49,18 +49,7 @@ const handelChange=(e)=>{
   }
 
   
-//*************add to file json */
-// const handleSubmit=(e)=>{
-// e.preventDefault()
-// console.log('input',input)
 
-// axios.post('https://movies-762da-default-rtdb.firebaseio.com/posts.json', input)
-// .then((response)=> console.log(response))
-// .then(response=> window.location.reload())
-// .catch((error)=> console.log('error'))
-
-
-// }
 const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -77,82 +66,76 @@ const [show, setShow] = useState(false);
      
 
       <Modal  show={show} onHide={handleClose}>
-        <Modal.Header className="modal-content-add" closeButton>
-          <Modal.Title>Vous pouvez Ajouter un nouveau produit
+        <Modal.Header className="" closeButton>
+          <Modal.Title>update a craftswoman
               
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body className="modal-content-add">
+        <Modal.Body className="">
 {/* ************************************* */}
 <div>
 
-<Form onSubmit={handelSubmit}  className="">
+<form onSubmit={handelSubmit}  className="">
 <div className="troix-1-input">
-<Form.Group controlId="formGroupPassword" className="ml-2">
-    {/* <Form.Label>Titre de votre film</Form.Label> */}
-    <Form.Control  className="text-center"   onChange={handelChange}  name="nom" defaultValue={el.nom}   type="text" placeholder="nom" />
-    </Form.Group>
+
+    <input  className="text-center w-50 mb-3"   onChange={handelChange}  name="nom" defaultValue={el.nom}   type="text" placeholder="nom" />
+  
 
 
-  <Form.Group controlId="formGroupEmail">
-    {/* <Form.Label>Langue de votre film</Form.Label> */}
-    <Form.Control className="text-center" onChange={handelChange}  name="prenom" defaultValue={el.prenom}  type="text" placeholder="prenom" />
-  </Form.Group>
+    <input  className="text-center w-50 mb-3" onChange={handelChange}  name="prenom" defaultValue={el.prenom}  type="text" placeholder="prenom" />
+ 
 
 
-  <Form.Group controlId="formGroupPassword">
-    {/* <Form.Label>Acteur  de votre film</Form.Label> */}
-    <Form.Control className="text-center" name="role"  defaultValue={el.role} onChange={handelChange}  type="text" placeholder="role" />
-  </Form.Group>
+  
+   
+ 
   </div>
-  <Form.Group controlId="formGroupPassword">
-    <Form.Control className="text-center"  name="desc" defaultValue={el.desc}  onChange={handelChange}  type="text" placeholder="description " />
-  </Form.Group>
+  
+
+    <input  className="text-center w-100 mb-3"  name="desc" defaultValue={el.desc}  onChange={handelChange}  type="text" placeholder="description " />
+
 
 <div className="troix-1-input">
-  <Form.Group controlId="formGroupPassword">
-    <Form.Control className="text-center"  name="latitude" defaultValue={el.latitude}  onChange={handelChange}  type="text" placeholder="lalitude" />
-  </Form.Group>
 
-  <Form.Group controlId="formGroupPassword">
-    <Form.Control  className="text-center"  name="longitude" defaultValue={el.longitude}  onChange={handelChange}  type="text" placeholder="longitude" />
-  </Form.Group>
+    <input  className="text-center w-50 mb-3"  name="latitude" defaultValue={el.latitude}  onChange={handelChange}  type="text" placeholder="lalitude" />
+
+
+    <input   className="text-center w-50 mb-3"  name="longitude" defaultValue={el.longitude}  onChange={handelChange}  type="text" placeholder="longitude" />
+
   </div>
-  <Form.Group controlId="formGroupPassword">
-    <Form.Control className="text-center"  name="imageP" defaultValue={el.imageP}  onChange={handelChange}  type="text" placeholder="image personnel" />
-  </Form.Group>
+ 
+    <input  className="text-center w-100 mb-3"  name="imageP" defaultValue={el.imageP}  onChange={handelChange}  type="text" placeholder="image personnel" />
+  
 
-  <Form.Group controlId="formGroupPassword">
-    <Form.Control  className="text-center" name="image1" defaultValue={el.image1}  onChange={handelChange}   type="text" placeholder="image 1 de votre atelier" />
-  </Form.Group>
+ 
+    <input   className="text-center w-100 mb-3" name="image1" defaultValue={el.image1}  onChange={handelChange}   type="text" placeholder="image 1 de votre atelier" />
 
-  <Form.Group controlId="formGroupPassword">
-    <Form.Control className="text-center"  name="image2" defaultValue={el.image2}   onChange={handelChange}   type="text" placeholder="image 2 de votre atelier" />
-  </Form.Group>
 
-  <Form.Group controlId="formGroupPassword">
-    <Form.Control className="text-center"  name="image3" defaultValue={el.image3}  onChange={handelChange}  type="text" placeholder="image 3 de votre atelier" />
-  </Form.Group>
 
-  <Form.Group controlId="formGroupPassword">
-    <Form.Control className="text-center"  name="image4" defaultValue={el.image4}  onChange={handelChange}   type="text" placeholder="image 4 de votre atelier" />
-  </Form.Group>
+    <input  className="text-center w-100 mb-3"  name="image2" defaultValue={el.image2}   onChange={handelChange}   type="text" placeholder="image 2 de votre atelier" />
+ 
+
+
+    <input  className="text-center w-100 mb-3"  name="image3" defaultValue={el.image3}  onChange={handelChange}  type="text" placeholder="image 3 de votre atelier" />
+
+
+
+    <input  className="text-center w-100 mb-3"  name="image4" defaultValue={el.image4}  onChange={handelChange}   type="text" placeholder="image 4 de votre atelier" />
 
 <div className="troix-1-input">
-  <Form.Group controlId="formGroupPassword">
-    <Form.Control className="text-center"  name="Ntelf" defaultValue={el.Ntelf}  onChange={handelChange}   type="text" placeholder="N telephone" />
-  </Form.Group>
+ 
+    <input  className="text-center w-25 mb-3"  name="Ntelf" defaultValue={el.Ntelf}  onChange={handelChange}   type="text" placeholder="N telephone" />
 
-  <Form.Group controlId="formGroupPassword">
-    <Form.Control className="text-center"  name="adress" defaultValue={el.adress}  onChange={handelChange} type="text" placeholder="adress" />
-  </Form.Group>
 
-  <Form.Group controlId="formGroupPassword">
-    <Form.Control className="text-center"  name="gouvernorat" defaultValue={el.gouvernorat}  onChange={handelChange}  type="text" placeholder="gouvernorat" />
-  </Form.Group>
+
+    <input  className="text-center w-25 mb-3"  name="adress" defaultValue={el.adress}  onChange={handelChange} type="text" placeholder="adress" />
+
+
+    <input className="text-center w-25 mb-3"  name="gouvernorat" defaultValue={el.gouvernorat}  onChange={handelChange}  type="text" placeholder="gouvernorat" />
+
   </div>
-  <Button onClick={handelSubmit} type="submit">  Valider</Button>
-</Form>
+  <button id="valider-bnt-modal-add-admin" onClick={handelSubmit} type="submit">  Valider</button>
+</form>
 
 
 </div>

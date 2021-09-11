@@ -6,7 +6,7 @@ import Doshboard from './Dashbord';
 const Admin = () => {
  
   return(
-  <div>
+  <div id="admin">
   <Doshboard/>
   </div>
    )

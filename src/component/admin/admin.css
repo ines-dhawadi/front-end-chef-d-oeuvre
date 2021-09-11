@@ -1,3 +1,12 @@
+:root{
+  --fnt:'Audiowide', cursive;
+  --allFont:Arial, Helvetica, sans-serif;
+  /* --color-on:#f36600; */
+  --color-on:#fcb931;
+  --big-title: 'Pathway Gothic One', Arial, serif !important;
+
+
+}
 .tim-typo {
     padding-left: 25%;
     margin-bottom: 40px;
@@ -114,13 +123,15 @@
   }
   
   .bd-docs.dark-edition .bd-example {
-    background-color: #1a2035;
+    
     border: 0;
     border-radius: 10px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  
+  #admin{
+    background-color: #1a2035 !important;
+  }
   .bd-docs.dark-edition {
     background-color: #fff;
   }
@@ -156,7 +167,7 @@
   }
 
   .modal-ajout-artisan{
-margin-top: 8rem;
+margin-top: 4rem;
 margin-left: 50rem;
   }
 
@@ -168,4 +179,32 @@ margin-left: 50rem;
     size: cover;
    
   }
+ .bnt-add-artisan-admin{
+   background-color:var( --color-on) !important ;
+   color: white;
+ }
+
+ .modal-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
  
+  transform: translate(-100%);
+ 
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 2px rgba(131, 130, 130, 0.356);
+  overflow: auto;
+  transform: scaleY(0);
+  transform-origin: center;
+  animation: modal .5s forwards;
+}
+.modal-content-add .modal-body{
+  max-width: 200px !important;
+}
+
+#valider-bnt-modal-add-admin{
+  margin-left: 72%;
+  background-color: var(--color-on);
+  color: white;
+}
