@@ -62,7 +62,7 @@ const [show, setShow] = useState(false);
 
     <div >
       <Button variant="primary" onClick={handleShow}>
-      Ajouter un nouveau produit
+      Ajouter Artisan
       </Button>
 
       <Modal  show={show} onHide={handleClose}>

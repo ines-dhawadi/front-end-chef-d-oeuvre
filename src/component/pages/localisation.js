@@ -5,7 +5,7 @@ import "../css/localisation.css";
 import '../../App.css';
 import TopNavbar from "../view/top-navbar";
 import Footer from "../view/footer";
-
+import MapRespenv from '../view/mapRespenv';
 
 
 
@@ -27,7 +27,7 @@ function Localisation(){
 </div>
 
 < GestMap />
-
+<MapRespenv />
 <Footer />
 {/* <h1 className="titre-1-localisation "></h1> */}
 

@@ -46,7 +46,7 @@ soyez plus accessible et plus connu.
 <i class="fas fa-arrow-down"></i></p></div>
     <div className="container">
       <div className="row all-local">
-        <div className="col-md-4 col-sm-12">
+        <div className="col-md-4 col-sm-12 carousel-desc">
 {/* *************** */}
 <div className="col-md-3 col-sm-6  carousel-desc">
 {/* *******carosel******** */}
@@ -110,7 +110,7 @@ soyez plus accessible et plus connu.
 
         </div>
         <div className="col-md-9 col-sm-12 map-all  position-sticky ">
-        <div>
+        <div className="map-all-min">
       <MapContainer className="w-75" center={[36.806496, 10.181532]} zoom={6.5} scrollWheelZoom={true}>
   <TileLayer
     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

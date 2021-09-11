@@ -17,11 +17,11 @@ function Part1Homme(){
   < div className="alll-part-1-homme">
   <h1  className="big-title text-left">Explorez les environs</h1>
 <div className="row  part2-h"> 
-<div className="col-lg-6 col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/tunus.png" aly="" /> <figcaption> Gouvernorat de Tunis</figcaption> <Link to="/Tunis"><button className="bnt-voir">voir</button></Link> </figure>
+<div className="col-lg-3 col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/tunus.png" aly="" /> <figcaption> Gouvernorat de Tunis</figcaption> <Link to="/Tunis"><button className="bnt-voir">voir</button></Link> </figure>
  </div>
-<div className="col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/ariana.jpeg" aly="" /> <figcaption> Gouvernorat de Ariana</figcaption> <Link to="/Ariana"><button className="bnt-voir">voir</button> </Link></figure> </div>
-<div className="col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/manouba.jpg" aly="" /> <figcaption> Gouvernorat de Manouba</figcaption> <Link to="/Manouba"><button className="bnt-voir">voir</button></Link></figure> </div>
-<div className="col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/benarous.jpg" aly="" /> <figcaption> Gouvernorat de ben arous</figcaption> <Link to="/BenArous"><button className="bnt-voir">voir</button></Link></figure> </div>
+<div className=" col-lg-3 col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/ariana.jpeg" aly="" /> <figcaption> Gouvernorat de Ariana</figcaption> <Link to="/Ariana"><button className="bnt-voir">voir</button> </Link></figure> </div>
+<div className=" col-lg-3 col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/manouba.jpg" aly="" /> <figcaption> Gouvernorat de Manouba</figcaption> <Link to="/Manouba"><button className="bnt-voir">voir</button></Link></figure> </div>
+<div className="col-lg-3 col-md-3 col-sm-6 "> <figure> <img className="img-4-g-t" src="/images/image-view/benarous.jpg" aly="" /> <figcaption> Gouvernorat de ben arous</figcaption> <Link to="/BenArous"><button className="bnt-voir">voir</button></Link></figure> </div>
 </div>
 
  </div>
