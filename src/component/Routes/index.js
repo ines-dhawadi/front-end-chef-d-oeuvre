@@ -21,6 +21,7 @@ import Tunis from "../view/tunis";
 import Ariana from "../view/Ariana";
 import Manouba from "../view/Manouba";
 import BenArous from "../view/BenArous";
+import SignInAdmin from "../authentification/signInAdmin"
 //import NewNavbar from "../view/newnavbar";
 
 
@@ -33,7 +34,7 @@ function Routes() {
 
 <Route  path="/"   exact component={Homme}/>
 <Route path="/localisation"  exact component={Localisation}/> 
-<Route  path="/IDHCAR"   exact component={Admin} /> 
+<Route  path="/IDHCAR/INES/DHAWADI/APP/CAR"   exact component={Admin} /> 
 <Route path="/artisan" exact component={Users} /> 
 <Route path="/users" exact component={Client} /> 
 <Route path="/Contact" exact component={Contact}/>
@@ -46,9 +47,11 @@ function Routes() {
 <Route path="/BenArous" exact component={BenArous} /> 
 
 
-
+{/* DASHBOARD ADLIN */}
+<Route path="/DASHBOARD-ADLIN" exact component={SignInAdmin} />
 
 {/* pages chat  */}
+
 
         <Route path="/Chat" exact component={Chat} />
         <Route path="/Tendance" exact component={Tendance} />
