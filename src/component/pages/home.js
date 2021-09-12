@@ -20,7 +20,10 @@ function Homme(){
         <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
     </svg>
 </div>
+
+<p className="slogan">  <span id="bord">.----------- </span> <br></br><span id="spsl">" </span> Pour  <span id="spsl">tous </span>  les contraires <br></br><br></br> et pour ceux qui s'attirent <span id="spsl"> " </span> </p>
 <div>
+ 
 <img className="img-homme-top img-fluid" src='/images/image-view/0.png' alt=""/>
 </div>
 {/* <h1 className="titre-1-home">GUIDE ME</h1> */}

@@ -36,6 +36,27 @@
   margin-bottom: 12%;
   font-family: var( --font-2);
 }
+.slogan{
+  margin-top: -24%;
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 12%;
+  text-align: center;
+  
+  
+}
+#bord{
+  border-top: 4px solid #fcb931;
+  width: 30rem !important;
+  color: #000000;
+padding-bottom: 2%;
+ 
+}
+#spsl{
+  color: #fcb931;
+  font-size: 2.5rem;
+}
 .custom-shape-divider-top-1630758667 {
   
   
