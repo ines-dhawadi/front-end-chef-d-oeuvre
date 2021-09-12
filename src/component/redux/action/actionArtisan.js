@@ -1,23 +1,39 @@
 import {updateArtisanR,deleteArtisan,addArtisan,fetchArtisan} from '../requests/requestArtisan'
 import {REACT_APP_UPDATE_ARTISAN,REACT_APP_DELETE_ARTISAN,REACT_APP_POST_ARTISAN,REACT_APP_GET_ARTISAN,REACT_APP_GET_ARTISAN_FAILED} from './type'
 import axios from 'axios'
-import {GET_ONEARTISAN_API,SERVER_BASE_API} from '../shared/apiURL'
+import {GET_ONEARTISAN_API,GET_ARTISAN_API,SERVER_BASE_API} from '../shared/apiURL'
+//import { SERVER_BASE_API ,GET_ARTISAN_API,ADD_ARTISAN_API} from "../shared/apiURL"
 
 
 // GET ARTISAN
-export function allArtisan(){
-    return dispatch =>{
-        fetchArtisan() 
-        .then(artisan => dispatch(
-{type :REACT_APP_GET_ARTISAN, payload :artisan })
-        )
-        .catch(err=> dispatch({
-            type:REACT_APP_GET_ARTISAN_FAILED,
-            payload: err
-        }))
-    }
-}
+// export function allArtisan(num){
+//     return dispatch =>{
+//         fetchArtisan() 
+//         .then((res) =>  {
+//            const arry = res.data.slice(0,num)
+//           dispatch(
+// {type :REACT_APP_GET_ARTISAN, payload :arry })
+//         })
+//         .catch(err=> dispatch({
+//             type:REACT_APP_GET_ARTISAN_FAILED,
+//             payload: err
+//         }))
+//     }
+// }
+//******************* */
 
+export const allArtisan = (num) => {
+  return (dispatch) => {
+    return axios
+      .get(`${GET_ARTISAN_API}`)
+      .then((res) => {
+        const arry = res.data.slice(0,num)
+       
+        dispatch({ type: REACT_APP_GET_ARTISAN, payload: arry });
+      })
+      .catch((err) => console.log(err));
+  };
+};
 // // get by id
 export const getArtisanById=(id)=> async (dispatch)=> {
   try{

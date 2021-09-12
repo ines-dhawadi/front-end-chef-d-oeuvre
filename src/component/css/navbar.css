@@ -133,22 +133,7 @@ color: white;
    
    
   }
-  /* .titre-1-home{
-     background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75))  
-background-image:linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.767)), url("https://www.brumpost.com/wp-content/uploads/2020/02/Tesla-Model-3-Steering-and-digidash.jpg") !important;
-background-repeat: no-repeat;
-font-size: 4rem;
-color: white;
-padding-top: 35rem;
-    font-family: var( --fnt);
-    background-position: top;
-    background-size: cover;
-height: 48rem;
-border: 1px solid #333;
-    box-shadow: 1px 1px 1px #000000;
-    border-radius: 3px;
-    background-attachment: fixed;
-  } */
+
 
 
   .logo-top-navbar{
@@ -203,20 +188,7 @@ padding-top: 0% !important;
  
   }
 
-  /* .navbar.colorChange  .par-2-scrol{
-   margin-left: 25% !important;
- 
-display: flex;
-justify-content: space-around;
-  } */
-  /* .navbar.colorChange .part3-nav{
-    margin-left: 12%;
-   } */
 
-   /* .navbar.colorChange .part2-nav-hover{
-    margin-left: 3%;
-    margin-right: 3%;
-  } */
 
 
   .active-left-nav {
@@ -236,24 +208,52 @@ justify-content: space-around;
 
       
       }
-
+      .map-respensv{
+        display: none !important;
+      }
+/* *********************************************************
+**********************************************************
+***********************************************************
+*********************************************************
+**********************************************************
+*********************************************************** */
       @media screen and(max-width: 590px) {
         
-        .active-left-nav{height: 33px;
+        .active-left-nav{
+          height: 33px;
         left: -8px;
       }
     }
-  
+   
+    .mart-r-p-map{
+      display: none !important;
+    }
 
+    .all-top-part-locl{
+      display: flex;
+      flex-direction: column !important;
+      justify-content: center !important;
+      width: 100% !important;
+
+
+      box-shadow: 1px 1px 1px 1px white !important;
+    }
+
+   
 
   }
-.map-respensv{
-  display: none;
-}
+/* *********************************************************
+**********************************************************
+***********************************************************
+*********************************************************
+**********************************************************
+*********************************************************** */
   /*** media  822px*/ 
      @media only screen and (max-width: 1081px){
-
-
+      
+body{
+  overflow-y: hidden;
+}
    
         .top-navb{
           display: none;
@@ -347,14 +347,6 @@ iframe{
   margin-top: 5%;
 }
 
-.all-top-part-locl{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100% !important;
-  margin-left: 0% !important;
-  box-shadow: 1px 1px 1px 1px white !important;
-}
 .mart-r-p-map{
   display: flex;
   flex-direction: column;
@@ -386,6 +378,9 @@ iframe{
 
 
 
+.all-new-amp-loc{
+  display: none;
+}
 
 
 
@@ -393,11 +388,36 @@ iframe{
 
 
      }
-
+/* *********************************************************
+**********************************************************
+***********************************************************
+*********************************************************
+**********************************************************
+*********************************************************** */
 
 /*  ************footer 1024************ */
     @media only screen and(max-width:1023){
       #nav_menu-2{
    margin-left: 15px !important;
        }
+    }
+/* *********************************************************
+**********************************************************
+***********************************************************
+*********************************************************
+**********************************************************
+*********************************************************** */
+
+    
+    @media only screen and(max-width:768){
+     
+      .all-top-part-locl{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        width: 100% !important;
+      
+        box-shadow: 1px 1px 1px 1px white !important;
+      }
+
     }

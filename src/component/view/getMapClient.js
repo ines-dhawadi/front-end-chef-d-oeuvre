@@ -1,6 +1,6 @@
 import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {useSelector,useDispatch} from "react-redux"
 import {allArtisan,getArtisanById} from "../redux/action/actionArtisan"
 import { Carousel } from "react-bootstrap";
@@ -26,10 +26,10 @@ const  GestMap=()=> {
   //   history.push(path);
   // };
   const artisan = useSelector(state =>state.artisanStore.datas)
-    
+  const [Num, setNum] = useState(10)
   const dispatch = useDispatch()
   useEffect(()=>{
-    dispatch( allArtisan());
+    dispatch( allArtisan(Num));
   },[]);
   console.log("produit", artisan)
 
@@ -39,11 +39,25 @@ const  GestMap=()=> {
   }
   return(
     <div>
-<div className="all-top-part-locl"><p className="text-center"> <i id="icon-location" class="fas fa-3x fa-map-marked-alt"></i> <br></br> <br></br>Partager votre profil, expérience <br></br>
+
+      <div className="container">
+<div className="row">
+  <div className="col-md-4 col col-sm-12"></div>
+  <div className="col-md-4 col col-sm-12"><div className="all-top-part-locl"><p className="text-center"> <i id="icon-location" class="fas fa-3x fa-map-marked-alt"></i> <br></br> <br></br>Partager votre profil, expérience <br></br>
 et localisation sur notre map, afin que vous<br></br>
 soyez plus accessible et plus connu.
 <br></br><br></br>
-<i class="fas fa-arrow-down"></i></p></div>
+<i class="fas fa-arrow-down"></i></p></div></div>
+  <div className="col-md-4 col col-sm-12"></div>
+
+
+
+</div>
+      </div>
+
+
+
+
     <div className="container">
       <div className="row all-local">
         <div className="col-md-4 col-sm-12 carousel-desc">

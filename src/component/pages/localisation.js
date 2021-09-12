@@ -6,7 +6,7 @@ import '../../App.css';
 import TopNavbar from "../view/top-navbar";
 import Footer from "../view/footer";
 import MapRespenv from '../view/mapRespenv';
-
+import TestMap from '../view/testmap'
 
 
 function Localisation(){
@@ -26,7 +26,8 @@ function Localisation(){
     </svg>
 </div>
 
-< GestMap />
+{/* < GestMap /> */}
+<TestMap />
 <MapRespenv />
 <Footer />
 {/* <h1 className="titre-1-localisation "></h1> */}

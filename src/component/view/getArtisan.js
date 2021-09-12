@@ -93,14 +93,14 @@
 
 import React from 'react'
 import "../css/cardartisan.css";
-import {useEffect} from "react";
+import {useEffect,useState} from "react";
 import {useSelector,useDispatch} from "react-redux"
 import { deleteArtisanB ,allArtisan} from "../redux/action/actionArtisan"
 import  UpdateArtisan from "../view/updateArtisan"
 
 const GetArtisan=()=>{
     const artisan = useSelector(state =>state.artisanStore.datas)
-    
+    //  const [Num, setNum] = useState(5)
     const dispatch = useDispatch()
     useEffect(()=>{
       dispatch( allArtisan());
